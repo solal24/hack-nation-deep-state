@@ -17,7 +17,8 @@ _TBD._
 | Name | Role | GitHub |
 |------|------|--------|
 | Solal Abitbol | | @solal24 |
-| | | |
+| | | @eaboufadel3 |
+| | | @IsmaA24 |
 
 ## Repo layout
 ```
