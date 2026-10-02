@@ -16,8 +16,8 @@ _TBD._
 | Person | GitHub | Owns |
 |--------|--------|------|
 | Solal | solal24 | _TBD_ (available from Sat ~6:30 PM ET) |
-| | eaboufadel3 | _TBD_ |
-| Isma | IsmaA24 | _TBD_ |
+| Elie Abou-Fadel | eaboufadel3 | _TBD_ |
+| Ismail Ameur | IsmaA24 | _TBD_ |
 
 Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`src/llm.py`, `requirements.txt`, this file), keep the change minimal and mention it in the commit message.
 
