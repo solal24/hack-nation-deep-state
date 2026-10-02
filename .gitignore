@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+*.pem
+*.key
+data/*
+!data/.gitkeep
+node_modules/
+.DS_Store
