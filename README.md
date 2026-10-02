@@ -3,7 +3,7 @@
 Team **Deep State** at the [Hack-Nation 7th Global AI Hackathon](https://hack-nation.ai/hackathon) (Oct 3-4, 2026).
 
 ## Key times (ET)
-- **Sat Oct 3, 12:00 PM**: global kick-off, challenges revealed
+- **Sat Oct 3, 11:00 PM**: global kick-off, challenges revealed
 - **Sun Oct 4, 9:00 AM**: submission deadline (hard)
 - Oct 8: finalists notified · Oct 10: finalist pitches and awards
 
