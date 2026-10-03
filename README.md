@@ -26,7 +26,8 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 | 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 v1 on branch `feat/address-lookup`, tested on dev rules |
 | 3 · Change tests T1-T5 | `pipeline/changes.py` | _tbd_ | ⏳ |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
-| External data (missing law texts, APIs) | `starter/corpus/supplemental/` (planned) | Elie | ⏳ |
+| External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | 🟡 on branch `feat/external-data`: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
+| External data · law texts, legislative APIs | `starter/corpus/supplemental/` (planned) | Elie | ⏳ |
 | App | Lovable | _tbd_ | ⏳ |
 
 ## Run it

@@ -1,6 +1,6 @@
 PY ?= .venv/bin/python
 
-.PHONY: setup enrich extract engine changes eval all ingest
+.PHONY: setup enrich extract engine changes eval all ingest online online-check
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
@@ -24,3 +24,9 @@ all: enrich extract engine changes eval
 
 ingest:        ## add one new document end to end: make ingest DOC=path/to/doc.txt
 	$(PY) -m pipeline.extract --doc $(DOC) && $(MAKE) engine changes eval
+
+online:        ## external data: one address outside the sample -> data/addresses_online.csv (make online ADDR="...")
+	$(PY) -m pipeline.online_address "$(ADDR)"
+
+online-check:  ## accuracy of the online lookup vs the supplied sample (10 addresses per city)
+	$(PY) -m pipeline.online_address --validate 10
