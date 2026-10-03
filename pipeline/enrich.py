@@ -113,8 +113,8 @@ def range_fallback(r):
                 **PARAMS, "format": "json", "layers": "Incorporated Places,Counties",
                 "address": f"{n} {street}, {r['postal_city']}, {r['state']}"})
             resp.raise_for_status()
-            cache.write_text(json.dumps(resp.json()["result"]["addressMatches"]))
-        matches = json.loads(cache.read_text())
+            cache.write_text(json.dumps(resp.json()["result"]["addressMatches"]), encoding="utf-8")
+        matches = json.loads(cache.read_text(encoding="utf-8"))
         exact = [x for x in matches if x["matchedAddress"].upper().startswith(f"{n} {street.upper()},")]
         if not matches:
             return None
