@@ -15,9 +15,9 @@ Judges value a working demo above everything: a polished narrow feature beats a 
 ## Team and ownership
 | Person | GitHub | Owns |
 |--------|--------|------|
-| Solal | solal24 | Lane C · Eval + Product + Story (proposed) |
-| Elie Abou-Fadel | eaboufadel3 | Lane A or B (to confirm) |
-| Ismail Ameur | IsmaA24 | Lane A or B (to confirm) |
+| Solal | solal24 | **Address → laws**: jurisdiction stack, rule matching, coverage logic, results (`pipeline/engine.py`), branch `feat/address-lookup` |
+| Elie Abou-Fadel | eaboufadel3 | **External data**: missing law texts (link-only docs), legislative APIs, public parcel data. Respect site terms, no bulk scraping |
+| Ismail Ameur | IsmaA24 | **Data processing**: addresses (`pipeline/enrich.py`), corpus cleaning, tables per the data contracts in PLAN.md |
 
 Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`pipeline/llm.py`, `requirements.txt`, `PLAN.md`, this file), keep the change minimal and mention it in the commit message.
 
