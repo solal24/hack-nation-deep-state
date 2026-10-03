@@ -46,12 +46,16 @@ DOCS = {
         "change_tests": "T5",
     },
     "X007": {
-        "url": "https://www.mass.gov/doc/cella-v-attorney-general-sjc-w13893/download",
-        "found_via": "mass.gov > Supreme Judicial Court slip opinion, Cella v. Attorney General, SJC-13893",
+        "url": "https://www.ma-appellatecourts.org/docket/SJC-13893",
+        "found_via": "Massachusetts Appellate Courts public case search, docket SJC-13893 (official court record); "
+                     "saved by hand from a browser as PDF because the site answers 403 to scripts. The mass.gov "
+                     "slip-opinion link did not work",
         "jurisdictions": "MA",
-        "bill": "Cella v. Attorney General, SJC-13893 (decided 2026-06-23) on Initiative Petition 25-21",
-        "bill_status": "court decision: IP 25-21 barred from the 2026 ballot (status of the petition: failed)",
-        "bill_dates": "2026-06-23 decided",
+        "bill": "Cella v. Attorney General, SJC-13893, 497 Mass. 706 (decided 2026-06-23): docket incl. rescript",
+        "bill_status": "court decision: IP 25-21 contains excluded matters (art. 48); Secretary enjoined from placing "
+                       "it on the 2026 ballot -> petition failed",
+        "bill_dates": "2026-02-18 entered; 2026-05-06 argued; 2026-06-23 decided (rescript, full opinion); "
+                      "2026-07-21 rescript issued to trial court",
         "change_tests": "T5",
     },
     # Newark: the attached PDFs are scans (no text layer); Legistar stores the ordinance text itself.
