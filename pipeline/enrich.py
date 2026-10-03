@@ -92,6 +92,47 @@ def oneline(r):
             (place.get("NAME") if len(places) == 1 else None, place.get("GEOID"), county.get("NAME"), county.get("GEOID")))
 
 
+STREET_SUFFIXES = {"ST", "AVE", "AV", "RD", "DR", "BLVD", "PL", "CT", "LN", "WAY", "TER", "PKWY", "SQ", "HWY", "CIR"}
+
+
+def range_fallback(r):
+    """'521-523 S 17TH' -> geocode every number in the range (no supplied ZIP, 'ST' added if no suffix).
+    Per number, candidates spelled exactly like the query win ('MT PROSPECT' over 'MOUNT PROSPECT').
+    Accepted only if every number matches with the same ZIP, place and county. Same tuple shape as oneline()."""
+    m = re.match(r"^(\d+)(?:\.\d+)?-(\d+)(?:\.\d+)?\s+(.*)$", r["street_address"].strip())  # '322-322.5' -> 322
+    if not m or not 0 <= int(m.group(2)) - int(m.group(1)) <= 10:
+        return None
+    street = normalize_street(m.group(3))
+    if street.split()[-1].upper() not in STREET_SUFFIXES:
+        street += " ST"
+    hits = []
+    for n in range(int(m.group(1)), int(m.group(2)) + 1):
+        cache = CACHE / f"range_{r['address_id']}_{n}.json"
+        if not cache.exists():
+            resp = requests.get(f"{CENSUS}/onelineaddress", timeout=60, params={
+                **PARAMS, "format": "json", "layers": "Incorporated Places,Counties",
+                "address": f"{n} {street}, {r['postal_city']}, {r['state']}"})
+            resp.raise_for_status()
+            cache.write_text(json.dumps(resp.json()["result"]["addressMatches"]))
+        matches = json.loads(cache.read_text())
+        exact = [x for x in matches if x["matchedAddress"].upper().startswith(f"{n} {street.upper()},")]
+        if not matches:
+            return None
+        hits.extend(exact or matches)
+    keys = set()
+    for h in hits:
+        g = h.get("geographies", {})
+        keys.add((h["matchedAddress"].rsplit(",", 1)[-1].strip(),
+                  (g.get("Incorporated Places") or [{}])[0].get("GEOID"), (g.get("Counties") or [{}])[0].get("GEOID")))
+    if len(keys) != 1:
+        return None
+    h, g = hits[0], hits[0].get("geographies", {})
+    place = (g.get("Incorporated Places") or [{}])[0]
+    county = (g.get("Counties") or [{}])[0]
+    return ("Match:range_consistent", h["matchedAddress"], h["coordinates"]["x"], h["coordinates"]["y"],
+            (place.get("NAME"), place.get("GEOID"), county.get("NAME"), county.get("GEOID")))
+
+
 def legal_city(place_name, state):
     """'Los Angeles city' -> 'Los Angeles, CA'. None when unincorporated."""
     if not place_name:
@@ -102,11 +143,14 @@ def legal_city(place_name, state):
 
 def unit_bounds(r):
     """(min, max, source). Supplied `units` wins; else parse the use code / description."""
-    if r["units"].strip():
-        n = int(float(r["units"]))
-        return n, n, "supplied"
     desc, code, ds = r["use_description"].upper(), r["use_code"].upper(), r["source_dataset"]
     m = re.search(r"(\d+)\s*U\b|(\d+)U-", desc)              # NJ MOD-IV: '6B-20U-G' -> 20 units
+    if r["units"].strip():
+        n = int(float(r["units"]))
+        if ds.startswith("NJOGIS") and m and int(m.group(1) or m.group(2)) != n:  # A0227: units=2 vs '93U'
+            d = int(m.group(1) or m.group(2))
+            return min(n, d), max(n, d), "conflict"           # keep both: engine answers 'unknown' in between
+        return n, n, "supplied"
     if ds.startswith("NJOGIS") and m:
         n = int(m.group(1) or m.group(2))
         return n, n, "use_code"
@@ -126,6 +170,26 @@ def unit_bounds(r):
     return None, None, "unknown"
 
 
+def fill_from_city(out):
+    """Rows Census could not place (postal_fallback): copy city/county/state GEOIDs from the geocoded rows of
+    the same legal city (only if they all agree), and use the supplied ZIP only for datasets whose ZIPs
+    match Census on every geocoded row. lat/lon stay empty. Marked geocode_match '...:city_inferred'."""
+    geo_by_city, zip_ok = collections.defaultdict(set), collections.defaultdict(set)
+    for o in out:
+        if o["legal_city_source"] != "postal_fallback":
+            geo_by_city[o["legal_city"]].add((o["legal_city_geoid"], o["county"], o["county_geoid"]))
+            if o["zip"] and o["zip_geocoded"]:
+                zip_ok[o["source_dataset"]].add(o["zip"] == o["zip_geocoded"])
+    for o in out:
+        if o["legal_city_source"] != "postal_fallback" or len(geo_by_city[o["legal_city"]]) != 1:
+            continue
+        (o["legal_city_geoid"], o["county"], o["county_geoid"]), = geo_by_city[o["legal_city"]]
+        o["state_geoid"] = o["county_geoid"][:2]
+        if o["zip"] and zip_ok[o["source_dataset"]] == {True}:
+            o["zip_geocoded"] = o["zip"]
+        o["geocode_match"] += ":city_inferred"
+
+
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     rows = list(csv.DictReader(SRC.open()))
@@ -137,6 +201,11 @@ def main():
         if lon is None:  # batch No_Match / Tie -> retry one by one
             match, matched, lon, lat, place = oneline(r)
             source = "census_oneline"
+            if (match == "No_Match" or match.startswith("Tie")) and (ranged := range_fallback(r)):
+                match, matched, lon, lat, place = ranged
+                source = "census_range"
+            elif match.startswith("Tie"):  # unresolved tie: drop the arbitrary first candidate's geography
+                matched, lon, lat, place = "", None, None, (None, None, None, None)
         elif lon is not None:
             place = place_for(r["address_id"], lon, lat)
         city = legal_city(place[0], r["state"])
@@ -149,6 +218,7 @@ def main():
                 "legal_city": city, "legal_city_source": source,
                 "legal_city_geoid": place[1] or "",
                 "county": place[2] or "", "county_geoid": place[3] or "",
+                "state_geoid": (place[3] or "")[:2],
                 "zip_geocoded": zip_geo, "lat": lat or "", "lon": lon or "",
                 "geocode_match": match,
                 "units_min": umin if umin is not None else "", "units_max": umax if umax is not None else "",
@@ -156,6 +226,7 @@ def main():
 
     with ThreadPoolExecutor(8) as pool:
         out = list(pool.map(enrich, rows))
+    fill_from_city(out)
 
     with OUT.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0].keys()))
