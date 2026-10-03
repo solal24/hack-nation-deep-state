@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market",
+      "requirement": "Landlords, agents, or subcontractors may not pay or contract with a service provider that uses algorithms or software to collect competitor data and recommend rent prices, occupancy levels, or lease terms. Service providers are also banned from facilitating agreements among landlords not to compete on rental pricing or terms.",
+      "key_value": "Fine of $100-$2000 per day for subsequent violations",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to real estate lessors leasing residential dwelling units in Jersey City; exempts actions by an owner of multiple properties relating exclusively to properties it controls; excludes licensed real estate agents operating per state regulations; does not cover inpatient medical care, long-term care, or detention/correctional facilities."
+      },
+      "exemptions": "Exempts owners of multiple properties for actions related exclusively to multiple properties they control; exempts licensed real estate agents operating in accordance with applicable state regulations.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": "2025-05-22",
+      "penalty": "First violation punishable under Chapter 1, Art. I, §1-25; subsequent violations fined not less than $100 and up to $2000; each day of violation is a separate offense. Attorney fees and costs awarded to prevailing plaintiff, including the attorney general or city/county/district attorney.",
+      "citation": "Jersey City, N.J. Code of Ordinances § 218-12",
+      "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or otherwise exchange anything of value in return for the services of a Service Provider.",
+      "confidence": 0.9,
+      "conflict_note": null
+    }
+  ]
+}
