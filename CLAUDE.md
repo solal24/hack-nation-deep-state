@@ -39,6 +39,7 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 - Deliverables use only supplied data (+ Census geocoding). Enrichment is a separate, provenance-labeled layer
 - Never join on ZIP or postal_city; use the geocoded legal city
 - Don't create new top-level folders; ask the team first
+- When a step changes status, update the Status table in README.md in the same commit; new decisions go in PLAN.md
 - `main` must always run. Work on a branch `feat/<name>`, merge only when it runs
 - Always `git pull` before starting work; commit small, push often
 - Prefer the simplest thing that demos well. No premature abstractions, no test suites unless asked
