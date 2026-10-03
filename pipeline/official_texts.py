@@ -7,6 +7,9 @@ corpus_extra/text/<doc_id>.txt with the SOURCE / RETRIEVED header, plus one row 
 (provenance "elie_manual"). Rules extracted from these land in outputs/rules_all.json with review_status
 "to_review"; outputs/rules.json stays supplied-corpus-only unless organizers allow outside sources.
 
+A site that refuses scripts (mass.gov answers 403) is not worked around: download that file in a browser,
+save it as data/cache/external/official_<doc_id>.bin and re-run; the copy is then used as the source.
+
 Run: python -m pipeline.official_texts            (all documents)
      python -m pipeline.official_texts X004       (one)
 """
@@ -14,6 +17,7 @@ import argparse
 import csv
 import hashlib
 import io
+import json
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -38,6 +42,60 @@ DOCS = {
                       "2025-05-22 approved by mayor",
         "change_tests": "T2, T3",
     },
+    "X005": {
+        "url": "https://hobokennj.iqm2.com/Citizens/FileOpen.aspx?Type=30&ID=69209",
+        "found_via": "hobokennj.gov news 2025-07-10 'City of Hoboken outlaws algorithmic rent-fixing' -> Hoboken iQM2 "
+                     "legislation file 12291 (meeting 2943, 2025-07-09) -> attachment 'Printout'",
+        "jurisdictions": "Hoboken, NJ",
+        "bill": "Hoboken ordinance amending Code ch. 158 (Rent Increases), new § 158-2 (text heading reads § 154-8)",
+        "bill_status": "adopted 2025-07-09 (unanimous, per the city's iQM2 legislation page); the attached text is the "
+                       "clerk's template copy: ordinance number and vote record are blank in the PDF",
+        "bill_dates": "2025-07-09 adopted by City Council (unanimous); 2025-07-10 announced by the City",
+        "effective_clause": "This Ordinance shall take effect immediately upon passage and publication as provided by law.",
+        "change_tests": "T2, T3",
+    },
+    "X006": {
+        "url": "https://www.mass.gov/doc/25-21-an-initiative-petition-to-protect-tenants-by-limiting-rent-increases/download",
+        "found_via": "mass.gov (Attorney General) > Ballot initiatives submitted for the 2026 statewide election > 25-21",
+        "jurisdictions": "MA",
+        "bill": "Initiative Petition 25-21, 'An Initiative Petition to Protect Tenants by Limiting Rent Increases'",
+        "bill_status": "failed: struck from the 2026 ballot by the SJC on 2026-06-23 (Cella v. Attorney General, "
+                       "SJC-13893, see X007); never law",
+        "bill_dates": "2025 filed with and certified by the Attorney General; 2026-06-23 SJC: not in compliance with "
+                      "art. 48 excluded matters, Secretary enjoined from placing it on the ballot",
+        "change_tests": "T5",
+    },
+    "X007": {
+        "url": "https://www.mass.gov/doc/cella-v-attorney-general-sjc-w13893/download",
+        "found_via": "mass.gov > Supreme Judicial Court slip opinion, Cella v. Attorney General, SJC-13893",
+        "jurisdictions": "MA",
+        "bill": "Cella v. Attorney General, SJC-13893 (decided 2026-06-23) on Initiative Petition 25-21",
+        "bill_status": "court decision: IP 25-21 barred from the 2026 ballot (status of the petition: failed)",
+        "bill_dates": "2026-06-23 decided",
+        "change_tests": "T5",
+    },
+    # Newark: the attached PDFs are scans (no text layer); Legistar stores the ordinance text itself.
+    "X008": {
+        "url": "https://webapi.legistar.com/v1/newark/matters/1611524/texts/1559191",
+        "json_field": "MatterTextPlain",
+        "found_via": "Newark Legistar matter 26-0532 (https://newark.legistar.com/LegislationDetail.aspx?ID=1611524"
+                     "&GUID=2864F5C6-2BDC-4A7B-A1EC-A99FF0E3D674), stored matter text, version 1",
+        "jurisdictions": "Newark, NJ",
+        "bill": "Newark ordinance 26-0532, amending Ord. 6PSF-I, Title XIX Rent Control, Chapter 2 (Rent Control "
+                "Regulations; Rent Control Board)",
+        "bill_status": "adopted 2026-05-20 (Legistar status 'Adopted'; only one text version is stored)",
+        "bill_dates": "2026-04-08 introduced; 2026-05-20 adopted",
+    },
+    "X009": {
+        "url": "https://webapi.legistar.com/v1/newark/matters/1611507/texts/1559171",
+        "json_field": "MatterTextPlain",
+        "found_via": "Newark Legistar matter 26-0515 (stored matter text, version 1); certified ordinance PDF is a scan",
+        "jurisdictions": "Newark, NJ",
+        "bill": "Newark ordinance 26-0515, amending Title XIX, Chapter 19:3 (Rent Control), legal services in "
+                "eviction proceedings: definition of income-eligible individual",
+        "bill_status": "adopted 2026-05-20 (Legistar status 'Adopted'; certified ordinance attached as a scan)",
+        "bill_dates": "2026-04-07 introduced; 2026-05-20 adopted",
+    },
 }
 
 
@@ -49,10 +107,13 @@ def fetch(doc_id, url):
         r = requests.get(url, timeout=120, headers={"User-Agent": "hack-nation-deep-state research (one-off fetch)"})
         r.raise_for_status()
         path.write_bytes(r.content)
-    return path.read_bytes()
+    fetched = datetime.fromtimestamp(path.stat().st_mtime, timezone.utc)   # when it was really downloaded
+    return path.read_bytes(), fetched
 
 
-def to_text(raw):
+def to_text(raw, json_field=None):
+    if json_field:   # e.g. Legistar matter text: the city's own stored text of the ordinance, taken verbatim
+        return json.loads(raw)[json_field].replace("\r\n", "\n").strip(), "json"
     if raw[:5] == b"%PDF-":
         pages = [p.extract_text() or "" for p in PdfReader(io.BytesIO(raw)).pages]
         if sum(len(p.strip()) for p in pages) < 200:
@@ -70,9 +131,14 @@ def main():
     for doc_id, d in DOCS.items():
         if args.doc_ids and doc_id not in args.doc_ids:
             continue
-        raw = fetch(doc_id, d["url"])
-        text, kind = to_text(raw)
-        now = datetime.now(timezone.utc)
+        try:
+            raw, now = fetch(doc_id, d["url"])
+            text, kind = to_text(raw, d.get("json_field"))
+        except (requests.HTTPError, ValueError) as e:
+            # e.g. mass.gov answers 403 to scripts: we don't work around it. Download the file in a browser and
+            # save it as data/cache/external/official_<doc_id>.bin, then re-run (fetch() uses that copy).
+            print(f"  {doc_id} SKIPPED ({e}). Save it by hand as {CACHE.relative_to(ROOT)}/official_{doc_id}.bin")
+            continue
         path = EXTRA / "text" / f"{doc_id}.txt"
         path.write_text(f"SOURCE: {d['url']}\nRETRIEVED: {now:%Y-%m-%d %H:%M} UTC\n\n{text}\n", encoding="utf-8")
         rows[doc_id] = {"doc_id": doc_id, "jurisdictions": d["jurisdictions"], "url": d["url"],
