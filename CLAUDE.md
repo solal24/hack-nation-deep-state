@@ -15,7 +15,7 @@ _TBD._
 ## Team and ownership
 | Person | GitHub | Owns |
 |--------|--------|------|
-| Solal | solal24 | _TBD_ (available from Sat ~6:30 PM ET) |
+| Solal | solal24 | _TBD_ |
 | Elie Abou-Fadel | eaboufadel3 | _TBD_ |
 | Ismail Ameur | IsmaA24 | _TBD_ |
 
