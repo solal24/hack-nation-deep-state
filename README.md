@@ -22,10 +22,12 @@ _TBD._
 
 ## Repo layout
 ```
-src/        application / model code
-notebooks/  exploration
-data/       local data (git-ignored, share download scripts instead)
-docs/       pitch deck, demo video link, submission text
+starter/    RealPage starter pack (corpus, addresses, schema, tests). Never edited
+pipeline/   our code, one file per step: enrich → extract → engine → changes (+ llm.py)
+eval/       our gold set and checks
+data/       addresses_enriched.csv (+ Census cache)
+outputs/    rules.json, lookups.json, changes.json (the deliverables)
+PLAN.md     plan, lanes, timeline, data contracts
 ```
 
 ## Setup
@@ -45,7 +47,7 @@ cp .env.example .env   # add your own API keys, never commit .env
 
 ## Submission checklist
 - [ ] Working demo
-- [ ] Demo video (link in `docs/`)
+- [ ] Demo video (link in README)
 - [ ] Pitch / slides
 - [ ] README updated with problem, solution, how to run
 - [ ] Submitted before Sun 9:00 AM ET

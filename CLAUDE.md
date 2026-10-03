@@ -10,7 +10,7 @@ Judges value a working demo above everything: a polished narrow feature beats a 
 **Challenge 2 · Rental Housing Law Navigator (RealPage).** Starter pack in `starter/` (read `starter/README.md`). Deliverables: `outputs/rules.json`, `outputs/lookups.json`, `outputs/changes.json`, live demo, one-page method note.
 
 ## Our idea
-**Read `PLAN.md` first** (north star, lanes, priorities, timeline) and `docs/contracts.md` (data formats). LLM extracts rules with verified quotes; deterministic code decides coverage; intent-based app per role (renter / landlord / legislator / public office).
+**Read `PLAN.md` first** (north star, lanes, priorities, timeline) (appendix: data contracts). LLM extracts rules with verified quotes; deterministic code decides coverage; intent-based app per role (renter / landlord / legislator / public office).
 
 ## Team and ownership
 | Person | GitHub | Owns |
@@ -19,7 +19,7 @@ Judges value a working demo above everything: a polished narrow feature beats a 
 | Elie Abou-Fadel | eaboufadel3 | Lane A or B (to confirm) |
 | Ismail Ameur | IsmaA24 | Lane A or B (to confirm) |
 
-Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`src/llm.py`, `requirements.txt`, this file), keep the change minimal and mention it in the commit message.
+Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`pipeline/llm.py`, `requirements.txt`, `PLAN.md`, this file), keep the change minimal and mention it in the commit message.
 
 ## Partners (use them, judges notice)
 - **Lovable**: AI app builder (React + Supabase). Use it for the user-facing app
@@ -28,19 +28,19 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 - **Bright Data** (credits): web scraping / unblocking / SERP API / ready-made scrapers. Use it to get real data instead of synthetic
 
 ## Stack
-- Frontend: Lovable app (lives in its own Lovable-synced GitHub repo, link it here once created)
-- Backend: Python 3.11+ in this repo (ML / optimization), exposed as a small API if Lovable needs it
-- Fallback UI: `streamlit run src/app.py` if Lovable blocks us
-- LLM calls go through `src/llm.py` (`ask`, `ask_json`). Model set by `CLAUDE_MODEL` in `.env`
+- Repo layout: `starter/` (given by RealPage, never edit) · `pipeline/` (our code, one file per step) · `eval/` (gold set + checks) · `data/` (enriched addresses + Census cache) · `outputs/` (the 3 deliverable JSONs)
+- Run steps with `make enrich|extract|engine|changes|eval|all` (Python venv: `make setup`)
+- LLM calls go through `pipeline/llm.py` (`ask`, `ask_json`). Model set by `CLAUDE_MODEL` in `.env`
+- Frontend: Lovable app (its own synced repo, link it here once created)
 - Keys live in `.env` only (copy `.env.example`). Never commit `.env`, never hardcode keys
 
 ## Rules for Claude
 - Never hand-edit `outputs/rules.json`; extraction must be automated. Every `quoted_span` must exist verbatim in its source doc
 - Deliverables use only supplied data (+ Census geocoding). Enrichment is a separate, provenance-labeled layer
 - Never join on ZIP or postal_city; use the geocoded legal city
+- Don't create new top-level folders; ask the team first
 - `main` must always run. Work on a branch `feat/<name>`, merge only when it runs
 - Always `git pull` before starting work; commit small, push often
 - Prefer the simplest thing that demos well. No premature abstractions, no test suites unless asked
-- Never add data files to git (`data/` is ignored); add a download script instead
 - Before the deadline, priority order: demo works > README explains it > code is clean
 - Update the "Challenge", "Our idea" and "Team" sections when the team decides

@@ -2,7 +2,6 @@ anthropic
 openai
 pydantic
 python-dotenv
-streamlit
 pandas
 requests
 jsonschema
