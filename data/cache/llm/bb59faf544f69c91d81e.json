@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Just Cause Requirement for Termination of Residential Tenancy",
+      "requirement": "After a tenant (or all tenants, if added later) has lawfully occupied a rental unit for 12 months (or 24 months in some multi-tenant situations), the landlord cannot end the tenancy without a legally recognized 'just cause' reason, which must be stated in the written termination notice. For no-fault terminations (e.g., owner move-in, demolition/substantial remodel, withdrawal from rental market, government order to vacate), the landlord must also pay the tenant one month's rent as relocation assistance or waive the final month's rent.",
+      "key_value": "1 month's rent (relocation assistance/rent waiver for no-fault terminations)",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": true,
+        "exempt_if_built_within_years": 15,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": true,
+        "notes": "Also exempt: transient/tourist hotels; nonprofit hospital/religious/extended-care/licensed elderly or adult residential care facilities; college dormitories and K-12 schools; residences where tenant shares bath/kitchen with a resident owner; real property alienable separately from any other unit where the owner is not a REIT, corporation, or LLC with a corporate member (contingent on a specific written exemption notice); and deed-restricted/subsidized affordable housing for very low, low, or moderate income households."
+      },
+      "exemptions": "Does not apply to: transient/tourist hotel occupancy; nonprofit hospital, religious facility, extended care facility, licensed elderly residential care facility, or adult residential facility; dormitories owned/operated by higher-ed institutions or K-12 schools; housing where tenant shares bath/kitchen with an owner who lives on site; single-family owner-occupied residences renting no more than 2 units/bedrooms (incl. ADU/JADU) and mobilehomes; a 2-unit property where the owner occupies one unit as a principal residence; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); property alienable separate from title to any other unit where the owner is not a REIT, corporation, or LLC with a corporate member (subject to a required exemption notice); and deed-restricted or subsidized affordable housing for very low/low/moderate income households. Also excludes mobilehome homeowners (as opposed to renters); curable lease violations require a prior notice-and-cure opportunity.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Local just-cause ordinances adopted on or before September 1, 2019 control instead of this section. Local ordinances adopted or amended after that date control only if they are 'more protective' (consistent with this section, further limiting termination reasons or providing higher relocation amounts or additional protections, with a binding local finding of greater protectiveness). Local ordinances adopted after September 1, 2019 that are less protective than this section are not enforced unless this section is repealed. A property cannot be subject to both a local just-cause ordinance and this section at the same time.",
+      "effective_date": "2024-04-01",
+      "penalty": "A termination notice issued in violation of this section is void. An owner who attempts to recover possession in material violation of this section is liable to the tenant for actual damages, attorney's fees and costs (in the court's discretion), and up to three times actual damages (plus possible punitive damages) for willful, oppressive, fraudulent, or malicious conduct. The Attorney General or city/county counsel may seek injunctive relief.",
+      "citation": "Cal. Civ. Code § 1946.2",
+      "quoted_span": "after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy",
+      "confidence": 0.9,
+      "conflict_note": "The document states this section 'shall become operative on April 1, 2024' (subd. (m)) and was most recently amended effective January 1, 2026 (Stats. 2025, Ch. 203 / AB 1529), but other subsections (e.g., (e)(8)(B)(ii), (f)) reference obligations tied to 'tenancy existing prior to July 1, 2020' and notices due by August 1, 2020, indicating the underlying just-cause requirement was originally enacted and in force before July 2020 (not stated verbatim in this excerpt). The section sunsets January 1, 2030 per its own terms."
+    }
+  ]
+}

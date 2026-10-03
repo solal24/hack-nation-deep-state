@@ -21,10 +21,11 @@ def ask(prompt: str, system: str = "You are a helpful assistant.", max_tokens: i
     return "".join(b.text for b in response.content if b.type == "text")
 
 
-def ask_json(prompt: str, schema: type[BaseModel], system: str = "You are a helpful assistant.") -> BaseModel:
+def ask_json(prompt: str, schema: type[BaseModel], system: str = "You are a helpful assistant.",
+             model: str = None) -> BaseModel:
     """Answer validated against a Pydantic schema (structured outputs)."""
     response = client.messages.parse(
-        model=MODEL,
+        model=model or MODEL,
         max_tokens=16000,
         system=system,
         messages=[{"role": "user", "content": prompt}],

@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+      "requirement": "Bans landlords from using, paying for, or facilitating an algorithmic 'coordinator' (software or device) that collects competitively sensitive data (prices, lease terms, security deposits, occupancy levels) from multiple rental property owners to set or recommend rental prices, lease terms, or occupancy levels. Also bans two or more rental property owners from engaging in tacit or express 'parallel pricing coordination' on rents, and makes any violation a violation of the New Jersey Antitrust Act.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Does not cover: spreadsheets that operate without AI and require human analysis; databases that only query unprocessed stored data; use of data solely for research/statistical analysis/testing not used to set prices; publicly available free rent estimate tools; real estate brokerage databases available on equal terms to subscribers that do not set/recommend prices or collect competitively sensitive information; and government entities setting/limiting rents through affordability controls (e.g., Section 8, rent control/leveling ordinances, NJHMFA programs).",
+      "overrides_citations": [],
+      "preempts_local": true,
+      "conflicting_sources": false,
+      "interaction": "Does not limit application of sections 6 through 17 of the New Jersey Antitrust Act to violations of this act, and is construed as in addition to that act and any other law. A municipality is prohibited from enacting an ordinance that conflicts with this act, though ordinances explicitly authorized or required by other law remain permitted.",
+      "effective_date": "2027-07-01",
+      "penalty": "Violation is deemed a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.); the Attorney General must maintain a complaint intake location and may adopt implementing rules and regulations.",
+      "citation": "P.L.2026, c.43",
+      "quoted_span": "a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction",
+      "confidence": 0.88,
+      "conflict_note": null
+    }
+  ]
+}

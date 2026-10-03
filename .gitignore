@@ -14,3 +14,8 @@ node_modules/
 !data/cache/
 runs/*
 !runs/.gitkeep
+!data/addresses_online.csv
+data/cache/online/
+!data/external/
+data/cache/external/
+outputs/*_dev.json

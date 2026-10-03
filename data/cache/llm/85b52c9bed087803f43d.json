@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Jersey City Rent Control Ordinance (Chapter 260) - Coverage and Exemption",
+      "requirement": "Jersey City's Rent Control Ordinance (Chapter 260 of the Municipal Code) regulates rent increases for covered rental properties and is administered by the Office of Landlord/Tenant Relations and the Rent Leveling Board. Properties with 1 to 4 units are exempt from rent control, so the ordinance's increase limits apply only to buildings of 5 or more units, subject to other permitted exemptions landlords may request.",
+      "key_value": "1-4 unit properties exempt (rent control applies to 5+ unit buildings)",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": 5,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": true,
+        "notes": "All 1-4 unit properties, including owner-occupied small buildings, are exempt from rent control; other case-by-case exemptions may be granted via a Rent Control Exemption Request."
+      },
+      "exemptions": "All 1-4 unit properties are exempt from rent control. Property owners may also submit a Rent Control Exemption Request for review if they meet criteria for another permitted exemption. Landlords may apply for increases above the standard limit via Capital Improvement, Vacancy Capital Improvement, or Hardship Rental Increase applications filed with the Rent Leveling Board.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Jersey City Mun. Code ch. 260",
+      "quoted_span": "All 1-4 Unit Properties are exempt from rent control",
+      "confidence": 0.55,
+      "conflict_note": "The document references the ordinance and its exemptions and application procedures but does not itself state the numeric percentage cap on annual rent increases (it points to a CPI chart and the full ordinance text for that figure)."
+    }
+  ]
+}

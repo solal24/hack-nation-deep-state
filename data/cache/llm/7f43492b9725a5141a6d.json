@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Source-of-lawful-income housing discrimination ban (NJ Law Against Discrimination)",
+      "requirement": "A landlord may not refuse to rent, deny availability, or otherwise discriminate against a tenant or purchaser based on the lawful source of income or lawful source of rent/mortgage payment they use — for example, a landlord cannot deny a lawful Section 8 HUD voucher holder the right to rent an apartment based solely on that source of income.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Also exempt: rental of a room or rooms within a one-family dwelling occupied by the owner/occupant as their residence at the time of the rental."
+      },
+      "exemptions": "The LAD's housing provisions (including the source-of-income protection) do not apply to: rental of a single apartment/flat in a two-family dwelling where the other unit is owner-occupied at the time of rental; rental of a room or rooms within a one-family dwelling occupied by the owner/occupant as their residence; preference given to persons of the same religion by a religious organization in sale, lease or rental; and (for the familial-status protection specifically) housing for older persons as defined at N.J.S.A. 10:5-5mm.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Enforced by the NJ Division on Civil Rights; a complaint may be filed with the Division within 180 days of the alleged violation, or in NJ Superior Court within two years. The Division does not handle ordinary landlord-tenant disputes concerning evictions.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 10:5-12",
+      "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses.",
+      "confidence": 0.55,
+      "conflict_note": "Document (an NJ AG/Division on Civil Rights consumer brochure) does not itself cite a section number for the source-of-income provision beyond naming the 'LAD'; N.J.S.A. 10:5-12 is the standard housing-discrimination section of the Law Against Discrimination and is inferred, not quoted verbatim in the text."
+    }
+  ]
+}

@@ -1,0 +1,2600 @@
+[
+ {
+  "bill_key": "CA-SB52",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "SB52",
+  "session": "2025-2026 Regular Session",
+  "title": "Housing rental terms: algorithmic devices.",
+  "description": "An act to add Section 1947.16 to the Civil Code, relating to housing.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "engrossed",
+  "status_date": "2025-06-02",
+  "last_action": "August 29 hearing: Held in committee and under submission.",
+  "last_action_date": "2025-08-29",
+  "days_since_last_action": 400,
+  "progress": [
+   {
+    "date": "2024-12-20",
+    "event": 1
+   },
+   {
+    "date": "2025-01-29",
+    "event": 9
+   },
+   {
+    "date": "2025-04-08",
+    "event": 9
+   },
+   {
+    "date": "2025-04-23",
+    "event": 10
+   },
+   {
+    "date": "2025-04-24",
+    "event": 9
+   },
+   {
+    "date": "2025-05-23",
+    "event": 10
+   },
+   {
+    "date": "2025-06-02",
+    "event": 2
+   },
+   {
+    "date": "2025-06-09",
+    "event": 9
+   },
+   {
+    "date": "2025-06-26",
+    "event": 9
+   },
+   {
+    "date": "2025-07-02",
+    "event": 10
+   },
+   {
+    "date": "2025-07-02",
+    "event": 9
+   },
+   {
+    "date": "2025-07-08",
+    "event": 9
+   },
+   {
+    "date": "2025-07-17",
+    "event": 10
+   },
+   {
+    "date": "2025-07-17",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2024-12-20",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#99INT",
+    "legiscan_doc_id": 3035241
+   },
+   {
+    "date": "2025-04-08",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#98AMD",
+    "legiscan_doc_id": 3206045
+   },
+   {
+    "date": "2025-04-24",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#97AMD",
+    "legiscan_doc_id": 3221508
+   },
+   {
+    "date": "2025-06-26",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#96AMD",
+    "legiscan_doc_id": 3259231
+   },
+   {
+    "date": "2025-07-08",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#95AMD",
+    "legiscan_doc_id": 3261045
+   },
+   {
+    "date": "2025-07-17",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB52#94AMD",
+    "legiscan_doc_id": 3262232
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB52",
+  "legiscan_url": "https://legiscan.com/CA/bill/SB52/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/3e3534a8-bc29-41fc-8efb-cc546b220916",
+   "session": "20252026",
+   "latest_action_date": "2025-08-29",
+   "latest_action": "August 29 hearing: Held in committee and under submission.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/SB52/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-AB325",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "AB325",
+  "session": "2025-2026 Regular Session",
+  "title": "Cartwright Act: violations.",
+  "description": "An act to add Sections 16729 and 16756.1 to the Business and Professions Code, relating to business regulations.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T1"
+  ],
+  "status": "enacted",
+  "legiscan_status": "passed",
+  "status_date": "2025-10-06",
+  "last_action": "Chaptered by Secretary of State - Chapter 338, Statutes of 2025.",
+  "last_action_date": "2025-10-06",
+  "days_since_last_action": 362,
+  "progress": [
+   {
+    "date": "2025-01-27",
+    "event": 1
+   },
+   {
+    "date": "2025-03-10",
+    "event": 9
+   },
+   {
+    "date": "2025-03-10",
+    "event": 10
+   },
+   {
+    "date": "2025-03-11",
+    "event": 9
+   },
+   {
+    "date": "2025-04-08",
+    "event": 10
+   },
+   {
+    "date": "2025-04-10",
+    "event": 9
+   },
+   {
+    "date": "2025-04-24",
+    "event": 10
+   },
+   {
+    "date": "2025-04-28",
+    "event": 9
+   },
+   {
+    "date": "2025-05-01",
+    "event": 10
+   },
+   {
+    "date": "2025-05-01",
+    "event": 9
+   },
+   {
+    "date": "2025-05-14",
+    "event": 9
+   },
+   {
+    "date": "2025-05-23",
+    "event": 10
+   },
+   {
+    "date": "2025-06-02",
+    "event": 2
+   },
+   {
+    "date": "2025-06-03",
+    "event": 9
+   },
+   {
+    "date": "2025-06-11",
+    "event": 9
+   },
+   {
+    "date": "2025-06-19",
+    "event": 10
+   },
+   {
+    "date": "2025-06-19",
+    "event": 9
+   },
+   {
+    "date": "2025-07-02",
+    "event": 10
+   },
+   {
+    "date": "2025-07-02",
+    "event": 9
+   },
+   {
+    "date": "2025-07-14",
+    "event": 9
+   },
+   {
+    "date": "2025-08-29",
+    "event": 10
+   },
+   {
+    "date": "2025-09-12",
+    "event": 3
+   },
+   {
+    "date": "2025-10-06",
+    "event": 8
+   },
+   {
+    "date": "2025-10-06",
+    "event": 4
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-01-27",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#99INT",
+    "legiscan_doc_id": 3084704
+   },
+   {
+    "date": "2025-03-10",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#98AMD",
+    "legiscan_doc_id": 3162561
+   },
+   {
+    "date": "2025-04-09",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#97AMD",
+    "legiscan_doc_id": 3207688
+   },
+   {
+    "date": "2025-04-24",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#96AMD",
+    "legiscan_doc_id": 3221583
+   },
+   {
+    "date": "2025-05-29",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#95AMD",
+    "legiscan_doc_id": 3248171
+   },
+   {
+    "date": "2025-06-19",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#94AMD",
+    "legiscan_doc_id": 3257424
+   },
+   {
+    "date": "2025-08-29",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#93AMD",
+    "legiscan_doc_id": 3266937
+   },
+   {
+    "date": "2025-09-05",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#92AMD",
+    "legiscan_doc_id": 3267950
+   },
+   {
+    "date": "2025-09-16",
+    "type": "Enrolled",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#91ENR",
+    "legiscan_doc_id": 3269757
+   },
+   {
+    "date": "2025-10-06",
+    "type": "Chaptered",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325#90CHP",
+    "legiscan_doc_id": 3272268
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB325",
+  "legiscan_url": "https://legiscan.com/CA/bill/AB325/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/e40a3cb9-da25-4611-93c5-f9a12d7296ab",
+   "session": "20252026",
+   "latest_action_date": "2025-10-06",
+   "latest_action": "Chaptered by Secretary of State - Chapter 338, Statutes of 2025.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/AB325/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D022"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-AB414",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "AB414",
+  "session": "2025-2026 Regular Session",
+  "title": "Residential tenancies: return of security.",
+  "description": "An act to amend Section 1950.5 of the Civil Code, relating to tenancy.",
+  "categories": [
+   "security_deposits"
+  ],
+  "change_tests": [],
+  "status": "enacted",
+  "legiscan_status": "passed",
+  "status_date": "2025-10-06",
+  "last_action": "Chaptered by Secretary of State - Chapter 340, Statutes of 2025.",
+  "last_action_date": "2025-10-06",
+  "days_since_last_action": 362,
+  "progress": [
+   {
+    "date": "2025-02-04",
+    "event": 1
+   },
+   {
+    "date": "2025-02-18",
+    "event": 9
+   },
+   {
+    "date": "2025-03-11",
+    "event": 10
+   },
+   {
+    "date": "2025-03-20",
+    "event": 2
+   },
+   {
+    "date": "2025-03-20",
+    "event": 9
+   },
+   {
+    "date": "2025-05-07",
+    "event": 9
+   },
+   {
+    "date": "2025-06-11",
+    "event": 10
+   },
+   {
+    "date": "2025-06-11",
+    "event": 9
+   },
+   {
+    "date": "2025-06-25",
+    "event": 10
+   },
+   {
+    "date": "2025-09-03",
+    "event": 3
+   },
+   {
+    "date": "2025-10-06",
+    "event": 8
+   },
+   {
+    "date": "2025-10-06",
+    "event": 4
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-04",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#99INT",
+    "legiscan_doc_id": 3100492
+   },
+   {
+    "date": "2025-03-12",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#98AMD",
+    "legiscan_doc_id": 3172051
+   },
+   {
+    "date": "2025-06-11",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#97AMD",
+    "legiscan_doc_id": 3254872
+   },
+   {
+    "date": "2025-07-08",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#96AMD",
+    "legiscan_doc_id": 3261034
+   },
+   {
+    "date": "2025-08-19",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#95AMD",
+    "legiscan_doc_id": 3265707
+   },
+   {
+    "date": "2025-09-05",
+    "type": "Enrolled",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#94ENR",
+    "legiscan_doc_id": 3267954
+   },
+   {
+    "date": "2025-10-06",
+    "type": "Chaptered",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#93CHP",
+    "legiscan_doc_id": 3272194
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB414",
+  "legiscan_url": "https://legiscan.com/CA/bill/AB414/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/0ba7b6b8-6578-407a-92e7-bde00d9a6c40",
+   "session": "20252026",
+   "latest_action_date": "2025-10-06",
+   "latest_action": "Chaptered by Secretary of State - Chapter 340, Statutes of 2025.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/AB414/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D025"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-AB924",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "AB924",
+  "session": "2025-2026 Regular Session",
+  "title": "Leases: termination of tenancy: abuse or violence: security deposit.",
+  "description": "An act to amend Section 1946.7 of the Civil Code, relating to housing.",
+  "categories": [
+   "security_deposits"
+  ],
+  "change_tests": [],
+  "status": "failed",
+  "legiscan_status": "failed",
+  "status_date": "2026-02-02",
+  "last_action": "From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.",
+  "last_action_date": "2026-02-02",
+  "days_since_last_action": 243,
+  "progress": [
+   {
+    "date": "2025-02-19",
+    "event": 1
+   },
+   {
+    "date": "2025-03-03",
+    "event": 9
+   },
+   {
+    "date": "2026-02-02",
+    "event": 6
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-19",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB924#99INT",
+    "legiscan_doc_id": 3131940
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB924",
+  "legiscan_url": "https://legiscan.com/CA/bill/AB924/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/3bba1126-020a-453b-92ed-92d8013a50b4",
+   "session": "20252026",
+   "latest_action_date": "2026-02-02",
+   "latest_action": "From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/AB924/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-SB763",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "SB763",
+  "session": "2025-2026 Regular Session",
+  "title": "Conspiracy against trade: punishment.",
+  "description": "An act to amend Section 16755 of, and to add Sections 16755.1 and 16762 to, the Business and Professions Code, relating to business.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T1"
+  ],
+  "status": "enacted",
+  "legiscan_status": "passed",
+  "status_date": "2025-10-06",
+  "last_action": "Chaptered by Secretary of State. Chapter 426, Statutes of 2025.",
+  "last_action_date": "2025-10-06",
+  "days_since_last_action": 362,
+  "progress": [
+   {
+    "date": "2025-02-21",
+    "event": 1
+   },
+   {
+    "date": "2025-03-12",
+    "event": 9
+   },
+   {
+    "date": "2025-04-09",
+    "event": 10
+   },
+   {
+    "date": "2025-04-09",
+    "event": 9
+   },
+   {
+    "date": "2025-04-30",
+    "event": 10
+   },
+   {
+    "date": "2025-04-30",
+    "event": 9
+   },
+   {
+    "date": "2025-05-23",
+    "event": 10
+   },
+   {
+    "date": "2025-06-04",
+    "event": 2
+   },
+   {
+    "date": "2025-06-16",
+    "event": 9
+   },
+   {
+    "date": "2025-07-02",
+    "event": 10
+   },
+   {
+    "date": "2025-07-02",
+    "event": 9
+   },
+   {
+    "date": "2025-07-16",
+    "event": 10
+   },
+   {
+    "date": "2025-07-16",
+    "event": 9
+   },
+   {
+    "date": "2025-08-29",
+    "event": 10
+   },
+   {
+    "date": "2025-09-13",
+    "event": 3
+   },
+   {
+    "date": "2025-10-06",
+    "event": 8
+   },
+   {
+    "date": "2025-10-06",
+    "event": 4
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-21",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB763#99INT",
+    "legiscan_doc_id": 3137279
+   },
+   {
+    "date": "2025-05-23",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB763#98AMD",
+    "legiscan_doc_id": 3245441
+   },
+   {
+    "date": "2025-09-02",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB763#97AMD",
+    "legiscan_doc_id": 3267129
+   },
+   {
+    "date": "2025-09-18",
+    "type": "Enrolled",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB763#96ENR",
+    "legiscan_doc_id": 3270239
+   },
+   {
+    "date": "2025-10-06",
+    "type": "Chaptered",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB763#95CHP",
+    "legiscan_doc_id": 3272209
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB763",
+  "legiscan_url": "https://legiscan.com/CA/bill/SB763/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/b1aa8b30-1cc6-409f-b7db-c91ad2516656",
+   "session": "20252026",
+   "latest_action_date": "2025-10-06",
+   "latest_action": "Chaptered by Secretary of State. Chapter 426, Statutes of 2025.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/SB763/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-S960",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "S960",
+  "session": "194th General Court",
+  "title": "Authorizing the town of Brookline to implement rent stabilization and tenant eviction protections",
+  "description": "For legislation to authorize the town of Brookline to implement rent stabilization and tenant eviction protections. Housing. [Local Approval Received.]",
+  "categories": [
+   "just_cause_eviction",
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2025-02-27",
+  "last_action": "Read second and ordered to a third reading",
+  "last_action_date": "2026-01-29",
+  "days_since_last_action": 247,
+  "progress": [
+   {
+    "date": "2025-02-27",
+    "event": 1
+   },
+   {
+    "date": "2025-02-27",
+    "event": 9
+   },
+   {
+    "date": "2025-12-11",
+    "event": 10
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-27",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/S960.pdf",
+    "legiscan_doc_id": 3162072
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://malegislature.gov/Bills/194/S960",
+  "legiscan_url": "https://legiscan.com/MA/bill/S960/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/efc1bf58-670c-425e-8284-f13ecac01035",
+   "session": "194th",
+   "latest_action_date": "2026-01-29",
+   "latest_action": "Read second and ordered to a third reading",
+   "openstates_url": "https://openstates.org/ma/bills/194th/S960/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-S1016",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "S1016",
+  "session": "194th General Court",
+  "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+  "description": "For legislation to establish the Preventing Algorithmic Rent Fixing in the Rental Housing Market Act. Housing.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2025-02-27",
+  "last_action": "Accompanied a new draft, see S2983",
+  "last_action_date": "2026-03-12",
+  "days_since_last_action": 205,
+  "progress": [
+   {
+    "date": "2025-02-27",
+    "event": 1
+   },
+   {
+    "date": "2025-02-27",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-27",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/S1016.pdf",
+    "legiscan_doc_id": 3162882
+   }
+  ],
+  "related_bills": [
+   "Replaced by: S2983"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/S1016",
+  "legiscan_url": "https://legiscan.com/MA/bill/S1016/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/e91c8c8c-7605-4bbf-bfab-0769f6ea90bf",
+   "session": "194th",
+   "latest_action_date": "2026-03-12",
+   "latest_action": "Accompanied a new draft, see S2983",
+   "openstates_url": "https://openstates.org/ma/bills/194th/S1016/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D046",
+   "D047"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-S994",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "S994",
+  "session": "194th General Court",
+  "title": "Prohibiting algorithmic rent setting",
+  "description": "For legislation to prohibit algorithmic rent setting. Housing.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2025-02-27",
+  "last_action": "Accompanied a new draft, see S2983",
+  "last_action_date": "2026-03-12",
+  "days_since_last_action": 205,
+  "progress": [
+   {
+    "date": "2025-02-27",
+    "event": 1
+   },
+   {
+    "date": "2025-02-27",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-27",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/S994.pdf",
+    "legiscan_doc_id": 3163839
+   }
+  ],
+  "related_bills": [
+   "Replaced by: S2983"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/S994",
+  "legiscan_url": "https://legiscan.com/MA/bill/S994/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/9cae9331-4492-43ba-92c9-834430314c14",
+   "session": "194th",
+   "latest_action_date": "2026-03-12",
+   "latest_action": "Accompanied a new draft, see S2983",
+   "openstates_url": "https://openstates.org/ma/bills/194th/S994/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D046",
+   "D047"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-H1564",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "H1564",
+  "session": "194th General Court",
+  "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+  "description": "Relative to preventing algorithmic rent fixing in the rental housing market. Housing.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2025-02-27",
+  "last_action": "Accompanied a new draft, see H5222",
+  "last_action_date": "2026-03-12",
+  "days_since_last_action": 205,
+  "progress": [
+   {
+    "date": "2025-02-27",
+    "event": 1
+   },
+   {
+    "date": "2025-02-27",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-02-27",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/H1564.pdf",
+    "legiscan_doc_id": 3167484
+   }
+  ],
+  "related_bills": [
+   "Replaced by: H5222"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/H1564",
+  "legiscan_url": "https://legiscan.com/MA/bill/H1564/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/462ff7da-c13e-431e-af13-5a598d22d3bb",
+   "session": "194th",
+   "latest_action_date": "2026-03-12",
+   "latest_action": "Accompanied a new draft, see H5222",
+   "openstates_url": "https://openstates.org/ma/bills/194th/H1564/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D045"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S452",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S452",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes Statewide limitation on rent increases.",
+  "description": "Establishes Statewide limitation on rent increases.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-12-11",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S0500/452_I1.HTM",
+    "legiscan_doc_id": 3311283
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S3658",
+   "Carry Over: A3289",
+   "Same As: A751"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S452",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S452/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/53f06e74-d50a-44c1-9cec-18a1f5648a9a",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S452/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S3096",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S3096",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+  "description": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-08",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S3500/3096_I1.HTM",
+    "legiscan_doc_id": 3312022
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S4552",
+   "Carry Over: A5269",
+   "Same As: A2622"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S3096",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S3096/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/82626b2b-aab7-45a1-a7dd-fb2851eb2264",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S3096/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S433",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S433",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes limit on rent increase for senior citizen tenants of certain properties financed with assistance from HMFA.",
+  "description": "Establishes limit on rent increase for senior citizen tenants of certain properties financed with assistance from HMFA.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-12-11",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S0500/433_I1.HTM",
+    "legiscan_doc_id": 3312446
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S2436"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S433",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S433/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/e1926877-dc88-4964-b877-269c8da91c6a",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S433/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S2624",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S2624",
+  "session": "2026-2027 Regular Session",
+  "title": "Prohibits facilitation of agreements among rental property owners who restrict competition with respect to residential dwelling units.",
+  "description": "Prohibits facilitation of agreements among rental property owners who restrict competition with respect to residential dwelling units.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-06",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S3000/2624_I1.HTM",
+    "legiscan_doc_id": 3312925
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S3699",
+   "Carry Over: A4872",
+   "Same As: A3497"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S2624",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S2624/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/9f615cf2-8470-4571-a024-3e991050b11e",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S2624/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S726",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S726",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+  "description": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-12-18",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S1000/726_I1.HTM",
+    "legiscan_doc_id": 3313258
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S4280",
+   "Carry Over: A5432",
+   "Same As: A3507"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S726",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S726/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/82f5f76e-4344-4529-9412-050a9c5524ab",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S726/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S3049",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S3049",
+  "session": "2026-2027 Regular Session",
+  "title": "Allows certain senior citizens to apply for rent increase limit.",
+  "description": "Allows certain senior citizens to apply for rent increase limit.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-08",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S3500/3049_I1.HTM",
+    "legiscan_doc_id": 3314314
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S4188",
+   "Carry Over: A3290",
+   "Same As: A461"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S3049",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S3049/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/eb51be09-da84-47ce-8e26-362826167a87",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S3049/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S451",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S451",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+  "description": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T3"
+  ],
+  "status": "replaced_by_substitute",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Substituted by A3497 (ACS/1R)",
+  "last_action_date": "2026-06-30",
+  "days_since_last_action": 95,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   },
+   {
+    "date": "2026-03-05",
+    "event": 10
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-12-11",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S0500/451_I1.HTM",
+    "legiscan_doc_id": 3314384
+   },
+   {
+    "date": "2026-03-06",
+    "type": "Amended",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S0500/451_R1.HTM",
+    "legiscan_doc_id": 3387393
+   },
+   {
+    "date": "2026-06-18",
+    "type": "Amended",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S0500/451_R2.HTM",
+    "legiscan_doc_id": 3449408
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S3657",
+   "Replaced by: A3497"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S451",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S451/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/0ff1b090-94d1-4de2-b680-cd1661cceced",
+   "session": "222",
+   "latest_action_date": "2026-06-30",
+   "latest_action": "Substituted by A3497 (ACS/1R)",
+   "openstates_url": "https://openstates.org/nj/bills/222/S451/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3498",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3498",
+  "session": "2026-2027 Regular Session",
+  "title": "Authorizes residential tenant action for alleged unconscionable rent increase; appropriates $2 million.",
+  "description": "Authorizes residential tenant action for alleged unconscionable rent increase; appropriates $2 million.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-08",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3498_I1.HTM",
+    "legiscan_doc_id": 3336042
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A4873"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3498",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3498/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/0ec56e3e-8fb3-4e76-a4bb-7c81e2c0e690",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3498/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3989",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3989",
+  "session": "2026-2027 Regular Session",
+  "title": "Restricts use and sale of algorithmic devices for establishing rent price or occupancy of residential property.",
+  "description": "Restricts use and sale of algorithmic devices for establishing rent price or occupancy of residential property.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-13",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A4000/3989_I1.HTM",
+    "legiscan_doc_id": 3336392
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3989",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3989/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/0f03915c-ce5e-4493-b883-e099230dd50c",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3989/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A2622",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A2622",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+  "description": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-06",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3000/2622_I1.HTM",
+    "legiscan_doc_id": 3336421
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A5269",
+   "Carry Over: S4552",
+   "Same As: S3096"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A2622",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A2622/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/68fe9a53-f822-4107-8554-b3d73820d066",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A2622/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3326",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3326",
+  "session": "2026-2027 Regular Session",
+  "title": "Makes use of algorithmic systems to influence price and supply of residential rental units unlawful.",
+  "description": "Makes use of algorithmic systems to influence price and supply of residential rental units unlawful.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-05",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3326_I1.HTM",
+    "legiscan_doc_id": 3336891
+   }
+  ],
+  "related_bills": [
+   "Carry Over: S3657",
+   "Same As: S451"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3326",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3326/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/7a77badd-0f32-4b1b-938a-40021394ea06",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3326/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3995",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3995",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+  "description": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-07",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A4000/3995_I1.HTM",
+    "legiscan_doc_id": 3337273
+   }
+  ],
+  "related_bills": [
+   "Same As: S4173"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3995",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3995/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/f11b432c-0ecb-4a29-b641-2dfa3fb68817",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3995/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A2299",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A2299",
+  "session": "2026-2027 Regular Session",
+  "title": "Prohibits use and sale of algorithmic devices for setting rent price or occupancy of residential dwelling units.",
+  "description": "Prohibits use and sale of algorithmic devices for setting rent price or occupancy of residential dwelling units.",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-05",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A2500/2299_I1.HTM",
+    "legiscan_doc_id": 3338475
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A4916"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A2299",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A2299/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/1129eff4-0d11-4564-807f-7232b4fc122c",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A2299/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A751",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A751",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes Statewide limitation on rent increases.",
+  "description": "Establishes Statewide limitation on rent increases.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-12-01",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A1000/751_I1.HTM",
+    "legiscan_doc_id": 3338483
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A3289",
+   "Carry Over: S3658",
+   "Same As: S452"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A751",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A751/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/caab6c51-04a2-41c7-9032-409a6d7b09e2",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A751/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A461",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A461",
+  "session": "2026-2027 Regular Session",
+  "title": "Allows certain senior citizens to apply for rent increase limit.",
+  "description": "Allows certain senior citizens to apply for rent increase limit.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-01-13",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-01-13",
+  "days_since_last_action": 263,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2025-11-25",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A0500/461_I1.HTM",
+    "legiscan_doc_id": 3338635
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A3290",
+   "Carry Over: S4188",
+   "Same As: S3049"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A461",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A461/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/5ce377a5-9f9d-4178-a9d5-7d72d190f3c8",
+   "session": "222",
+   "latest_action_date": "2026-01-13",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A461/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3497",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3497",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+  "description": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T3"
+  ],
+  "status": "enacted",
+  "legiscan_status": "passed",
+  "status_date": "2026-07-20",
+  "last_action": "Approved P.L.2026, c.43.",
+  "last_action_date": "2026-07-20",
+  "days_since_last_action": 75,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   },
+   {
+    "date": "2026-03-09",
+    "event": 9
+   },
+   {
+    "date": "2026-06-08",
+    "event": 10
+   },
+   {
+    "date": "2026-06-23",
+    "event": 10
+   },
+   {
+    "date": "2026-06-30",
+    "event": 2
+   },
+   {
+    "date": "2026-06-30",
+    "event": 3
+   },
+   {
+    "date": "2026-07-20",
+    "event": 8
+   },
+   {
+    "date": "2026-07-20",
+    "event": 4
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-08",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3497_I1.HTM",
+    "legiscan_doc_id": 3338727
+   },
+   {
+    "date": "2026-03-10",
+    "type": "Amended",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3497_R1.HTM",
+    "legiscan_doc_id": 3390099
+   },
+   {
+    "date": "2026-06-09",
+    "type": "Comm Sub",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3497_U1.HTM",
+    "legiscan_doc_id": 3447226
+   },
+   {
+    "date": "2026-06-24",
+    "type": "Amended",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A3500/3497_R1a.HTM",
+    "legiscan_doc_id": 3450356
+   },
+   {
+    "date": "2026-09-17",
+    "type": "Enrolled",
+    "state_link": "https://pub.njleg.gov/Bills/2026/AL26/43_.HTM",
+    "legiscan_doc_id": 3458994
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A4872",
+   "Carry Over: S3699",
+   "Same As: S451"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3497",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3497/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/10a9c3b8-953b-4174-9fdf-1ec9771a3ad5",
+   "session": "222",
+   "latest_action_date": "2026-07-20",
+   "latest_action": "Approved P.L.2026, c.43.",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3497/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D069"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A3507",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A3507",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+  "description": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "engrossed",
+  "status_date": "2026-03-23",
+  "last_action": "Received in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-05-04",
+  "days_since_last_action": 152,
+  "progress": [
+   {
+    "date": "2026-01-13",
+    "event": 1
+   },
+   {
+    "date": "2026-01-13",
+    "event": 9
+   },
+   {
+    "date": "2026-03-09",
+    "event": 10
+   },
+   {
+    "date": "2026-03-23",
+    "event": 2
+   },
+   {
+    "date": "2026-05-04",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-01-08",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A4000/3507_I1.HTM",
+    "legiscan_doc_id": 3339167
+   }
+  ],
+  "related_bills": [
+   "Carry Over: A5432",
+   "Carry Over: S4280",
+   "Same As: S726"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A3507",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A3507/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/b45e3e1a-08a6-4fd8-91b6-e815a6042e25",
+   "session": "222",
+   "latest_action_date": "2026-05-04",
+   "latest_action": "Received in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A3507/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-SB1160",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "SB1160",
+  "session": "2025-2026 Regular Session",
+  "title": "Judicial Council: eviction data reporting.",
+  "description": "An act to add Chapter 2.15 (commencing with Section 68652) to Title 8 of the Government Code, relating to courts.",
+  "categories": [
+   "just_cause_eviction"
+  ],
+  "change_tests": [],
+  "status": "enacted",
+  "legiscan_status": "passed",
+  "status_date": "2026-09-27",
+  "last_action": "Chaptered by Secretary of State. Chapter 681, Statutes of 2026.",
+  "last_action_date": "2026-09-27",
+  "days_since_last_action": 6,
+  "progress": [
+   {
+    "date": "2026-02-18",
+    "event": 1
+   },
+   {
+    "date": "2026-02-26",
+    "event": 9
+   },
+   {
+    "date": "2026-03-23",
+    "event": 9
+   },
+   {
+    "date": "2026-04-08",
+    "event": 10
+   },
+   {
+    "date": "2026-04-08",
+    "event": 9
+   },
+   {
+    "date": "2026-05-14",
+    "event": 10
+   },
+   {
+    "date": "2026-05-27",
+    "event": 2
+   },
+   {
+    "date": "2026-06-04",
+    "event": 9
+   },
+   {
+    "date": "2026-06-18",
+    "event": 9
+   },
+   {
+    "date": "2026-06-23",
+    "event": 10
+   },
+   {
+    "date": "2026-06-23",
+    "event": 9
+   },
+   {
+    "date": "2026-08-13",
+    "event": 10
+   },
+   {
+    "date": "2026-08-31",
+    "event": 3
+   },
+   {
+    "date": "2026-09-27",
+    "event": 8
+   },
+   {
+    "date": "2026-09-27",
+    "event": 4
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-02-18",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#99INT",
+    "legiscan_doc_id": 3367399
+   },
+   {
+    "date": "2026-03-23",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#98AMD",
+    "legiscan_doc_id": 3402574
+   },
+   {
+    "date": "2026-06-18",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#97AMD",
+    "legiscan_doc_id": 3449509
+   },
+   {
+    "date": "2026-08-13",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#96AMD",
+    "legiscan_doc_id": 3455492
+   },
+   {
+    "date": "2026-09-04",
+    "type": "Enrolled",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#95ENR",
+    "legiscan_doc_id": 3458105
+   },
+   {
+    "date": "2026-09-27",
+    "type": "Chaptered",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#94CHP",
+    "legiscan_doc_id": 3460495
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB1160",
+  "legiscan_url": "https://legiscan.com/CA/bill/SB1160/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/411b5201-140d-435f-b799-2642736a7e74",
+   "session": "20252026",
+   "latest_action_date": "2026-09-27",
+   "latest_action": "Chaptered by Secretary of State. Chapter 681, Statutes of 2026.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/SB1160/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-A4444",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "A4444",
+  "session": "2026-2027 Regular Session",
+  "title": "Concerns exemptions to municipal rent control and rent leveling ordinances.",
+  "description": "Concerns exemptions to municipal rent control and rent leveling ordinances.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-02-24",
+  "last_action": "Introduced, Referred to Assembly Housing Committee",
+  "last_action_date": "2026-02-24",
+  "days_since_last_action": 221,
+  "progress": [
+   {
+    "date": "2026-02-24",
+    "event": 1
+   },
+   {
+    "date": "2026-02-24",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-02-25",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/A4500/4444_I1.HTM",
+    "legiscan_doc_id": 3375154
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/A4444",
+  "legiscan_url": "https://legiscan.com/NJ/bill/A4444/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/5c68ad7f-4f9e-4603-9264-626d22ef1cc0",
+   "session": "222",
+   "latest_action_date": "2026-02-24",
+   "latest_action": "Introduced, Referred to Assembly Housing Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/A4444/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "CA-AB2609",
+  "state": "CA",
+  "jurisdiction": "CA",
+  "bill_number": "AB2609",
+  "session": "2025-2026 Regular Session",
+  "title": "Tenancy: additional rents and securities: common household pets.",
+  "description": "An act to amend Section 1950.5 of, and to add Section 1947.16 to, the Civil Code, relating to housing.",
+  "categories": [
+   "security_deposits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-02-20",
+  "last_action": "In committee: Set, first hearing. Hearing canceled at the request of author.",
+  "last_action_date": "2026-04-27",
+  "days_since_last_action": 159,
+  "progress": [
+   {
+    "date": "2026-02-20",
+    "event": 1
+   },
+   {
+    "date": "2026-03-19",
+    "event": 9
+   },
+   {
+    "date": "2026-03-19",
+    "event": 10
+   },
+   {
+    "date": "2026-03-23",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-02-20",
+    "type": "Introduced",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2609#99INT",
+    "legiscan_doc_id": 3371227
+   },
+   {
+    "date": "2026-03-19",
+    "type": "Amended",
+    "state_link": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2609#98AMD",
+    "legiscan_doc_id": 3400064
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2609",
+  "legiscan_url": "https://legiscan.com/CA/bill/AB2609/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/d189d2c3-bd7c-4d58-a9c3-cffed8d8898f",
+   "session": "20252026",
+   "latest_action_date": "2026-04-27",
+   "latest_action": "In committee: Set, first hearing. Hearing canceled at the request of author.",
+   "openstates_url": "https://openstates.org/ca/bills/20252026/AB2609/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-S2983",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "S2983",
+  "session": "194th General Court",
+  "title": "Prohibiting algorithmic rent setting",
+  "description": "For legislationfor legislation to establish the Preventing Algorithmic Rent Fixing in the Rental Housing Market Act., report the accompanying bill (Senate, No. 2983).",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T4"
+  ],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-03-12",
+  "last_action": "Bill reported favorably by committee and referred to the committee on Senate Ways and Means",
+  "last_action_date": "2026-03-12",
+  "days_since_last_action": 205,
+  "progress": [
+   {
+    "date": "2026-03-12",
+    "event": 1
+   },
+   {
+    "date": "2026-03-12",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-03-12",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/S2983.pdf",
+    "legiscan_doc_id": 3392844
+   }
+  ],
+  "related_bills": [
+   "Replaces: S994"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/S2983",
+  "legiscan_url": "https://legiscan.com/MA/bill/S2983/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/2583a727-95d3-478e-a94d-18a041c9f5b1",
+   "session": "194th",
+   "latest_action_date": "2026-03-12",
+   "latest_action": "Bill reported favorably by committee and referred to the committee on Senate Ways and Means",
+   "openstates_url": "https://openstates.org/ma/bills/194th/S2983/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D046",
+   "D047"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-H5222",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "H5222",
+  "session": "194th General Court",
+  "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+  "description": "Relative to preventing algorithmic rent fixing in the rental housing market",
+  "categories": [
+   "algorithmic_rent_setting"
+  ],
+  "change_tests": [
+   "T4"
+  ],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-03-12",
+  "last_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+  "last_action_date": "2026-03-12",
+  "days_since_last_action": 205,
+  "progress": [
+   {
+    "date": "2026-03-12",
+    "event": 1
+   },
+   {
+    "date": "2026-03-12",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-03-12",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/H5222.pdf",
+    "legiscan_doc_id": 3393050
+   }
+  ],
+  "related_bills": [
+   "Replaces: H1564"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/H5222",
+  "legiscan_url": "https://legiscan.com/MA/bill/H5222/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/e607bf79-c7bd-4998-a495-3b3330f42b09",
+   "session": "194th",
+   "latest_action_date": "2026-03-12",
+   "latest_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+   "openstates_url": "https://openstates.org/ma/bills/194th/H5222/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [
+   "D045"
+  ],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S4173",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S4173",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+  "description": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-05-11",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-05-11",
+  "days_since_last_action": 145,
+  "progress": [
+   {
+    "date": "2026-05-11",
+    "event": 1
+   },
+   {
+    "date": "2026-05-11",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-05-12",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S4500/4173_I1.HTM",
+    "legiscan_doc_id": 3434860
+   }
+  ],
+  "related_bills": [
+   "Same As: A3995"
+  ],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S4173",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S4173/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/9c03a678-cb78-42af-b201-6473ab3fd8ef",
+   "session": "222",
+   "latest_action_date": "2026-05-11",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S4173/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "MA-H5408",
+  "state": "MA",
+  "jurisdiction": "MA",
+  "bill_number": "H5408",
+  "session": "194th General Court",
+  "title": "REPORT of the SPECIAL JOINT COMMITTEE on INITIATIVE PETITIONS on the INITIATIVE PETITION of ADAM GOMEZ AND OTHERS FOR THE PASSAGE OF AN ACT TO PROTECT TENANTS BY LIMITING RENT INCREASES (see House, No. 5008).",
+  "description": "REPORT of the SPECIAL JOINT COMMITTEE on INITIATIVE PETITIONS on the INITIATIVE PETITION of ADAM GOMEZ AND OTHERS FOR THE PASSAGE OF AN ACT TO PROTECT TENANTS BY LIMITING RENT INCREASES (see House, No. 5008).",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-05-07",
+  "last_action": "See H5008",
+  "last_action_date": "2026-05-07",
+  "days_since_last_action": 149,
+  "progress": [
+   {
+    "date": "2026-05-07",
+    "event": 1
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-05-07",
+    "type": "Introduced",
+    "state_link": "https://malegislature.gov/Bills/194/H5408.pdf",
+    "legiscan_doc_id": 3433327
+   }
+  ],
+  "related_bills": [
+   "Replaced by: H5008"
+  ],
+  "official_url": "https://malegislature.gov/Bills/194/H5408",
+  "legiscan_url": "https://legiscan.com/MA/bill/H5408/2025",
+  "openstates": {
+   "openstates_id": "ocd-bill/3c9afdc8-2729-4be0-bd8b-667c04518893",
+   "session": "194th",
+   "latest_action_date": "2026-05-07",
+   "latest_action": "See H5008",
+   "openstates_url": "https://openstates.org/ma/bills/194th/H5408/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ },
+ {
+  "bill_key": "NJ-S4451",
+  "state": "NJ",
+  "jurisdiction": "NJ",
+  "bill_number": "S4451",
+  "session": "2026-2027 Regular Session",
+  "title": "Establishes Statewide rent control.",
+  "description": "Establishes Statewide rent control.",
+  "categories": [
+   "rent_increase_limits"
+  ],
+  "change_tests": [],
+  "status": "pending",
+  "legiscan_status": "introduced",
+  "status_date": "2026-06-15",
+  "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+  "last_action_date": "2026-06-15",
+  "days_since_last_action": 110,
+  "progress": [
+   {
+    "date": "2026-06-15",
+    "event": 1
+   },
+   {
+    "date": "2026-06-15",
+    "event": 9
+   }
+  ],
+  "texts": [
+   {
+    "date": "2026-06-16",
+    "type": "Introduced",
+    "state_link": "https://pub.njleg.gov/Bills/2026/S4500/4451_I1.HTM",
+    "legiscan_doc_id": 3448567
+   }
+  ],
+  "related_bills": [],
+  "official_url": "https://www.njleg.state.nj.us/bill-search/2026/S4451",
+  "legiscan_url": "https://legiscan.com/NJ/bill/S4451/2026",
+  "openstates": {
+   "openstates_id": "ocd-bill/4b25c167-0a9e-4f9b-b9e6-0ce047f1619b",
+   "session": "222",
+   "latest_action_date": "2026-06-15",
+   "latest_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "openstates_url": "https://openstates.org/nj/bills/222/S4451/"
+  },
+  "sources_agree_on_latest_action": true,
+  "in_supplied_corpus": [],
+  "retrieved_at": "2026-10-03T22:10Z",
+  "provenance": "public",
+  "review_status": "unreviewed",
+  "sources": [
+   "LegiScan API (CC BY 4.0)",
+   "Open States API v3"
+  ],
+  "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+ }
+]

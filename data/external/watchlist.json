@@ -1,0 +1,861 @@
+{
+ "CA": [
+  {
+   "bill": "CA AB325",
+   "title": "Cartwright Act: violations.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "enacted",
+   "last_action": "Chaptered by Secretary of State - Chapter 338, Statutes of 2025.",
+   "last_action_date": "2025-10-06",
+   "days_since_last_action": 362,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB325",
+   "change_tests": [
+    "T1"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA AB414",
+   "title": "Residential tenancies: return of security.",
+   "categories": [
+    "security_deposits"
+   ],
+   "status": "enacted",
+   "last_action": "Chaptered by Secretary of State - Chapter 340, Statutes of 2025.",
+   "last_action_date": "2025-10-06",
+   "days_since_last_action": 362,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB414",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA SB763",
+   "title": "Conspiracy against trade: punishment.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "enacted",
+   "last_action": "Chaptered by Secretary of State. Chapter 426, Statutes of 2025.",
+   "last_action_date": "2025-10-06",
+   "days_since_last_action": 362,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB763",
+   "change_tests": [
+    "T1"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA SB1160",
+   "title": "Judicial Council: eviction data reporting.",
+   "categories": [
+    "just_cause_eviction"
+   ],
+   "status": "enacted",
+   "last_action": "Chaptered by Secretary of State. Chapter 681, Statutes of 2026.",
+   "last_action_date": "2026-09-27",
+   "days_since_last_action": 6,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB1160",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA SB52",
+   "title": "Housing rental terms: algorithmic devices.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "August 29 hearing: Held in committee and under submission.",
+   "last_action_date": "2025-08-29",
+   "days_since_last_action": 400,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB52",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA AB2609",
+   "title": "Tenancy: additional rents and securities: common household pets.",
+   "categories": [
+    "security_deposits"
+   ],
+   "status": "pending",
+   "last_action": "In committee: Set, first hearing. Hearing canceled at the request of author.",
+   "last_action_date": "2026-04-27",
+   "days_since_last_action": 159,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2609",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "CA AB924",
+   "title": "Leases: termination of tenancy: abuse or violence: security deposit.",
+   "categories": [
+    "security_deposits"
+   ],
+   "status": "failed",
+   "last_action": "From committee: Filed with the Chief Clerk pursuant to Joint Rule 56.",
+   "last_action_date": "2026-02-02",
+   "days_since_last_action": 243,
+   "link": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB924",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  }
+ ],
+ "MA": [
+  {
+   "bill": "MA S960",
+   "title": "Authorizing the town of Brookline to implement rent stabilization and tenant eviction protections",
+   "categories": [
+    "just_cause_eviction",
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Read second and ordered to a third reading",
+   "last_action_date": "2026-01-29",
+   "days_since_last_action": 247,
+   "link": "https://malegislature.gov/Bills/194/S960",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA S1016",
+   "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Accompanied a new draft, see S2983",
+   "last_action_date": "2026-03-12",
+   "days_since_last_action": 205,
+   "link": "https://malegislature.gov/Bills/194/S1016",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA S994",
+   "title": "Prohibiting algorithmic rent setting",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Accompanied a new draft, see S2983",
+   "last_action_date": "2026-03-12",
+   "days_since_last_action": 205,
+   "link": "https://malegislature.gov/Bills/194/S994",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA H1564",
+   "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Accompanied a new draft, see H5222",
+   "last_action_date": "2026-03-12",
+   "days_since_last_action": 205,
+   "link": "https://malegislature.gov/Bills/194/H1564",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA S2983",
+   "title": "Prohibiting algorithmic rent setting",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Bill reported favorably by committee and referred to the committee on Senate Ways and Means",
+   "last_action_date": "2026-03-12",
+   "days_since_last_action": 205,
+   "link": "https://malegislature.gov/Bills/194/S2983",
+   "change_tests": [
+    "T4"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA H5222",
+   "title": "Relative to preventing algorithmic rent fixing in the rental housing market",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Bill reported favorably by committee and referred to the committee on House Ways and Means",
+   "last_action_date": "2026-03-12",
+   "days_since_last_action": 205,
+   "link": "https://malegislature.gov/Bills/194/H5222",
+   "change_tests": [
+    "T4"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "MA H5408",
+   "title": "REPORT of the SPECIAL JOINT COMMITTEE on INITIATIVE PETITIONS on the INITIATIVE PETITION of ADAM GOMEZ AND OTHERS FOR THE PASSAGE OF AN ACT TO PROTECT TENANTS BY LIMITING RENT INCREASES (see House, No. 5008).",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "See H5008",
+   "last_action_date": "2026-05-07",
+   "days_since_last_action": 149,
+   "link": "https://malegislature.gov/Bills/194/H5408",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  }
+ ],
+ "NJ": [
+  {
+   "bill": "NJ A3497",
+   "title": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "enacted",
+   "last_action": "Approved P.L.2026, c.43.",
+   "last_action_date": "2026-07-20",
+   "days_since_last_action": 75,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3497",
+   "change_tests": [
+    "T3"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S452",
+   "title": "Establishes Statewide limitation on rent increases.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S452",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S3096",
+   "title": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S3096",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S433",
+   "title": "Establishes limit on rent increase for senior citizen tenants of certain properties financed with assistance from HMFA.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S433",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S2624",
+   "title": "Prohibits facilitation of agreements among rental property owners who restrict competition with respect to residential dwelling units.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S2624",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S726",
+   "title": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S726",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S3049",
+   "title": "Allows certain senior citizens to apply for rent increase limit.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S3049",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A3498",
+   "title": "Authorizes residential tenant action for alleged unconscionable rent increase; appropriates $2 million.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3498",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A3989",
+   "title": "Restricts use and sale of algorithmic devices for establishing rent price or occupancy of residential property.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3989",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A2622",
+   "title": "Establishes Rent Control Enforcement Unit in DCA; authorizes residential tenant to petition for review of alleged violation of local rent restriction.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A2622",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A3326",
+   "title": "Makes use of algorithmic systems to influence price and supply of residential rental units unlawful.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3326",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A3995",
+   "title": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3995",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A2299",
+   "title": "Prohibits use and sale of algorithmic devices for setting rent price or occupancy of residential dwelling units.",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A2299",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A751",
+   "title": "Establishes Statewide limitation on rent increases.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A751",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A461",
+   "title": "Allows certain senior citizens to apply for rent increase limit.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-01-13",
+   "days_since_last_action": 263,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A461",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A4444",
+   "title": "Concerns exemptions to municipal rent control and rent leveling ordinances.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced, Referred to Assembly Housing Committee",
+   "last_action_date": "2026-02-24",
+   "days_since_last_action": 221,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A4444",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ A3507",
+   "title": "Establishes standards for determining an unconscionable rent increase; excludes from public access landlord tenant records in certain circumstances.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Received in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-05-04",
+   "days_since_last_action": 152,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/A3507",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S4173",
+   "title": "Establishes certain requirements concerning unconscionable rent increases for residential rental properties.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-05-11",
+   "days_since_last_action": 145,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S4173",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S4451",
+   "title": "Establishes Statewide rent control.",
+   "categories": [
+    "rent_increase_limits"
+   ],
+   "status": "pending",
+   "last_action": "Introduced in the Senate, Referred to Senate Community and Urban Affairs Committee",
+   "last_action_date": "2026-06-15",
+   "days_since_last_action": 110,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S4451",
+   "change_tests": [],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  },
+  {
+   "bill": "NJ S451",
+   "title": "Establishes \"Forbidding the Algorithmic Inflation of Rent (FAIR) Act.\"",
+   "categories": [
+    "algorithmic_rent_setting"
+   ],
+   "status": "replaced_by_substitute",
+   "last_action": "Substituted by A3497 (ACS/1R)",
+   "last_action_date": "2026-06-30",
+   "days_since_last_action": 95,
+   "link": "https://www.njleg.state.nj.us/bill-search/2026/S451",
+   "change_tests": [
+    "T3"
+   ],
+   "warning": "Bill information was retrieved automatically from LegiScan (CC BY 4.0) and Open States and has not been reviewed by a human. Pending bills are not law; enacted bills may take effect later. This is not part of the supplied corpus and is not legal advice."
+  }
+ ],
+ "Boston, MA": {
+  "council_monitoring": "monitored",
+  "items": [
+   {
+    "item": "Boston, MA council 2026-0864",
+    "title": "An Ordinance Increasing Tenant Protection During Rental Inspection Code Violations.",
+    "type": "Council Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "in_progress",
+    "last_action_date": "2026-04-29",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=42390&GUID=9C5AA912-D359-424B-A301-6FFDB4A6CBC1",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-1711",
+    "title": "Ordinance Amending and Extending Protections for Tenants Facing Displacement by Condominium or Cooperative Conversion.",
+    "type": "Council Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "in_progress",
+    "last_action_date": "2026-09-16",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=43396&GUID=5ED7804F-FE33-44E1-A86A-E928E3B27A50",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-0172",
+    "title": "Order for a hearing to investigate the use, impact, and potential ban of algorithmic price setting in the Boston rental market.",
+    "type": "Council Hearing Order",
+    "is_ordinance": false,
+    "categories": [
+     "algorithmic_rent_setting"
+    ],
+    "status": "in_progress",
+    "last_action_date": "2026-01-23",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=41663&GUID=6545535C-48E7-4CEB-8AF5-3B7C2214C636",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-0347",
+    "title": "Order for a hearing to explore programs the City of Boston offers or could establish to prevent illegal discrimination by landlords and real estate brokers against prospective tenants utilizing housing choice vouchers.",
+    "type": "Council Hearing Order",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "in_progress",
+    "last_action_date": "2026-02-09",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=41826&GUID=34EE5E0A-F749-485C-AAA7-ECA8ABB8E844",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-0673",
+    "title": "Resolution recognizing the Castle Square Tenants Organization.",
+    "type": "Consent Agenda Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "in_progress",
+    "last_action_date": "2026-03-20",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=42143&GUID=4A515871-8469-4D83-A774-F7045069372C",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-0224",
+    "title": "Resolution urging support for the 2026 ballot question on rent stabilization to protect tenants in Massachusetts.",
+    "type": "Council Legislative Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "rent_increase_limits"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-01-28",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=41681&GUID=2D979246-B649-4C37-B47B-9001C2516C03",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-1194",
+    "title": "Resolution in support of a proposed local option for rent stabilization, housing affordability, and tenant stability.",
+    "type": "Council Legislative Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "rent_increase_limits"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-06-24",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=42784&GUID=44B34EED-7C5B-4745-BE99-9B32F57FC97E",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Boston, MA council 2026-1858",
+    "title": "Resolution in support of H.1544 / S.998: An Act to Guarantee a Tenant's First Right of Refusal.",
+    "type": "Council Legislative Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-30",
+    "link": "https://boston.legistar.com/LegislationDetail.aspx?ID=43508&GUID=0AF4D9FE-268C-405A-9212-2F2408995077",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   }
+  ]
+ },
+ "Newark, NJ": {
+  "council_monitoring": "monitored",
+  "items": [
+   {
+    "item": "Newark, NJ council 26-0318",
+    "title": "AN ORDINANCE RATIFYING AND AUTHORIZING THE MAYOR OF THE CITY OF NEWARK AND/OR HIS DESIGNEE, AND THE DIRECTOR OF THE DEPARTMENT OF OFFICE OF VIOLENCE PREVENTION & TRAUMA RECOVERY TO ENTER INTO AND EXECUTE A LEASE AGREEMENT WITH SOUTH ORANGE NJ, LLC, A NEW JERSEY LIMITED LIABILITY COMPANY, 320 ROEBLING, SUITE 417, BROOKLYN, NEW YORK 11211, FOR THE GROUND LEVEL OF THE PROPERTY LOCATED AT 846-850 SOUTH ORANGE AVENUE, NEWARK, NEW JERSEY 07106, BLOCK 4057, LOT 00003, (WEST WARD), FOR THE PERIOD OF ONE (1) YEAR, COMMENCING ON JANUARY 1, 2026 AND TERMINATING ON DECEMBER 31, 2026, FOR THE ANNUAL RENT OF ($15,600.00), FOR USE AS OFFICE SPACE. WHEREAS, the City of Newark, Department of The Office of Violence Prevention & Trauma Recovery (\u201cOVP\u201d), is in need of leasing the ground level of the premises commonly known as 846-850 South Orange Avenue, Block 4057, Lot 00003 (the \u201cLeased Premises\u201d), on the Official Tax Map of the City of Newark, New Jersey, for public utilization as office space; and WHEREAS, OVP (\u201cTenant\u201d) and South Orange NJ, LLC, A New Jersey Limited Liability Company, located at 320 Roebling, Suite 417, Brooklyn, New York 11211 (\u201cLandlord\u201d), desire to enter into a lease agreement (hereinafter \u201cLease Agreement\u201d) for the Leased Premises for the period of one (1) year, commencing January 1, 2026 through December 31, 2026, for the annual sum of Fifteen Thousand Six Hundred Dollars and Zero Cents ($15,600.00); and WHEREAS, pursuant to N.J.A.C. 5:30-5.5, attached hereto is the Comptroller\u2019s partial Certification of Funds, which states that funds in the amount of Three Thousand Nine Hundred Dollars and Zero Cents ($3,900.00), are available in the 2026 Budget under Business Unit: NW011; Dept.: 030; Div./Proj.: 0312; Activity: A; Account #: 71610, to enter into the Lease Agreement for the Leased Premises for the period of January 1, 2026 through December 31, 2026, and a copy of the Certification of Funds shall be filed in the Office of the City Clerk.",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-05-06",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611310&GUID=F321CB15-6DAD-4FF7-AF4A-9E4FA079D4BF",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0532",
+    "title": "AN ORDINANCE TO AMEND AND SUPPLEMENT ORDINANCE 6PSF-I ADOPTED ON SEPTEMBER 18, 2024, TITLE XIX, RENT CONTROL, CHAPTER 2, RENT CONTROL REGULATIONS; RENT CONTROL BOARD, OF THE REVISED GENERAL ORDINANCES OF THE CITY OF NEWARK, 2000, AS AMENDED AND SUPPLEMENTED, BY MAKING VARIOUS CORRECTIONS AND ADDITIONS.",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "rent_increase_limits"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-05-20",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611524&GUID=2864F5C6-2BDC-4A7B-A1EC-A99FF0E3D674",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0515",
+    "title": "AN ORDINANCE AMENDING TITLE XIX, CHAPTER 19:3 OF THE NEWARK MUNICIPAL CODE (RENT CONTROL), PROVISION OF LEGAL SERVICES IN EVICTION PROCEEDINGS, TO REVISE THE DEFINITION OF \u201cINCOME-ELIGIBLE INDIVIDUAL.",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "rent_increase_limits",
+     "just_cause_eviction"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-05-20",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611507&GUID=D881CC3A-DD60-47E8-AF41-1945ACB96F1E",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0664",
+    "title": "ORDINANCE AMENDING ORDINANCE 6PSF-G, ADOPTED JUNE 2, 2021, AND AUTHORIZING THE MAYOR AND/OR HER DESIGNEE, THE DIRECTOR OF THE DEPARTMENT OF HEALTH AND COMMUNITY WELLNESS, TO ENTER INTO AND EXECUTE AN AMENDED LEASE AGREEMENT AMENDING THE NAME OF THE LANDLORD FROM URBAN RENEWAL, LLC, TO CATHOLIC CHARITIES ARCHDIOCES OF NEWARK FOR THE LEASE OF THE PREMISE COMMONLY KNOWN AS A RESIDENTIAL HOMELESS SHELTER AND ASSOCIATED OFFICE SPACE AT THE FORMER MILLER STREET SCHOOL, LOCATED AT 47-71 MILLER STREET; 61-75 FRELINGHUYSEN AVENUE, AND 47-61 VANDERPOOL STREET, NEWARK, NEW JERSEY, 07114 (SOUTH WARD);PURSUANT TO NJSA 40A:12-5. ORDINANCE 6PSF-Z 05/19/2021 EXTENDED TARGET DATE ON WHICH CITY OF NEWARK MAY TERMINATE IF PREMISES ARE NOT COMPLETED; AS WELL AS A SUBORDINATION, NONDISTURBANCE, ATTORNMENT AGREEMENT DATED DECEMBER 31, 2022.",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-06-17",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611656&GUID=5917B332-0499-407C-917C-B7E4DE5DD124",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1280",
+    "title": "AN ORDINANCE FOR THE APPROVAL OF THE ASSIGNMENT AND ASSUMPTION AGREEMENT BETWEEN EL SID PROPERTIES LLC AND GPOP DOREMUS AVE OWNER, LLC FOR THE PURPOSE OF TRANSFERRING ALL OBLIGATIONS OF THE CITY OF NEWARK AS TENANT TO GPOP DOREMUS AVE OWNER, LLC AS THE LANDLORD",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-23",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612272&GUID=2970AF77-2D96-437F-AE35-4DF31172D41F",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1291",
+    "title": "ORDINANCE PROHIBITING THE IMPOSITION OF CERTAIN BROKERAGE COSTS UPON RESIDENTIAL TENANTS IN THE CITY OF NEWARK",
+    "type": "Ordinance",
+    "is_ordinance": true,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-23",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612283&GUID=69D3D37F-BCB1-46D7-A307-159547E880D1",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0185",
+    "title": "A motion requesting a follow-up meeting at Georgia King Village (GKV) with the Administration and GKV Management to review mitigation of the complaints from the tenants\u2019 meeting held in January, 2026.",
+    "type": "Motion",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-02-04",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611178&GUID=FB1806DD-0EAF-471D-9447-7B0362691D61",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0314",
+    "title": "A motion requesting that the Administration provide the West Ward Councilman with a list of those West Ward landlords on the Mayor\u2019s recently enacted \u201cWorst Landlords in the City\u201d listing initiative.",
+    "type": "Motion",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-03-04",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611306&GUID=387E2771-E46C-4EAE-8C43-634F385D00A7",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0293",
+    "title": "Dept/ Agency: Finance Action: ( ) Ratifying (X) Authorizing ( ) Amending Purpose: Stipulation of Settlements for Tax Appeals List of Property: (Tax Payer/Address/Block/Lot/Ward/Assmnt./Year/Refund Amount) MRTRB Corp./1925/54/123-153 N 13th/West/2017/$1,421,800/-$0.00 MRTRB Corp./1925/54/123-153 N 13th/West/2018/$1,421,800/-$0.00 MRTRB Corp./1925/54/123-153 N 13th/West/2019/$1,260,000/-$0.00 MRTRB Corp./1925/54/123-153 N 13th/West/2020/$1,260,000/-$0.00 MRTRB Corp./1925/54/123-153 N 13th/West/2021/$1,260,000/-$0.00 MRTRB Corp./1925/54/123-153 N 13th/West/2022/$1,200,000/-$2,241.60 MRTRB Corp./1925/54/123-153 N 13th/West/2023/$1,200,000/-$2,236.80 39 McClellan St., LLC/3773/25/9-39 McClellan Street/South/2022/$2,402,000/-$0.00 39 McClellan St., LLC/3773/25/9-39 McClellan Street/South/2023/$2,402,000/-$0.00 39 McClellan St., LLC/3773/25/9-39 McClellan Street/South/2024/$2,100,000/-$11,485.06 39 McClellan St., LLC/3773/25/9-39 McClellan Street/South/2025/$1,800,000/-$0.00 109 Newark, LLC/3542/28(MERGED LOTS 28,30,36 INTO L30)/109-135 Meeker Avenue/South/2022/$1,500,800/-$3,736.00 109 Newark, LLC/3542/28(MERGED LOTS 28,30,36 INTO L30)/109-135 Meeker Avenue/South/2023/$1,400,800/-$7,456.00 109 Newark, LLC/3542/28(MERGED LOTS 28,30,36 INTO L30)/109-135 Meeker Avenue/South/2024/$1,400,800/-$7,606.00 109 Newark, LLC/3542/28(MERGED LOTS 28,30,36 INTO L30)/109-135 Meeker Avenue/South/2025/$1,400,800/-$0.00 555 Elizabeth Ave., LLC/3640/5/2-12 Renner Avenue/South/2020/$13,750,000/-$0.00 555 Elizabeth Ave., LLC/3640/5/2-12 Renner Avenue/South/2021/$13,750,000/-$0.00 555 Elizabeth Ave., LLC/3640/5/2-12 Renner Avenue/South/2022/$12,000,000/-$65,380.00 555 Elizabeth Ave., LLC/3640/5/2-12 Renner Avenue/South/2023/$10,000,000/-$139,800.00 555 Elizabeth Ave., LLC/3640/5/2-12 Renner Avenue/South/2024/$9,000,000/-$180,642.50 Regina Kornegay/3677/45/35 Pomona Avenue/South/2024/$210,000/-$1,528.81 New Generation Development, LLC/1976/19/213 Elm Street/East/2017/$173,200/-$0.00 New Generation Development, LLC/1976/19/213 Elm Street/East/2018/$150,000/-$856.78 New Generation Development, LLC/998/62/59 Garrison Street/East/2017/$0/-$3,965.84 New Generation Development, LLC/998/62/59 Garrison Street/East/2017/$0/-$4,114.00 HUSPRF NEWARK LP/Tenant: Storageblue Ferry Street LLC/2487/1.03/419-425 Ferry Street/East/2024/$8,250,000/-$0.00 HUSPRF NEWARK LP/Tenant: Storageblue Ferry Street LLC/2487/1.03/419-425 Ferry Street/East/2025/$6,000,000/-$46,350.00 Wilson Realty Corp./5050.02/1/B01/494-508 Wilson Avenue/East/2018/$125,000/-$4,331.89 Wilson Realty Corp./5050.02/1/B01/494-508 Wilson Avenue/East/2019/$125,000/-$4,411.65 115-119 Montclair Ave LLC/816/48/115 Montclair Avenue/North/2018/$365,000/-$0.00 115-119 Montclair Ave LLC/816/48/115 Montclair Avenue/North/2019/$365,000/-$0.00 115-119 Montclair Ave LLC/816/48/115 Montclair Avenue/North/2020/$300,000/-$763.80 115-119 Montclair Ave LLC/816/49/117 Montclair Avenue/North/2018/$363,000/-$0.00 115-119 Montclair Ave LLC/816/49/117 Montclair Avenue/North/2019/$363,000/-$0.00 115-119 Montclair Ave LLC/816/49/117 Montclair Avenue/North/2020/$300,000/-$1,216.00 115-119 Montclair Ave LLC/816/50/119 Montclair Avenue/North/2018/$365,500/-$0.00 115-119 Montclair Ave LLC/816/50/119 Montclair Avenue/North/2019/$365,500/-$0.00 115-119 Montclair Ave LLC/816/50/119 Montclair Avenue/North/2020/$300,000/-$1,820.20 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5042/70/X/Avenue I/East/2022/$3,599,900/-$0.00 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5042/70/X/Avenue I/East/2024/$3,901,700/-$93,108.85 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5042/70/X/Avenue I/East/2025/$3,750,000/-$53,560.00 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5088/60(66,122,123)/X/Avenue I/East/2022/$2,299,900/-$0.00 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5088/60(66,122,123)/X/Avenue I/East/2024/$2,151,700/-$43,669.85 Conrail c/o Tax Dept (United Rail Trans./Perry Cty. RR)/5088/60(66,122,123)/X/Avenue I/East/2025/$2,000,000/-$26,780.00 A&R Capital LLC/887/23/16-18 Oliver St/Central/2021/$1,590,000/-$0.00 A&R Capital LLC/887/23/16-18 Oliver St/Central/2022/$1,590,000/-$0.00 A&R Capital LLC/887/23/16-18 Oliver St/Central/2023/$2,840,000/-$0.00 A&R Capital LLC/887/23/16-18 Oliver St/Central/2024/$1,950,000/-$24,886.83 A&R Capital LLC/887/23/16-18 Oliver St/Central/2025/$1,800,000/-$16,570.64 Jose & Benito Lopez; 28 Cherry Street LLC/136/9/28-42 Cherry Street/Central/2016/$1,770,600/-$0.00 Jose & Benito Lopez; 28 Cherry Street LLC/137.01/120/29-39 River Street/Central/2016/$476,700/-$0.00 Jose & Benito Lopez; 28 Cherry Street LLC/137.01/13/842-862 McCarter Highway/Central/2015/$541,700/-$1,280.58 Jose & Benito Lopez; 28 Cherry Street LLC/137.01/13/842-862 McCarter Highway/Central/2016/$541,700/-$1,331.28 Jose & Benito Lopez; 28 Cherry Street LLC/137.01/13/B01/842-862 McCarter Highway/Central/2016/$111,000/-$0.00 Jose & Benito Lopez; 28 Cherry Street LLC/137.01/13/B01/842-862 McCarter Highway/Central/2015/$111,000/-$0.00 B8 McCarter Owner Urban Renewal LLC/829/10/2107-2143 McCarter Highway/North/2023/$5,000,000/-$130,480.00 ISUS (H&C Realty Assoc. LLC)/3791/112/590-638 Frelinghuysen Avenue/South/2023/$6,500,000/-$19,400.51 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2017/$13,022,300/-$0.00 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2018/$13,022,300/-$0.00 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2019/$12,022,300/-$37,610.00 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2021/$11,772,300/-$46,675.00 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2022/$11,772,300/-$46,700.00 Jay & Sussex Company, LLC/2842/1/176-190 Sussex Avenue/Central/2023/$10,840,000/-$81,356.14 Bragaw Apartments LLC/3047/6/45-59 Bragaw Avenue/South/2020/$614,400/-$6,057.20 Joanne Johnson/2668/37(31,32,42,43,44,45)/241-265 Clinton Avenue/Central/2018/$913,900/-$0.00 Joanne Johnson/2668/37/T01(cell tower taken off the bldg.)/241-265 Clinton Avenue/Central/2018/$85,600/-$5,539.50 Adams Cornell; CDL Urban Renewal Corp./2806/16(17,18,19,20)/1191-1199 Mayor Gibson Boulevard/East/2021/$470,000/-$0.00 Adams Cornell; CDL Urban Renewal Corp./2806/16(17,18,19,20)/1191-1199 Mayor Gibson Boulevard/East/2022/$400,000/-$2,615.20 Adams Cornell; CDL Urban Renewal Corp./2806/21/1199- Mayor Gibson Boulevard/East/2021/$470,000/-$0.00 Adams Cornell; CDL Urban Renewal Corp./2806/9/65-71 Emmet Street/East/2021/$294,100/-$0.00 Adams Cornell; CDL Urban Renewal Corp./2806/9/65-71 Emmet Street/East/2022/$200,000/-$3,515.58 Additional Information: Total credits: $1,131,080.09",
+    "type": "Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-04-01",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611285&GUID=1B047D0B-CEFE-4608-80CC-E949B1B2C728",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0537",
+    "title": "Dept./Agency: Economic and Housing Development Action: ( ) Ratifying ( X) Authorizing ( ) Amending Type of Service: Grant Agreement Purpose: To provide gap financing for the construction of a twenty-four (24) residential dwellings consisting of four (4) deed-restricted affordable housing restrictions for occupancy by qualified low-income tenants pursuant to the City of Newark Affordable Housing Trust Fund. Entity Name: Acension Capital Partners, LLC Entity Address: 59 Lincoln Park, Suite 375, Newark, New Jersey 07107 Grant Amount: $1,070,182.00 Funding Source: City of Newark Affordable Housing Trust Fund Total Project Cost: $18,460,639.00 City Contribution: $1,070,182.00 Other Funding Source/Amount: 4% Low-Income Housing Tax Credits and Conventional Lender Grant Period: Commencing upon the Effective Date, as defined in the Grant Agreement, and continuing through the expiration of the Affordability Period as defined in the Grant Agreement, which period shall be twenty (20) years following the issuance of a Certificate of Occupancy and the initial occupations of the Affordable Units by eligible households. Contract Basis: ( ) Bid ( ) State Vendor ( ) Prof. Ser. ( ) EUS ( ) Fair & Open ( ) No Reportable Contributions ( ) RFP ( ) RFQ ( ) Private Sale ( X) Grant ( ) Sub-recipient ( ) n/a List of Property: (Address/Block/Lot/Ward) 538-540 South 16th Street, Block 333, Lot 69 (formerly Lots 19, 20 and 69 (West Ward) 518-530 South 16th Street, Block 333, Lot 58.01 (formerly Lots 58, 59, and 64) (West Ward) Additional Information:",
+    "type": "Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-05-06",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611529&GUID=A54D1B61-7DCC-4D8E-93E9-E570E28ACCDF",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0843",
+    "title": "Re: 6PSF-b Office of Tenant and Legal Services representation The Governing body held a discussion regarding the above referenced legislation. During the meeting, Council President C. Lawrence Crump requested further information on the operations of the Office of Tenant Legal Services including: 1. When are the services provided in court proceeding? 2. How is it determined which tenants are represented?",
+    "type": "Direction of Council",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "closed",
+    "last_action_date": "2026-06-01",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611835&GUID=3A503FF6-743F-419A-9559-74639C0653BB",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-0355",
+    "title": "Dept/ Agency: Economic and Housing Development Action: ( ) Ratifying (X) Authorizing (X) Amending Type of Service: Private Sale/Redevelopment Purpose: First Amendment to the Agreement for the Sale and Redevelopment of Land to DCF Developers, LLC to change the property description to the new construction of four (4) three-family homes to provide twelve (12) three-bedroom units of which two (2) units shall be restricted to tenants at 80% Area Median Income (\u201cAMI\u201d), one (1) units shall be restricted to tenants at 60% AMI and the other nine (9) units will be market rate. Entity Name: DCF Developers, LLC Entity Address: 162 South 8th Street, Apartment 3, Brooklyn, New York 11211 Sale Amount: $131,040.00 Cost Basis: (X) $13.00 PSF ( ) Negotiated ( ) N/A ( ) Other: Assessed Amount: $158,600.00 Appraised Amount: N/A Contract Period: To commence within three (3) months and be completed within twenty-four (24) months from the transfer of ownership by the City Contract Basis: ( ) Bid ( ) State Vendor ( ) Prof. Ser. ( ) EUS ( ) Fair & Open ( ) No Reportable Contributions ( ) RFP ( ) RFQ (X) Private Sale ( ) Grant ( ) Sub-recipient ( ) n/a List of Property: (Address/Block/Lot/Ward) 233 South 10th Street/Block 1814/Lot 29/West Ward 235 South 10th Street/Block 1814/Lot 30/West Ward 476 Avon Avenue/Block 2643/Lot 7/South Ward 474 Avon Avenue/Block 2643/Lot 8/South Ward Additional Information: Resolution 7R2-d adopted on November 7, 2024, authorized the Private Sale/Redevelopment pursuant to the Agreement for the Sale and Redevelopment of Land. This Resolution authorizes a First Amendment to the Agreement for the Sale and Redevelopment of Land to change the Scope of Project due to a removal of one of the properties from the Preliminary Designation Letter.",
+    "type": "Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-06-17",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1611347&GUID=B6FD6172-E262-404C-9B92-1AF73DA06386",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1225",
+    "title": "AMENDED EXECUTIVE ORDER ESTABLISHING A PUBLIC ACCOUNTABILITY LIST OF THE CITY'S MOST SEVERE AND HABITUAL NON-COMPLIANT LANDLORDS AND RESTRICTING ACCESS TO CITY INCENTIVES, Friday, July 31,2026.",
+    "type": "Executive Order",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-07-31",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612217&GUID=1A4EA662-8BDA-48B1-8A1B-516E32D1D924",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1347",
+    "title": "A motion requesting that the Administration activate a City-wide eviction moratorium to prohibit any action by a landlord, owner or other person to remove or cause the removal of a covered tenant from residential property for non-payment of rent.",
+    "type": "Motion",
+    "is_ordinance": false,
+    "categories": [
+     "just_cause_eviction"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-09",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612339&GUID=6922A570-D841-4EA6-90BC-055311394342",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1348",
+    "title": "A motion requesting that the Administration include the owner(s) of the apartment building located at 130 Chancellor Avenue on the list of worst non-compliant landlords.",
+    "type": "Motion",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-09",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612340&GUID=D4202AFD-3133-4534-972D-7A7E9C731A7F",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1383",
+    "title": "A motion requesting that New Jersey Legislative Representatives enact a one-year moratorium on residential evictions within the State of New Jersey.",
+    "type": "Motion",
+    "is_ordinance": false,
+    "categories": [
+     "just_cause_eviction"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-23",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612375&GUID=762C9735-17A0-4E06-B82F-72BAC60F5017",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   },
+   {
+    "item": "Newark, NJ council 26-1020",
+    "title": "Dept/ Agency: Economic and Housing Development Action: ( ) Ratifying (X) Authorizing ( ) Amending Type of Service: Private Sale/Redevelopment Purpose: New Construction of a new one-family home for rent that will provide affordable housing for tenants participating in the Section 8 Housing Choice Voucher Program Entity Name: Mind Over Matter Orientation Commission LTD Entity Address: 250 Madison Avenue, Newark, New Jersey, 07108 Sale Amount: $70,000.00 Cost Basis: (X) $14.00 PSF ( ) Negotiated ( ) N/A ( ) Other: Assessed Amount: $15,600.00 Appraised Amount: N/A Contract Period: To commence within three (3) months and be completed within eighteen (18) months following transfer of property ownership from the City to the Redeveloper Contract Basis: ( ) Bid ( ) State Vendor ( ) Prof. Ser. ( ) EUS ( ) Fair & Open ( ) No Reportable Contributions ( ) RFP ( ) RFQ (X) Private Sale ( ) Grant ( ) Sub-recipient ( ) n/a List of Property: (Address/Block/Lot/Ward) 825-827 South 12th Street/ Block 3008 / Lot 48 / South Ward Additional Information: Sale Price: Total Square Footage X PSF = 5,000 X $14.00 = $70,000.00. Sale at prices set forth by Ordinance 6S&Fh, adopted on April 7, 2004, establishing the minimum sale price of City-owned property",
+    "type": "Resolution",
+    "is_ordinance": false,
+    "categories": [
+     "other_tenant_housing"
+    ],
+    "status": "adopted",
+    "last_action_date": "2026-09-23",
+    "link": "https://newark.legistar.com/LegislationDetail.aspx?ID=1612012&GUID=AA465A89-2BA5-416D-8B15-B6F1B9AC00E8",
+    "warning": "Council item retrieved automatically from the city's public Legistar feed and not reviewed by a human. Items in progress are not law; adopted ordinances may take effect later. Not part of the supplied corpus. Not legal advice."
+   }
+  ]
+ },
+ "Hoboken, NJ": {
+  "council_monitoring": "monitored",
+  "items": []
+ },
+ "San Francisco, CA": {
+  "council_monitoring": "Legistar web API not updated since 2020: check sfbos.org / sfgov.legistar.com",
+  "items": []
+ },
+ "Los Angeles, CA": {
+  "council_monitoring": "City Clerk Council File Management System (cityclerk.lacity.org), no public JSON API",
+  "items": []
+ },
+ "San Diego, CA": {
+  "council_monitoring": "No Legistar; city clerk agenda system, no public JSON API found",
+  "items": []
+ },
+ "Berkeley, CA": {
+  "council_monitoring": "No Legistar; agendas on berkeleyca.gov, no public JSON API found",
+  "items": []
+ },
+ "Jersey City, NJ": {
+  "council_monitoring": "No Legistar; city clerk site, no public JSON API found",
+  "items": []
+ },
+ "Cambridge, MA": {
+  "council_monitoring": "Granicus iQM2 (cambridgema.iqm2.com), no public JSON API found",
+  "items": []
+ }
+}

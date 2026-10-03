@@ -1,0 +1,57 @@
+{
+  "_note": "DEV FIXTURE ONLY. Hand-written rules to build and test the engine before extraction is ready. Never used for outputs/.",
+  "rules": [
+    {
+      "team_rule_id": "dev-CA-RENT", "jurisdiction": "CA", "level": "state", "category": "rent_increase_limits",
+      "status": "in_force", "title": "Tenant Protection Act rent cap",
+      "requirement": "Annual rent increases are capped at 5% plus CPI, with a maximum of 10%.",
+      "key_value": "5% + CPI, max 10%",
+      "coverage_conditions": {"exempt_if_built_within_years": 15, "built_cutoff_uses_co_date": true, "min_units": 2},
+      "overrides": [], "effective_date": "2020-01-01", "citation": "Cal. Civ. Code § 1947.12",
+      "source_doc_id": "D024", "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+      "quoted_span": "Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome."
+    },
+    {
+      "team_rule_id": "dev-SF-RENT", "jurisdiction": "San Francisco, CA", "level": "city", "category": "rent_increase_limits",
+      "status": "in_force", "title": "SF Rent Ordinance rent control",
+      "requirement": "Annual rent increases are limited to the Rent Board's allowable amount (1.6% from March 2026).",
+      "key_value": "1.6% (3/1/26-2/28/27)",
+      "coverage_conditions": {"built_before": "1979-06-13", "built_cutoff_uses_co_date": true, "min_units": 2},
+      "overrides": ["dev-CA-RENT"], "effective_date": null, "citation": "S.F. Admin. Code ch. 37",
+      "source_doc_id": "D079", "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+      "quoted_span": "tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979"
+    },
+    {
+      "team_rule_id": "dev-MA-DEP", "jurisdiction": "MA", "level": "state", "category": "security_deposits",
+      "status": "in_force", "title": "Security deposit limit",
+      "requirement": "A security deposit may not exceed the first month's rent.",
+      "key_value": "1 month's rent", "coverage_conditions": null,
+      "overrides": [], "effective_date": null, "citation": "G.L. c.186 § 15B",
+      "source_doc_id": "D052", "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "a security deposit equal to the first month's rent provided that such security deposit is deposited as required"
+    },
+    {
+      "team_rule_id": "dev-NJ-ALG", "jurisdiction": "NJ", "level": "state", "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective", "title": "NJ FAIR Act",
+      "requirement": "Prohibits algorithmic rent-setting practices statewide.",
+      "coverage_conditions": null, "overrides": [], "effective_date": "2027-07-01",
+      "citation": "P.L.2026, c.43", "source_doc_id": "D069", "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+      "quoted_span": "DEV FIXTURE placeholder span, not verified",
+      "preempts_local": true, "conflict_note": "May preempt the Jersey City and Hoboken local bans."
+    },
+    {
+      "team_rule_id": "dev-MA-ALG-P", "jurisdiction": "MA", "level": "state", "category": "algorithmic_rent_setting",
+      "status": "pending", "title": "S.2983 (pending)", "requirement": "Would restrict algorithmic rent-setting.",
+      "coverage_conditions": null, "overrides": [], "effective_date": null,
+      "citation": "MA S.2983", "source_doc_id": "D046", "source_url": "https://malegislature.gov/Bills/194/S2983",
+      "quoted_span": "DEV FIXTURE placeholder span, not verified"
+    },
+    {
+      "team_rule_id": "dev-CA-ALG", "jurisdiction": "CA", "level": "state", "category": "algorithmic_rent_setting",
+      "status": "in_force", "title": "AB 325 common pricing algorithms", "requirement": "Restricts use of common pricing algorithms.",
+      "coverage_conditions": null, "overrides": [], "effective_date": "2026-01-01",
+      "citation": "AB 325", "source_doc_id": "D022", "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "quoted_span": "DEV FIXTURE placeholder span, not verified"
+    }
+  ]
+}

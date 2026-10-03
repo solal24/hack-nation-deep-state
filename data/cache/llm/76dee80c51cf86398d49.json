@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice to Terminate Tenancy at Will and Right to Cure Nonpayment of Rent",
+      "requirement": "A landlord must give a tenant at will three months' written notice to terminate the tenancy (or, if rent is paid more often than every three months, notice equal to the rental interval or 30 days, whichever is longer). For nonpayment of rent, only 14 days' written notice to quit is required, but if the tenant has not received a similar nonpayment notice in the preceding 12 months, the tenant may cure by paying the full rent due within 10 days of receiving the notice, and the notice itself must contain specific statutory language informing the tenant of this right.",
+      "key_value": "14 days' notice to quit (nonpayment); 10-day cure right; 3 months' notice (at-will termination)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "If the notice fails to include the required statutory cure-right language, the tenant's time to pay or tender rent is extended to the day the answer is due in the landlord's possession action; also, if nonpayment was caused by a delay of a government agency in mailing a subsistence or rental payment, the court must continue the hearing at least 7 days and may treat the tenancy as not terminated if rent, interest, and costs are tendered within that time.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Mass. Gen. Laws ch. 186, § 12",
+      "quoted_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy",
+      "confidence": 0.75,
+      "conflict_note": "Section governs notice/cure procedure for terminating at-will tenancies generally; it does not establish 'just cause' requirements for eviction (Massachusetts is not a just-cause state statewide), so this record reflects notice and cure procedure rather than a substantive cause restriction."
+    }
+  ]
+}

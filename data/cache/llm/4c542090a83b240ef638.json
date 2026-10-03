@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Annual General Adjustment (AGA) rent ceiling increase",
+      "requirement": "Each year the Berkeley Rent Stabilization Board sets an Annual General Adjustment that eligible landlords may use to raise the permanent rent ceiling on rent-controlled units, based on 65% of the increase in the Bay Area Consumer Price Index (CPI) for the prior July-June period. For 2026 the AGA is 1.0%, applicable no earlier than January 1, 2026.",
+      "key_value": "65% of CPI increase (July-June), capped/set annually; 2026 AGA = 1.0%",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to units subject to Berkeley rent control (rent-ceiling units); excludes units where the tenancy began on/after 2025-01-01 with rent set under Costa-Hawkins vacancy decontrol."
+      },
+      "exemptions": "Does not apply to adjust the rent of tenancies that began on or after January 1, 2025 and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act (state vacancy-decontrol law). Conditions for qualifying for the increase and required tenant notice are set out in Rent Board Regulation 1148.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "The 65% of CPI formula applies within Berkeley's local rent stabilization system and operates alongside the state Costa-Hawkins Rental Housing Act, which removes certain post-2025 tenancies from the local rent ceiling.",
+      "effective_date": "2004-11",
+      "penalty": null,
+      "citation": "Berkeley Municipal Code § 13.76.110",
+      "quoted_span": "adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026",
+      "confidence": 0.85,
+      "conflict_note": "Document is a public notice summarizing the Board's adopted AGA Order/Regulation 1148 rather than the municipal code text itself; exact effective date of the underlying 65%-of-CPI formula (Nov. 2004 ballot measure) is approximate."
+    }
+  ]
+}

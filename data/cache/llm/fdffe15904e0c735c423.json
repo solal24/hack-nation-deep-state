@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Cap on Residential Rental Application Fees",
+      "requirement": "A landlord or their agent cannot charge an application or similar fee to apply to lease or sublease a residential rental dwelling that exceeds $50. The cap is adjusted annually for inflation (CPI) and published by the Division of Consumer Affairs.",
+      "key_value": "$50 (adjusted annually by CPI)",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": true,
+        "notes": "Exempts dwelling units in one-family or two-family dwellings offered for rent, and exempts licensees of the NJ Real Estate Commission unless the licensee is itself the landlord of the property."
+      },
+      "exemptions": "Does not apply to: (1) a dwelling unit in a one-family or two-family dwelling offered for rent; or (2) a licensee of the New Jersey Real Estate Commission, unless the licensee is the landlord of the property.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": "2026-05-01",
+      "penalty": "Up to $500 for a first offense, up to $750 for a second offense, and up to $1,000 for each subsequent offense, enforced via summary proceedings under the Penalty Enforcement Law of 1999 (P.L.1999, c.274); amounts wrongfully charged are remitted to the applicant/prospective tenant.",
+      "citation": "N.J.S.A. 46:8-18.1",
+      "quoted_span": "A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "confidence": 0.97,
+      "conflict_note": "Enacted as P.L.2025, c.405 (A4899 4R) but approved January 20, 2026; effective date computed as the first day of the fourth month following enactment (May 1, 2026)."
+    }
+  ]
+}

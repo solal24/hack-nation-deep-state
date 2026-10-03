@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Anti-Eviction Act – Good Cause Required for Residential Eviction",
+      "requirement": "A landlord may evict a residential tenant only for one of the statutory good causes (e.g., nonpayment of rent, disorderly conduct, property damage, substantial lease violation, owner retirement of the property from residential use, conversion to condominium/cooperative, certain criminal convictions on the premises). Except for nonpayment of rent, each cause must be described in a written Notice to Quit (sometimes preceded by a Notice to Cease), with required notice periods ranging from 3 days to 18 months depending on the cause, before an eviction suit may be filed. Tenants evicted to correct an illegal occupancy must receive relocation assistance equal to six times their monthly rent before they can be removed.",
+      "key_value": "Notice to Quit periods range from 3 days to 18 months depending on cause; relocation assistance for illegal-occupancy eviction = 6 times monthly rent",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Does not apply to hotel, motel, or guest-house transient/seasonal guests unless the occupant has no alternate residence and resides there on a continual basis; does not apply to a unit held in trust for a developmentally disabled immediate family member who permanently occupies it."
+      },
+      "exemptions": "Two- or three-unit owner-occupied premises with two or fewer rental units; hotel/motel/guest-house transient or seasonal guests (unless no alternate residence and continual occupancy); units held in trust for a developmentally disabled immediate family member who permanently occupies the unit.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Applies to most residential rentals including single-family homes, mobile homes, apartment buildings/complexes, and rooming/boarding homes.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 2A:18-61.1",
+      "quoted_span": "No residential landlord may evict or fail to renew a lease, whether it is a written or an oral lease without good cause.",
+      "confidence": 0.9,
+      "conflict_note": null
+    },
+    {
+      "jurisdiction": "NJ",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Rent Increase Must Not Be Unconscionable and Must Comply With Local Rent Control",
+      "requirement": "A landlord may only evict a tenant for failing to pay a rent increase if the increase itself is not unconscionable and complies with all other applicable laws and municipal ordinances, including local rent control. A tenant who believes the increase is unconscionable may withhold the difference between the old and new rent, leaving the issue for the court to decide.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "State law here does not set a numeric cap; it defers to and requires compliance with municipal rent control ordinances, with only an 'unconscionability' backstop at the state level.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 2A:18-61.1",
+      "quoted_span": "The rent increase must not be unconscionable and must comply with all other laws or municipal ordinances, including rent control.",
+      "confidence": 0.7,
+      "conflict_note": "This provision arises within the just-cause eviction statute (as a defense/ground tied to nonpayment of a rent increase) rather than a standalone rent-cap statute; no specific percentage or dollar cap is stated in this document."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "RSO Annual Allowable Rent Increase Percentage",
+      "requirement": "Landlords of units covered by the Los Angeles Rent Stabilization Ordinance (RSO) may raise rent once a year by an annually-announced percentage; for the period July 1, 2025 through June 30, 2026 that allowable increase is 3%. Starting February 2, 2026, landlords can no longer tack on an additional percentage increase for utilities on top of the allowable increase.",
+      "key_value": "3%",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies only to rental units subject to the LA Rent Stabilization Ordinance (RSO); tenants/landlords can check coverage via the City's ZIMAS lookup tool. Non-RSO properties are subject to different, state-law-based allowable increases."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Separate monthly per-unit RSO ($1.61) and Systematic Code Enforcement Program/SCEP ($2.83) surcharges may also be passed through to tenants with proper written notice; these are described as separate from, and in addition to, the rent amount and the annual percentage increase. A statewide notice rule (Cal. Civ. Code § 827) separately requires 30 days' written notice for increases under 10%.",
+      "effective_date": "2025-07-01",
+      "penalty": null,
+      "citation": "L.A. Mun. Code § 151.06",
+      "quoted_span": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%",
+      "confidence": 0.55,
+      "conflict_note": "Document does not cite the specific RSO section number; '§ 151.06' is inferred as the generally known rent-adjustment section of the ordinance and should be verified. Also, the stated 3% rate applies only to the July 2025-June 2026 period, which had already ended by the 2026-10-01 query date; the document does not give the rate for the following period."
+    },
+    {
+      "jurisdiction": "CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Advance Written Notice Required for Rent Increases Under 10%",
+      "requirement": "California state law requires landlords to give tenants at least 30 days' written advance notice before a rent increase that is less than 10%.",
+      "key_value": "30 days' notice for increases < 10%",
+      "sets_limit": false,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Applies alongside local rent-increase caps such as the LA RSO's annual percentage limit; a larger increase (10% or more, where permitted) requires longer (90-day) notice under the same state statute, which is not detailed in this document.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Cal. Civ. Code § 827",
+      "quoted_span": "State law requires landlords to provide 30 days' written advance notice of rent increases of less than 10%.",
+      "confidence": 0.75,
+      "conflict_note": null
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "California Tenant Protection Act (AB 1482) Statewide Rent Cap",
+      "requirement": "State law caps annual rent increases at 5% plus the local cost-of-living change, capped overall at 10%, for most rental units in buildings older than 15 years. The City of Los Angeles's Just Cause Ordinance does not itself regulate rent amounts, so this state cap applies within the City where no local rent-stabilization ordinance (like the RSO) sets a different limit.",
+      "key_value": "5% + regional CPI, capped at 10% annually (period Aug 1, 2024-Jul 31, 2025 cap was 8.9%; prior period Aug 2023-Jul 2024 was 8.8%)",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": 15,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": true,
+        "notes": "Rolling 15-year new-construction exemption (e.g., a unit built 1/1/2006 became covered starting 1/1/2021). Also exempt: deed-restricted/income-restricted affordable units, certain dormitories, a two-unit property where the second unit was owner-occupied throughout the tenancy, and units already subject to the City's RSO. Single-family homes/condos are exempt from this state cap (but not from the local JCO) only if owned by a trust, corporation, or an LLC with a corporate member AND the landlord gave the tenant written notice citing Civil Code §§ 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i) that the tenancy is not subject to state just-cause/rent-cap protections; this limited exemption does not apply if there is more than one dwelling unit on the lot or a non-severable second unit (e.g., an in-law unit)."
+      },
+      "exemptions": "Units built within the last 15 years (rolling); deed/income-restricted affordable housing; certain dormitories; qualifying owner-occupied two-unit properties; corporate/trust/LLC-owned single-family homes and condos with proper written notice; units already covered by a local RSO.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "The City of Los Angeles Just Cause Ordinance (JCO) does not regulate rent increase amounts; where a unit is not covered by the City's Rent Stabilization Ordinance (RSO), this state law (AB 1482) governs the maximum allowable rent increase instead.",
+      "effective_date": "2020-01-01",
+      "penalty": null,
+      "citation": "Cal. Civ. Code § 1947.12",
+      "quoted_span": "Annual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower",
+      "confidence": 0.9,
+      "conflict_note": null
+    },
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Los Angeles Just Cause for Eviction Ordinance (JCO)",
+      "requirement": "Landlords of covered rental units in the City of Los Angeles may only terminate a tenancy for a specific list of 'at-fault' or 'no-fault' reasons; tenants evicted for a no-fault reason (e.g., owner/family move-in, demolition, conversion to non-residential use, government order to vacate) are entitled to relocation assistance, while tenants evicted for an at-fault reason (e.g., nonpayment of rent, lease violation, nuisance) are not. Landlords must also register covered units annually, post required tenant-protection and right-to-counsel notices, and file all eviction notices with LAHD within 3 business days of service. For nonpayment-based evictions, a landlord may not evict a tenant whose unpaid rent does not exceed the applicable Fair Market Rent (FMR) for the unit's bedroom size.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": "1978-10-01",
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Covers most residential properties in the City not already regulated by the City's Rent Stabilization Ordinance (RSO), including buildings newer than October 1, 1978, and can apply even to a single-family dwelling. Requires the tenant to have lived in the unit at least 6 months or that the original lease term has expired, whichever comes first."
+      },
+      "exemptions": "Transient hotels, licensed care facilities, fraternity/sorority houses, an owner's roommate, certain cooperatives, some non-profit homeless or short-term substance-abuse treatment facilities, and some HACLA- or government-owned properties.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Applies to units not covered by the City's RSO; does not itself set rent-increase limits (see AB 1482 rent-cap record). The nonpayment/Fair Market Rent eviction limitation applies to both RSO and JCO units.",
+      "effective_date": "2023-01-27",
+      "penalty": null,
+      "citation": "Los Angeles Municipal Code ch. XV, art. 1",
+      "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "confidence": 0.55,
+      "conflict_note": "The source page does not cite a specific LAMC section number for the JCO; citation given is the chapter housing the City's rent/eviction regulations. The 2023-01-27 effective date is inferred from the document's stated compliance deadline for the Notice of Renters' Protections, not an explicit 'effective date' statement for the ordinance as a whole; the Fair Market Rent nonpayment protection is separately dated 2023-03-27 in the source."
+    }
+  ]
+}

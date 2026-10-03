@@ -44,6 +44,24 @@ outputs → Supabase ───► 5 APP (Lovable): role → address → verdict 
 **P2 · differentiators:** "What would flip this answer?" (counterfactual missing fact) · answer receipt (hash of source + span + rule + engine version) · impact map (500 buildings by regime, city limits) · known-unknowns register (the 4 open questions in guide §9).
 **P3 · bonus (only after 05:00 if all green... or never):** policy simulator for legislators · monitoring (LegiScan / Open States / Legistar + manifest sha256) · voice chatbot (ElevenLabs, grounded on our rules only) · FR · addresses outside the sample.
 
+## Product methodology (Solal's user journey, agreed Oct 3)
+Not just informative: **intent-based**. The user says who they are and what they want to decide; we answer the decision, with sources.
+
+1. **Pick a role** on arrival: renter · landlord · legislator · public office.
+2. **Enter an address.**
+   - In our 500 → use `data/addresses_enriched.csv` (supplied data + Census geocoding).
+   - Not in our 500 → live Census Geocoder (+ TIGER city limits) for the legal city; building facts from public parcel data or **entered by the user**; labeled `provenance = public|user`, never mixed into the 500 deliverables.
+3. **Match the address to laws** (SQL-style joins: address → jurisdictions → rules) and test coverage with the engine (true / false / unknown + missing fact).
+4. **Law status on the chosen date:** in force · not yet effective · pending · failed, with warnings.
+   - Current law = our corpus (frozen at 2026-10-01 for the deliverables).
+   - Freshness = **monitoring layer**: re-check official pages by sha256 (manifest) + legislative APIs for upcoming laws: **LegiScan** and **Open States** (state bills), **Legistar** (city council agendas). No scraping against site terms.
+   - The LLM **proposes** new/changed rules into a review queue; a human approves before they enter the rule table.
+5. **Output by role** (template below): verdict → what applies → what we don't know (and which fact) → what's coming → sources (quoted span, retrieval date, as-of) → "Not legal advice".
+6. **Chatbot under the answer:** answers only from our rule table, cites, says "I don't know" otherwise. Optional voice via ElevenLabs (incl. Spanish).
+7. **Languages:** English + Spanish first (official stretch goal), French as a cheap bonus.
+
+Quest ideas kept (P2): "What would flip this answer?" (the missing fact that decides an unknown) · answer receipt (hash of source + span + rule + engine version) · impact map · known-unknowns register. P3: policy simulator for legislators.
+
 ### Intent by role (P1)
 | Role | Their question | What we show |
 |---|---|---|
@@ -103,7 +121,8 @@ Exactly `starter/schema/rule_record.schema.json`, plus this structure for `cover
 {
   "built_before": "1979-06-13",          // year built / CO strictly before (or on, see next)
   "built_cutoff_uses_co_date": true,     // true → a building built in the cutoff year is "unknown"
-  "built_after": null,                   // e.g. new-construction exemptions (built within last 15 years)
+  "built_after": null,                   // building built after a date
+  "exempt_if_built_within_years": 15,    // rolling exemption relative to the as-of date (e.g. CA AB 1482)
   "min_units": 2, "max_units": null,
   "excludes_owner_occupied_min_units": null,  // e.g. owner-occupied <= 2 units exempt → owner type unknown
   "excludes_single_family": true,

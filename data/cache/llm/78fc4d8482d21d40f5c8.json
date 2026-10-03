@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Restrictions on Use of Criminal History in Tenant Screening",
+      "requirement": "A housing provider may check an applicant's criminal history, but may not rely on arrests that did not lead to conviction, records that are sealed or expunged, or juvenile justice records, and may not impose a blanket ban excluding all applicants with any criminal history. Any denial based on a conviction must be directly related to the applicant's ability to be a good tenant and to the health and safety of others, considering the nature/severity of the offense and time elapsed.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Arrests without conviction, sealed or expunged records, and juvenile-justice-system records cannot be considered; blanket bans on all applicants with any criminal history are prohibited.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Cal. Code Regs. tit. 2, § 12269",
+      "quoted_span": "Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system. Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+      "confidence": 0.55,
+      "conflict_note": "Source document is a CRD FAQ page that describes this standard in plain language but does not cite the underlying regulation/statute; citation (2 CCR 12269, the CRD criminal-history-in-housing regulations) and in-force status are supplied from general knowledge of California fair housing law, not stated verbatim in the document."
+    },
+    {
+      "jurisdiction": "CA",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Source-of-Income Discrimination Protections for Tenants",
+      "requirement": "Landlords cannot refuse to rent to, charge different terms to, or advertise a preference/limitation against an applicant or tenant because of their lawful source of income, including Section 8 Housing Choice vouchers, SSI/SSDI disability benefits, rental assistance/subsidy programs, or wages. This includes a prohibition on refusing to process required paperwork for a subsidy program and on charging higher deposits or denying amenity access based on source of income.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Cal. Gov. Code § 12955",
+      "quoted_span": "California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”). This includes the State of California’s COVID-19 Rent Relief Program, Housing Choice (Section 8) vouchers, (SSI) social security disability benefits, or wages earned from a job.",
+      "confidence": 0.55,
+      "conflict_note": "Source document is a CRD FAQ page that does not cite a specific statute section; citation (Cal. Gov. Code § 12955, the FEHA provision prohibiting source-of-income discrimination in housing) is supplied from general knowledge of California fair housing law rather than stated in the document itself."
+    }
+  ]
+}
