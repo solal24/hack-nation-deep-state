@@ -10,3 +10,7 @@ data/*
 !data/.gitkeep
 node_modules/
 .DS_Store
+!data/addresses_enriched.csv
+!data/cache/
+runs/*
+!runs/.gitkeep

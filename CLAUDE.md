@@ -7,17 +7,17 @@ Hack-Nation 7th Global AI Hackathon. 24h build. **Submission deadline: Sun Oct 4
 Judges value a working demo above everything: a polished narrow feature beats a broken ambitious one.
 
 ## Challenge
-_TBD at kick-off (Sat 12:00 PM ET): track, problem statement, judging criteria, sponsor tools required._
+**Challenge 2 · Rental Housing Law Navigator (RealPage).** Starter pack in `starter/` (read `starter/README.md`). Deliverables: `outputs/rules.json`, `outputs/lookups.json`, `outputs/changes.json`, live demo, one-page method note.
 
 ## Our idea
-_TBD._
+**Read `PLAN.md` first** (north star, lanes, priorities, timeline) and `docs/contracts.md` (data formats). LLM extracts rules with verified quotes; deterministic code decides coverage; intent-based app per role (renter / landlord / legislator / public office).
 
 ## Team and ownership
 | Person | GitHub | Owns |
 |--------|--------|------|
-| Solal | solal24 | _TBD_ |
-| Elie Abou-Fadel | eaboufadel3 | _TBD_ |
-| Ismail Ameur | IsmaA24 | _TBD_ |
+| Solal | solal24 | Lane C · Eval + Product + Story (proposed) |
+| Elie Abou-Fadel | eaboufadel3 | Lane A or B (to confirm) |
+| Ismail Ameur | IsmaA24 | Lane A or B (to confirm) |
 
 Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`src/llm.py`, `requirements.txt`, this file), keep the change minimal and mention it in the commit message.
 
@@ -35,6 +35,9 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 - Keys live in `.env` only (copy `.env.example`). Never commit `.env`, never hardcode keys
 
 ## Rules for Claude
+- Never hand-edit `outputs/rules.json`; extraction must be automated. Every `quoted_span` must exist verbatim in its source doc
+- Deliverables use only supplied data (+ Census geocoding). Enrichment is a separate, provenance-labeled layer
+- Never join on ZIP or postal_city; use the geocoded legal city
 - `main` must always run. Work on a branch `feat/<name>`, merge only when it runs
 - Always `git pull` before starting work; commit small, push often
 - Prefer the simplest thing that demos well. No premature abstractions, no test suites unless asked
