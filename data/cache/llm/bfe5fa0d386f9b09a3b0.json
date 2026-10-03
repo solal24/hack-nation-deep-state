@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "rent_increase_limits",
+      "status": "failed",
+      "title": "Initiative Petition 25-21 — 'An Initiative Petition to Protect Tenants by Limiting Rent Increases'",
+      "requirement": "A proposed statewide ballot initiative that would have limited rent increases was blocked by the Supreme Judicial Court, which ruled the petition contained excluded matters in violation of article 48 and enjoined the Secretary of the Commonwealth from placing it on the 2026 ballot.",
+      "key_value": null,
+      "sets_limit": false,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "This was a proposed statewide ballot measure (not an enacted statute) that the SJC ruled could not appear on the 2026 ballot due to constitutional defects in its scope under article 48.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Mass. Initiative Petition No. 25-21",
+      "quoted_span": "Initiative Petition 25-21 contains excluded matters in violation of art. 48, and enjoining the Secretary of the Commonwealth from taking steps to place the measure on the ballot for the 2026 Statewide election",
+      "confidence": 0.72,
+      "conflict_note": "Document is a court docket/rescript about ballot certification, not the text of the proposed rent law itself; no numeric cap or formula is stated in this source."
+    }
+  ]
+}

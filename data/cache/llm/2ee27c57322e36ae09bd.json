@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "rent_increase_limits",
+      "status": "pending",
+      "title": "Statewide Rent Increase Cap (Initiative Petition, Ch. 40P)",
+      "requirement": "This proposed state law would cap annual rent increases for most residential units in Massachusetts at the lower of the CPI increase or 5% in any 12-month period, regardless of tenant turnover. A base rent is set from the amount charged on January 31, 2026 (or last charged rent if vacant, or first rent charged after adoption if none).",
+      "key_value": "CPI increase or 5%, whichever is lower, per 12-month period",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": true,
+        "exempt_if_built_within_years": 10,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 4,
+        "excludes_single_family": false,
+        "notes": "Applies to all leased residential dwelling units in the commonwealth except specified exemptions; voucher tenancy does not count as being 'regulated by a public authority.'"
+      },
+      "exemptions": "Exempt: dwelling units in owner-occupied buildings with four or fewer units; units whose rents are regulated by a public authority (mobile housing voucher tenancy does not count); units rented primarily to transient guests for less than 14 consecutive days; units in facilities operated solely for educational, religious, or non-profit purposes; units whose first certificate of occupancy is less than 10 years old, for 10 years from issuance. Exempt units must receive a written notice of exemption with the lease or, if no lease, before acceptance of the first rent payment.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Section 5 states nothing in the chapter interferes with existing tenant rights/protections under current state or federal law.",
+      "effective_date": null,
+      "penalty": "Violations are deemed unfair and deceptive acts under Mass. Gen. Laws ch. 93A; tenants may sue under ch. 93A § 9, and the Attorney General may bring an enforcement action under ch. 93A § 4 seeking restitution, civil penalties, and injunctive relief.",
+      "citation": "Mass. Gen. Laws ch. 40P, § 3",
+      "quoted_span": "This chapter shall establish a limit on any annual rent increase for a covered dwelling unit in the commonwealth, which shall not exceed the annual increase in Consumer Price Index or 5%, whichever is lower, in any 12-month period.",
+      "confidence": 0.88,
+      "conflict_note": "This is a ballot initiative petition (25-21) that has not yet been enacted as of the query date; it would need voter approval to take effect."
+    }
+  ]
+}

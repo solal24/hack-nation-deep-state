@@ -44,6 +44,9 @@ DOCS = {
         "bill_dates": "2025 filed with and certified by the Attorney General; 2026-06-23 SJC: not in compliance with "
                       "art. 48 excluded matters, Secretary enjoined from placing it on the ballot",
         "change_tests": "T5",
+        # The petition alone reads as a live proposal (extraction made it "pending"); it was struck from the ballot.
+        # Kept for reference; the failed record comes from the SJC docket (X007).
+        "status": "reference_only",
     },
     "X007": {
         "url": "https://www.ma-appellatecourts.org/docket/SJC-13893",
@@ -140,7 +143,7 @@ def main():
         rows[doc_id] = {"doc_id": doc_id, "jurisdictions": d["jurisdictions"], "url": d["url"],
                         "source_type": "official", "capture": "yes", "retrieved_at": f"{now:%Y-%m-%dT%H:%MZ}",
                         "sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "text_file": f"text/{doc_id}.txt",
-                        "status": "ok", "provenance": "elie_manual", "bill": d["bill"],
+                        "status": d.get("status", "ok"), "provenance": "elie_manual", "bill": d["bill"],
                         "bill_status": d["bill_status"], "bill_dates": d["bill_dates"],
                         "effective_clause_verbatim": d.get("effective_clause", "not stated in text")}
         print(f"  {doc_id} {d['jurisdictions']:16} {kind} {len(raw):7} bytes -> {len(text):6} chars · {d['bill']}")

@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Newark, NJ",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Substantial Rehabilitation Exemption from Rent Restrictions",
+      "requirement": "A dwelling that undergoes substantial rehabilitation costing more than 50% of its fair market value within a 12-month period, and receives a Certificate of Occupancy confirming the work, is exempt from rent control and the landlord may charge an unrestricted initial rent.",
+      "key_value": "Rehab cost must exceed 50% of fair market value; resulting initial rent is unrestricted",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to dwellings substantially reconstructed or rehabilitated where rehabilitation cost during a 12-month period exceeds 50% of the appraised fair market value of the property, and a Certificate of Occupancy or Temporary Certificate of Occupancy has been issued."
+      },
+      "exemptions": "Exemption is lost for portions of the building not covered by a Temporary Certificate of Occupancy until a separate exemption application is approved; applications limited to a two-year window referenced elsewhere in the chapter.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Works alongside the Vacant Properties exemption (§19:2-18.2); both are administered by the Rent Control Board under Title XIX, Chapter 2.",
+      "effective_date": "2024-09-18",
+      "penalty": null,
+      "citation": "Newark Code § 19:2-18.3",
+      "quoted_span": "Substantially reconstructed or rehabilitated dwellings shall not be restricted in initial rent charged, if the Rent Control Board has made the following determinations: \na. The Board shall determine that the cost of reconstruction or rehabilitation during a twelve-month period exceeds 50% of the fair market value of the property.",
+      "confidence": 0.75,
+      "conflict_note": "Document does not restate the original effective date of this section; 2024-09-18 (adoption of Ordinance 6PSF-I, which this amends) is used as best available estimate."
+    },
+    {
+      "jurisdiction": "Newark, NJ",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Vacant Properties Substantial Rehabilitation Petition and Unrestricted Initial Rent",
+      "requirement": "An owner of a vacant property that has been substantially rehabilitated may petition the Rent Control Board for an exemption allowing an unrestricted initial rent, supported by an appraisal, permits, a rehabilitation plan, and a Certificate of Occupancy, and must swear that prior tenants were not evicted in order to qualify.",
+      "key_value": "Initial rent unrestricted upon Board approval of a valid petition; appraisal must be completed within 90 days of start of construction",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to vacant dwellings being substantially rehabilitated; requires appraisal, construction permits, rehabilitation plan (waived for buildings of 4 units or fewer), and a non-continued Certificate of Occupancy or Temporary Certificate of Occupancy."
+      },
+      "exemptions": "Petition invalid without a bona fide Certificate of Occupancy; a continued Certificate of Occupancy does not qualify; separate applications required for portions of a building not covered by a Temporary Certificate of Occupancy; applications limited to a two-year window referenced in §19:2-18.2c.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Parallels the Substantial Rehabilitation exemption under §19:2-18.3; both remove rent restrictions upon Board approval.",
+      "effective_date": "2024-09-18",
+      "penalty": null,
+      "citation": "Newark Code § 19:2-18.2",
+      "quoted_span": "The unrestricted initial rent that shall be charged shall appear on the petition, as well as a sworn and notarized affidavit executed by the landlord stating that he/she did not in any way, manner or method evict the prior tenants from the dwelling in question for the purpose of being considered under this section.",
+      "confidence": 0.72,
+      "conflict_note": "Original effective date of this section not restated in this amendatory ordinance; 2024-09-18 used as best available estimate for the underlying chapter."
+    }
+  ]
+}
