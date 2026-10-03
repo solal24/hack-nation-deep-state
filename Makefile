@@ -1,9 +1,10 @@
 PY ?= .venv/bin/python
-# Which sources go into the OFFICIAL outputs/rules.json: "all" (starter + corpus_extra) or "starter" (RealPage corpus only).
-# outputs/rules_all.json always has everything (for the app).
-SOURCES ?= all
+# Which sources go into the OFFICIAL outputs/rules.json: "starter" (RealPage corpus only, default: CLAUDE.md
+# keeps corpus_extra out unless organizers allow it) or "all" (starter + corpus_extra).
+# outputs/rules_all.json always has everything; corpus_extra rules there carry review_status "to_review".
+SOURCES ?= starter
 
-.PHONY: setup enrich extract engine changes eval all ingest online online-check external
+.PHONY: setup enrich extract engine changes eval all ingest online online-check external answer-check
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
@@ -36,3 +37,6 @@ online-check:  ## accuracy of the online lookup vs the supplied sample (10 addre
 
 external:      ## external data: state bills (LegiScan + Open States), council items (Legistar), enacted bill texts -> data/external/
 	$(PY) -m pipeline.legislation && $(PY) -m pipeline.council && $(PY) -m pipeline.bill_texts
+
+answer-check:  ## answer(): 7 self-tests (sample, public data, user facts, 4 out-of-scope reasons) + warning check
+	$(PY) -m pipeline.answer --selftest

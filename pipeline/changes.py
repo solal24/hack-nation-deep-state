@@ -94,9 +94,9 @@ def run_test(t, addresses, rules):
 def main():
     rules = load_rules()
     addresses = load_addresses()
-    tests = json.loads(TESTS.read_text())
+    tests = json.loads(TESTS.read_text(encoding="utf-8"))
     out = {t["test_id"]: run_test(t, addresses, rules) for t in tests}
-    OUT.write_text(json.dumps(out, indent=2))
+    OUT.write_text(json.dumps(out, indent=2), encoding="utf-8")
 
     # built-in checks against what the tests expect on this sample
     by_state = lambda s: sum(r["state"] == s for r in addresses.values())

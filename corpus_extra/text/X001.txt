@@ -1,7 +1,5 @@
-Source: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#93CHP
-Retrieved: 2026-10-03T21:42Z
-Via: LegiScan getBillText doc 3272194 (CC BY 4.0) · version: Chaptered 2025-10-06
-Provenance: public (not part of the supplied corpus)
+SOURCE: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB414#93CHP
+RETRIEVED: 2026-10-03 22:10 UTC
 
 Assembly Bill
 

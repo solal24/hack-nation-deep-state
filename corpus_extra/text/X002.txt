@@ -1,7 +1,5 @@
-Source: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#94CHP
-Retrieved: 2026-10-03T21:42Z
-Via: LegiScan getBillText doc 3460495 (CC BY 4.0) · version: Chaptered 2026-09-27
-Provenance: public (not part of the supplied corpus)
+SOURCE: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1160#94CHP
+RETRIEVED: 2026-10-03 22:10 UTC
 
 Senate Bill
 

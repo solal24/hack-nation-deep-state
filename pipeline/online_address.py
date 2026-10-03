@@ -46,7 +46,40 @@ COLUMNS = ["address_id", "street_address", "postal_city", "state", "zip", "year_
 
 
 class OutOfScope(Exception):
-    """Address resolves outside the cities we cover, or can't be resolved at all."""
+    """Address we refuse to answer for. `reason` is a stable code for the app, str(e) a message for people:
+    not_found · ambiguous · outside_states · santa_ana_no_building_data · unincorporated · outside_cities."""
+
+    def __init__(self, reason, message):
+        super().__init__(message)
+        self.reason = reason
+
+
+COVERED_STATES = {"CA": "California", "NJ": "New Jersey", "MA": "Massachusetts"}
+
+
+def check_scope(geo):
+    """Raise OutOfScope with a distinct reason when we won't answer for this geocoded address."""
+    where = geo["matched_address"]
+    if geo["state"] not in COVERED_STATES:
+        raise OutOfScope("outside_states",
+                         f"{where} is outside our coverage. We only have housing law for California, New Jersey and "
+                         f"Massachusetts, so we can't say which rules apply there.")
+    cities = ", ".join(sorted(SUPPORTED_CITIES))
+    if geo["legal_city"] == "Santa Ana, CA":
+        raise OutOfScope("santa_ana_no_building_data",
+                         f"{where} is in Santa Ana. Its local laws are in our sources, but no public parcel data with "
+                         f"building facts (year built, number of units) exists for Santa Ana, and those facts decide "
+                         f"which rules cover a building. We only answer where we can check both: {cities}.")
+    if not geo["legal_city"]:
+        raise OutOfScope("unincorporated",
+                         f"{where} is in an unincorporated area of {geo['county'] or COVERED_STATES[geo['state']]}, "
+                         f"not inside a city. City ordinances don't apply there and we don't cover county rules, so we "
+                         f"can't give a complete answer. We cover: {cities}.")
+    if geo["legal_city"] not in SUPPORTED_CITIES:
+        raise OutOfScope("outside_cities",
+                         f"{where} is in {geo['legal_city']}. {COVERED_STATES[geo['state']]} state law applies there, "
+                         f"but we don't have that city's local ordinances or its building data, and a partial answer "
+                         f"could miss a stricter local rule. We only answer for: {cities}.")
 
 
 def _cached_get(url, params, key):
@@ -73,11 +106,13 @@ def geocode(query):
                        f"census_{_key(query.upper().strip())}")
     matches = data["result"]["addressMatches"]
     if not matches:
-        raise OutOfScope(f"Census Geocoder found no match for {query!r}. Check the spelling or add the ZIP code.")
+        raise OutOfScope("not_found", f"We couldn't find {query!r} in the US Census Geocoder. "
+                                      "Check the spelling, or add the city, state and ZIP code.")
     places = {((m["geographies"].get("Incorporated Places") or [{}])[0].get("NAME")) for m in matches}
     if len(places) > 1:
-        raise OutOfScope(f"Ambiguous address, matches in several places: {sorted(p or 'unincorporated' for p in places)}. "
-                         "Add the city and ZIP code.")
+        raise OutOfScope("ambiguous", f"{query!r} matches addresses in several places "
+                                      f"({', '.join(sorted(p or 'unincorporated' for p in places))}). "
+                                      "Add the city and ZIP code so we look up the right building.")
     m = matches[0]
     comp, g = m["addressComponents"], m["geographies"]
     place = (g.get("Incorporated Places") or [{}])[0]
@@ -150,9 +185,7 @@ def save_online(rows):
 def lookup(query, save=True):
     """Address string -> row dict. Sample rows come back unchanged (provenance=supplied)."""
     geo = geocode(query)
-    if geo["legal_city"] not in SUPPORTED_CITIES:
-        raise OutOfScope(f"{geo['matched_address']} is in {geo['legal_city'] or 'an unincorporated area'}, "
-                         f"outside the cities we cover: {', '.join(sorted(SUPPORTED_CITIES))}.")
+    check_scope(geo)
     hit = in_sample(geo)
     if hit:
         return hit
@@ -239,7 +272,7 @@ def main():
         try:
             r = lookup(q)
         except OutOfScope as e:
-            print(f"OUT OF SCOPE  {q}\n  {e}")
+            print(f"OUT OF SCOPE ({e.reason})  {q}\n  {e}")
             continue
         print(f"{r['address_id']:10} {r['street_address']}, {r['legal_city']}  [{r['provenance']}]")
         print(f"  year_built={r['year_built'] or '?'} units={r['units'] or '?'} "

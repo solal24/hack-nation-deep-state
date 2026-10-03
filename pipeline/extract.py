@@ -34,10 +34,11 @@ CORPUS = ROOT / "starter/corpus"
 EXTRA = ROOT / "corpus_extra"
 OUT = ROOT / "outputs/rules.json"            # official deliverable (filtered by OFFICIAL_SOURCES)
 OUT_ALL = ROOT / "outputs/rules_all.json"    # everything, incl. corpus_extra (for the app)
-OFFICIAL_SOURCES = os.getenv("OFFICIAL_SOURCES", "all")  # "all" or "starter" (RealPage corpus only)
+# Default "starter": corpus_extra rules stay out of the deliverable unless organizers allow them (CLAUDE.md).
+OFFICIAL_SOURCES = os.getenv("OFFICIAL_SOURCES", "starter")  # "starter" (RealPage corpus only) or "all"
 LOG = ROOT / "outputs/extract_log.jsonl"
 CACHE = ROOT / "data/cache/llm"
-SCHEMA = json.loads((ROOT / "starter/schema/rule_record.schema.json").read_text())
+SCHEMA = json.loads((ROOT / "starter/schema/rule_record.schema.json").read_text(encoding="utf-8"))
 AS_OF = "2026-10-01"
 CHUNK_CHARS = 45000
 
@@ -133,7 +134,7 @@ def load_manifest():
     docs = {}
     for base, path in ((CORPUS, CORPUS / "corpus_manifest.csv"), (EXTRA, EXTRA / "manifest.csv")):
         if path.exists():
-            for r in csv.DictReader(path.open()):
+            for r in csv.DictReader(path.open(encoding="utf-8")):
                 r["_base"] = str(base)
                 r.setdefault("provenance", "starter" if base == CORPUS else "")
                 if base == CORPUS:
@@ -143,7 +144,7 @@ def load_manifest():
 
 
 def source_text(meta):
-    return (Path(meta["_base"]) / meta["text_file"]).read_text()
+    return (Path(meta["_base"]) / meta["text_file"]).read_text(encoding="utf-8")
 
 
 NAV = re.compile(r"^(skip to .*|home|search|menu|login|sitemap|accessibility|faq|feedback|x|>>|print page|"
@@ -318,14 +319,14 @@ def call_llm(prompt):
     fingerprint = json.dumps([prompt, SYSTEM, BACKEND, CLI_MODEL, Extraction.model_json_schema()], sort_keys=True)
     path = CACHE / f"{hashlib.sha256(fingerprint.encode()).hexdigest()[:20]}.json"
     if path.exists():
-        return Extraction.model_validate_json(path.read_text())
+        return Extraction.model_validate_json(path.read_text(encoding="utf-8"))
     if BACKEND == "api":
         from pipeline.llm import ask_json
         result = ask_json(prompt, Extraction, system=SYSTEM)
     else:
         result = call_claude_cli(prompt)
     tmp = path.with_suffix(".tmp")
-    tmp.write_text(result.model_dump_json(indent=2))
+    tmp.write_text(result.model_dump_json(indent=2), encoding="utf-8")
     tmp.replace(path)
     return result
 
@@ -345,6 +346,7 @@ def to_record(rule, doc_id, meta, span):
         "interaction": rule.interaction, "effective_date": canon_date(rule.effective_date),
         "citation": rule.citation, "source_doc_id": doc_id, "source_url": meta["url"],
         "retrieved_at": meta.get("retrieved_at"), "provenance": meta.get("provenance") or "starter",
+        "review_status": None if (meta.get("provenance") or "starter") == "starter" else "to_review",
         "quoted_span": span, "confidence": max(0.0, min(1.0, float(rule.confidence))),
         "sets_limit": rule.sets_limit, "preempts_local": rule.preempts_local,
         "conflict_flag": bool(rule.preempts_local or rule.conflicting_sources),
@@ -408,7 +410,10 @@ def assemble(records):
         if k not in best:
             best[k] = r
             continue
-        keep, other = (r, best[k]) if r["confidence"] > best[k]["confidence"] else (best[k], r)
+        # A supplied-corpus rule always wins over a corpus_extra duplicate (so rules.json never loses it),
+        # then the highest confidence.
+        rank = lambda x: (x.get("provenance", "starter") == "starter", x["confidence"])
+        keep, other = (r, best[k]) if rank(r) > rank(best[k]) else (best[k], r)
         also = set(keep.get("also_in") or []) | set(other.get("also_in") or []) | {other["source_doc_id"]}
         keep["also_in"] = sorted(also - {keep["source_doc_id"]})
         keep["overrides_citations"] = sorted(set(keep.get("overrides_citations") or []) | set(other.get("overrides_citations") or []))
@@ -431,7 +436,7 @@ def main():
     manifest = load_manifest()
 
     if args.verify_only:
-        rules = json.loads(OUT.read_text())["rules"]
+        rules = json.loads(OUT.read_text(encoding="utf-8"))["rules"]
         bad = [r["team_rule_id"] for r in rules if r["quoted_span"] not in source_text(manifest[r["source_doc_id"]])]
         print(f"{len(rules)} rules · quotes found verbatim (exact, case-sensitive): {len(rules) - len(bad)} · failed: {bad}")
         return
@@ -463,17 +468,17 @@ def main():
     previous = OUT_ALL if OUT_ALL.exists() else OUT
     if previous.exists():
         redone = {d for d in docs if d not in failed}
-        records = [r for r in json.loads(previous.read_text())["rules"] if r["source_doc_id"] not in redone] + records
+        records = [r for r in json.loads(previous.read_text(encoding="utf-8"))["rules"] if r["source_doc_id"] not in redone] + records
     if failed and not args.force:
         print(f"\n{len(failed)} document(s) failed: {failed}. rules.json NOT written (re-run, or --force).")
         return
     rules = assemble(records)
-    OUT_ALL.write_text(json.dumps({"rules": rules}, indent=2, ensure_ascii=False))
+    OUT_ALL.write_text(json.dumps({"rules": rules}, indent=2, ensure_ascii=False), encoding="utf-8")
     official = rules if OFFICIAL_SOURCES == "all" else [r for r in rules if r.get("provenance", "starter") == "starter"]
-    OUT.write_text(json.dumps({"rules": official}, indent=2, ensure_ascii=False))
+    OUT.write_text(json.dumps({"rules": official}, indent=2, ensure_ascii=False), encoding="utf-8")
     extra = sum(r.get("provenance", "starter") != "starter" for r in rules)
     print(f"rules_all.json: {len(rules)} rules ({extra} from corpus_extra) · rules.json (official, sources={OFFICIAL_SOURCES}): {len(official)}")
-    with LOG.open("a") as f:
+    with LOG.open("a", encoding="utf-8") as f:
         run_id = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
         for entry in log:
             f.write(json.dumps({"run": run_id, "model": CLI_MODEL if BACKEND == "claude_cli" else "api", **entry}) + "\n")

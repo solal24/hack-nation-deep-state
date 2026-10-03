@@ -34,9 +34,9 @@ def batch_geocode(rows):
         resp = requests.post(f"{CENSUS}/addressbatch", data=PARAMS,
                              files={"addressFile": ("a.csv", buf.getvalue())}, timeout=600)
         resp.raise_for_status()
-        cache.write_text(resp.text)
+        cache.write_text(resp.text, encoding="utf-8")
     out = {}
-    for rec in csv.reader(cache.read_text().splitlines()):
+    for rec in csv.reader(cache.read_text(encoding="utf-8").splitlines()):
         if len(rec) >= 6 and rec[2] == "Match":
             lon, lat = rec[5].split(",")
             out[rec[0]] = (f"{rec[2]}:{rec[3]}", rec[4], float(lon), float(lat))
@@ -52,8 +52,8 @@ def place_for(address_id, lon, lat):
         resp = requests.get(f"{CENSUS}/coordinates", timeout=60, params={
             **PARAMS, "x": lon, "y": lat, "layers": "Incorporated Places,Counties", "format": "json"})
         resp.raise_for_status()
-        cache.write_text(json.dumps(resp.json()["result"]["geographies"]))
-    g = json.loads(cache.read_text())
+        cache.write_text(json.dumps(resp.json()["result"]["geographies"]), encoding="utf-8")
+    g = json.loads(cache.read_text(encoding="utf-8"))
     place = (g.get("Incorporated Places") or [{}])[0]
     county = (g.get("Counties") or [{}])[0]
     return place.get("NAME"), place.get("GEOID"), county.get("NAME"), county.get("GEOID")
@@ -78,8 +78,8 @@ def oneline(r):
             **PARAMS, "format": "json", "layers": "Incorporated Places,Counties",
             "address": f"{normalize_street(r['street_address'])}, {r['postal_city']}, {r['state']} {r['zip']}".strip()})
         resp.raise_for_status()
-        cache.write_text(json.dumps(resp.json()["result"]["addressMatches"]))
-    matches = json.loads(cache.read_text())
+        cache.write_text(json.dumps(resp.json()["result"]["addressMatches"]), encoding="utf-8")
+    matches = json.loads(cache.read_text(encoding="utf-8"))
     if not matches:
         return "No_Match", "", None, None, (None, None, None, None)
     m = matches[0]
@@ -128,7 +128,7 @@ def unit_bounds(r):
 
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
-    rows = list(csv.DictReader(SRC.open()))
+    rows = list(csv.DictReader(SRC.open(encoding="utf-8")))
     geo = batch_geocode(rows)
 
     def enrich(r):
@@ -157,7 +157,7 @@ def main():
     with ThreadPoolExecutor(8) as pool:
         out = list(pool.map(enrich, rows))
 
-    with OUT.open("w", newline="") as f:
+    with OUT.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0].keys()))
         w.writeheader()
         w.writerows(out)

@@ -27,7 +27,8 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 | 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | 🟡 `outputs/changes.json`: T1 ✅ 250, T3 ✅ dates (conflicts wait for JC/Hoboken texts), T4 ✅ 110, T5 ✅ empty; T2 waits for JC/Hoboken texts |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
 | External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | 🟡 on branch `feat/external-data`: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
-| External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/` | Elie | 🟡 on branch `feat/external-data` (`make external`): 34 CA/NJ/MA housing bills (LegiScan, cross-checked 34/34 with Open States, all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), official texts of 5 enacted bills + verbatim effective-date clause (FAIR Act → 2027-07-01). `watchlist.json` = "What's coming" per state/city. All `provenance=public`, unreviewed, never in the deliverables |
+| External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/`, `corpus_extra/` | Elie | 🟡 `make external`: 34 CA/NJ/MA housing bills (LegiScan, latest action cross-checked 34/34 with Open States; all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), `watchlist.json` = what's coming per state/city. Enacted bill texts not already in the supplied corpus → `corpus_extra/` X001-X003 (AB 414, SB 1160, SB 763), ready for `make ingest`. Still missing for T2/T3/T5: JC + Hoboken algorithmic ordinances, MA ballot question |
+| App entry point | `pipeline/answer.py` | Elie | 🟡 `answer(address, as_of)` → verdicts (official rules) + unreviewed extra rules + what's coming + every warning; refuses out-of-scope addresses with a reason; `make answer-check` = 7 self-tests |
 | App | Lovable | _tbd_ | ⏳ |
 
 ## Run it
@@ -39,9 +40,12 @@ make extract    # step 1 (LLM via Claude Code login in ~/.claude-enterprise; ans
 make engine     # step 2 -> outputs/lookups.json
 make changes    # step 3 -> outputs/changes.json
 make ingest DOC=X001,X002   # add new law texts from corpus_extra/ end to end
-make extract SOURCES=starter   # official rules.json from the RealPage corpus only
+make extract SOURCES=all       # official rules.json incl. corpus_extra (only if organizers allow; default: RealPage corpus only)
+make external   # external data: bills, council items, enacted bill texts
+make online ADDR="300 Summit Ave, Jersey City, NJ"   # address outside the 500 (public parcel data)
 ```
 One address: `.venv/bin/python -m pipeline.engine --address A0016 --as-of 2026-10-01`
+What the app shows (any address, with warnings): `.venv/bin/python -m pipeline.answer "50 Bowdoin St, Boston, MA"`
 
 ## Repo layout
 ```

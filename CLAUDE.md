@@ -31,7 +31,7 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 - Repo layout: `starter/` (given by RealPage, never edit) · `pipeline/` (our code, one file per step) · `eval/` (gold set + checks) · `data/` (enriched addresses + Census cache) · `outputs/` (the 3 deliverable JSONs)
 - Run steps with `make enrich|extract|engine|changes|eval|all` (Python venv: `make setup`)
 - LLM calls go through `pipeline/llm.py` (`ask`, `ask_json`). Model set by `CLAUDE_MODEL` in `.env`
-- Frontend: Lovable app (its own synced repo, link it here once created)
+- Frontend: Lovable app (its own synced repo, link it here once created). The app gets everything for one address from `pipeline.answer.answer(address, as_of)`: never show a verdict, bill or address fact without the `warnings` it comes with (anything not from the supplied data carries one; `check_warnings` enforces it)
 - Keys live in `.env` only (copy `.env.example`). Never commit `.env`, never hardcode keys
 
 ## How to hand data to the pipeline

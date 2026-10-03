@@ -34,12 +34,12 @@ FACT_LABELS = {
 # ---------- inputs ----------
 
 def load_rules(dev=False):
-    data = json.loads((DEV_RULES if dev else RULES).read_text())
+    data = json.loads((DEV_RULES if dev else RULES).read_text(encoding="utf-8"))
     return data["rules"] if isinstance(data, dict) else data
 
 
 def load_addresses():
-    return {r["address_id"]: r for r in csv.DictReader(ADDRESSES.open())}
+    return {r["address_id"]: r for r in csv.DictReader(ADDRESSES.open(encoding="utf-8"))}
 
 
 def facts_from_row(row):
@@ -326,7 +326,7 @@ def main():
                for aid, row in addresses.items()}
     name = "lookups" + ("_dev" if args.dev else "") + ("" if args.as_of == DEFAULT_AS_OF else f"_{args.as_of}")
     out = ROOT / f"outputs/{name}.json"  # never overwrite the deliverable with another as_of
-    out.write_text(json.dumps({"as_of": args.as_of, "disclaimer": DISCLAIMER, "lookups": lookups}, indent=2))
+    out.write_text(json.dumps({"as_of": args.as_of, "disclaimer": DISCLAIMER, "lookups": lookups}, indent=2), encoding="utf-8")
     counts = {}
     for rows in lookups.values():
         for r in rows:
