@@ -21,8 +21,14 @@ _TBD._
 
 Only edit files owned by your human unless they ask otherwise. If you must touch shared files (`src/llm.py`, `requirements.txt`, this file), keep the change minimal and mention it in the commit message.
 
+## Partners (use them, judges notice)
+- **Lovable**: AI app builder (React + Supabase). Use it for the user-facing app
+- **Wajo AI / Fo**: agent that books, buys, pays, calls, emails. Use it for the real-world action in the demo
+
 ## Stack
-- Python 3.11+, `streamlit` for the demo UI (`streamlit run src/app.py`)
+- Frontend: Lovable app (lives in its own Lovable-synced GitHub repo, link it here once created)
+- Backend: Python 3.11+ in this repo (ML / optimization), exposed as a small API if Lovable needs it
+- Fallback UI: `streamlit run src/app.py` if Lovable blocks us
 - LLM calls go through `src/llm.py` (`ask`, `ask_json`). Model set by `CLAUDE_MODEL` in `.env`
 - Keys live in `.env` only (copy `.env.example`). Never commit `.env`, never hardcode keys
 
