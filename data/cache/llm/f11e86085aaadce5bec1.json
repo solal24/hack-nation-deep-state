@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Required Disclosure Form Accompanying Notice to Quit for Nonpayment of Rent",
+      "requirement": "When a landlord gives a tenant a written notice to quit for nonpayment of rent, the notice must be accompanied by a state-developed form disclosing any repayment agreements, information on rental assistance programs and legal protections, and a prominent statement that the notice is not an eviction and the tenant is entitled to a court proceeding before being forced to leave. Courts may not accept an eviction filing for nonpayment of rent without proof this form was delivered to the tenant.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to residential dwelling unit evictions for nonpayment of rent only."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": "Court may not accept the eviction filing (writ, summons or complaint) without proof of delivery of the required form.",
+      "citation": "Mass. Gen. Laws ch. 186, § 31",
+      "quoted_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+      "confidence": 0.55,
+      "conflict_note": "This section governs notice/disclosure procedure for nonpayment-of-rent evictions rather than establishing substantive just-cause grounds for eviction generally; Massachusetts does not have a general just-cause eviction requirement, so this record is included only because it is a mandatory eviction-notice protection within the 'notice' scope of this category."
+    }
+  ]
+}

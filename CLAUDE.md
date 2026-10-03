@@ -34,6 +34,13 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 - Frontend: Lovable app (its own synced repo, link it here once created)
 - Keys live in `.env` only (copy `.env.example`). Never commit `.env`, never hardcode keys
 
+## How to hand data to the pipeline
+- New law texts (Elie): never edit `starter/`. Save each text as `corpus_extra/text/X001.txt` starting with `SOURCE: <url>` and `RETRIEVED: <YYYY-MM-DD HH:MM UTC>`, full text below, no summary, no rewriting. Add one row to `corpus_extra/manifest.csv` (same columns as `starter/corpus/corpus_manifest.csv` + `provenance`: `elie_manual` | `legiscan_api` | `openstates_api`). Bills: keep the official bill text and note status + dates in the row. Then run `make ingest DOC=X001`.
+- Never write rules by hand: rules only come from `pipeline/extract.py` (LLM extraction + verbatim quote check). Rules from `corpus_extra/` are flagged "to review" and kept out of the official deliverable unless organizers allow them.
+- Addresses (Ismail): `data/addresses_enriched.csv` is the engine's input. Keep the existing column names (`legal_city`, `year_built`, `units_min`, `units_max`...). Add columns, never rename or remove.
+- Fetch pages one by one, respect site terms, no bulk scraping (ecode360, American Legal, Justia).
+- Work in progress: engine on branch `feat/address-lookup`, extraction on `feat/extract-rules` (Solal).
+
 ## Rules for Claude
 - Never hand-edit `outputs/rules.json`; extraction must be automated. Every `quoted_span` must exist verbatim in its source doc
 - Deliverables use only supplied data (+ Census geocoding). Enrichment is a separate, provenance-labeled layer

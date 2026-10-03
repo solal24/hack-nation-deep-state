@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Statewide ban on local rent control, with narrow local opt-in exception",
+      "requirement": "Massachusetts cities and towns are barred from enacting or enforcing rent control. A city or town may only adopt rent control if it formally accepts this chapter, and even then compliance becomes entirely voluntary for property owners after six months, the regulation cannot apply to units owned by an entity with fewer than ten rental units or with fair market rent over $400, and the municipality must compensate owners for the gap between market and controlled rent out of its general funds.",
+      "key_value": "Exempts units owned by entities with <10 rental units or fair market rent >$400; after 6 months compliance is voluntary",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Exemption keyed to the number of rental units an owning person/entity holds (fewer than ten) or to fair market rent exceeding $400 per unit, not to a specific building's unit count."
+      },
+      "exemptions": "Units owned by a person/entity owning fewer than ten rental units; units with fair market rent exceeding $400; after six months from initial adoption, compliance by property owners is voluntary. Local rent control regulation may not regulate occupancy, services, evictions, condominium conversion, or removal of properties from regulation.",
+      "overrides_citations": [],
+      "preempts_local": true,
+      "conflicting_sources": false,
+      "interaction": "Operates as a statewide preemption: local rent control is prohibited by default, and a city or town can only adopt it by affirmatively accepting this chapter, subject to the stated limits and compensation requirement.",
+      "effective_date": "1995",
+      "penalty": null,
+      "citation": "Mass. Gen. Laws ch. 40P, § 4",
+      "quoted_span": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides",
+      "confidence": 0.75,
+      "conflict_note": null
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Just Cause for Eviction Ordinance (Citywide JCO)",
+      "requirement": "Landlords of most residential rental units in the City of Los Angeles that are NOT regulated by the City's Rent Stabilization Ordinance (RSO) may terminate a tenancy only for an enumerated just cause, once the tenant has lived in the unit at least six months or the original lease has expired (whichever comes first). At-fault causes (no relocation assistance owed) include failure to pay rent, uncured lease violations, nuisance or property damage, illegal use of the unit, failure to renew a similar rental agreement, denying the landlord reasonable access, or an unapproved subtenant remaining after the lease ends. No-fault causes (owner/immediate-family move-in, required resident-manager move-in, demolition/permanent removal from the rental market/conversion to non-residential use, government order to vacate, HUD sale of the property, conversion/demolition of a residential hotel, or conversion to affordable housing) require the landlord to pay the tenant relocation assistance. Separately, effective March 27, 2023, a landlord in an RSO or JCO unit may not evict a tenant for unpaid rent unless the amount owed exceeds the HUD Fair Market Rent for the unit's bedroom size. Landlords must register covered units annually with LAHD, display the Registration Certificate, post a Notice of Right to Counsel (beginning August 20, 2025), and provide/post a Notice of Renters' Protections for tenancies beginning or renewing on or after January 27, 2023. All eviction notices must be filed with LAHD within 3 business days of service.",
+      "key_value": null,
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": "1978-10-01",
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Can apply to buildings newer than October 1, 1978 (unlike the RSO) and can apply to a property with only one single-family dwelling. Exemptions include transient hotels, licensed care facilities, fraternity/sorority houses, an owner's roommate, certain cooperatives, some nonprofit homeless facilities or short-term substance-abuse treatment centers, and some properties owned by HACLA or government entities."
+      },
+      "exemptions": "Transient hotels; licensed care facilities; fraternity or sorority houses; an owner's roommate; cooperatives under certain circumstances; some non-profit facilities for the homeless or short-term substance-abuse treatment centers; some properties owned by HACLA or the government; units already covered by the City's RSO (covered by RSO just-cause rules instead); tenancies under 6 months where the original lease has not expired.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "The JCO does not itself regulate rent increase amounts; rent increases in non-RSO buildings may instead be governed by state law (AB 1482 / Cal. Civ. Code § 1947.12).",
+      "effective_date": "2023-01-27",
+      "penalty": null,
+      "citation": "L.A. Municipal Code § 151.30",
+      "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+      "confidence": 0.5,
+      "conflict_note": "The source webpage does not itself state a codified section number or a single enactment date for the citywide JCO; citation and effective date (tied to the January 27, 2023 Notice of Renters' Protections requirement) are inferred rather than explicitly stated in this document."
+    },
+    {
+      "jurisdiction": "CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "California Tenant Protection Act rent increase cap (AB 1482)",
+      "requirement": "In buildings older than 15 years (on a rolling basis) that are not otherwise exempt, annual rent increases are capped at 5% plus the percentage change in the regional cost of living, or 10%, whichever is lower. The Los Angeles JCO does not regulate rent increases itself; this state law cap applies instead in qualifying units not covered by the City's RSO.",
+      "key_value": "5% + regional CPI, capped at 10% (whichever is lower); applied as 8.8% for Aug 1, 2023-Jul 31, 2024 and 8.9% for Aug 1, 2024-Jul 31, 2025 in the Los Angeles region",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": 15,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Exempt: units constructed within the last 15 years (rolling basis); units restricted by deed/regulatory agreement to low- or moderate-income affordability; certain dormitories; a two-unit property where the second unit was owner-occupied for the entire tenancy; units already subject to the City's RSO. Single-family homes and condominiums are exempt from this state cap (but not from the JCO) only if owned by a real estate trust, a corporation, or an LLC with at least one corporate member, AND the landlord gave the tenant written notice that the tenancy is not subject to the just-cause and rent-cap limitations under Civil Code §§ 1946.2(e)(8)(B)(i) and 1947.12(d)(5)(B)(i); this limited exemption does not apply where there is more than one dwelling unit on the lot or an in-law-type second unit that cannot be sold separately."
+      },
+      "exemptions": "Units built within the last 15 years (rolling); deed/regulatory-restricted affordable units; certain dormitories; owner-occupied two-unit properties (second unit); conditionally-exempt single-family homes/condos owned by a trust, corporation, or LLC with a corporate member that gave required written notice; units already covered by the City's RSO.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Operates independently of the Los Angeles JCO, which governs eviction causes and relocation assistance but not rent-increase amounts; applies in buildings not covered by the City's RSO.",
+      "effective_date": "2020-01-01",
+      "penalty": null,
+      "citation": "Cal. Civ. Code § 1947.12",
+      "quoted_span": "A\nnnual rent increases are limited to no more than 5% plus the percentage change in the cost of living for the region in which the property is located, or 10% whichever is lower).",
+      "confidence": 0.7,
+      "conflict_note": "The quoted span reproduces an apparent line-break artifact in the source page, which splits the word 'Annual' across lines ('A' then 'nnual'); this is a source formatting quirk, not a substantive discrepancy."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Just Cause Required for Eviction Under Rent Ordinance",
+      "requirement": "A landlord must have one of 17 enumerated \"just cause\" reasons as the dominant motive to evict a tenant from a unit covered by the Rent Ordinance. The mere expiration of a rental agreement or a change in ownership does not by itself constitute just cause.",
+      "key_value": "17 enumerated just cause reasons",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to rental units covered by the Rent Ordinance. Tenancies otherwise exempt from the Ordinance's rent-increase limitations — including units in buildings that first obtained a Certificate of Occupancy after June 13, 1979, units eligible for increases under the state Costa-Hawkins Rental Housing Act, and units with rent regulated by another government agency — remain subject to these just-cause eviction requirements."
+      },
+      "exemptions": "Removal of certain housing services (e.g., garage/parking facilities, storage spaces, laundry rooms) also requires just cause, except a landlord complying with Ordinance Section 37.2(r) may temporarily remove parking and storage access to perform mandatory soft-story seismic retrofit work required by the Building Code.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "One of the 17 causes is withdrawal of all rental units from the market under the state Ellis Act; another references Costa-Hawkins-eligible tenancies as still covered by just-cause protections even though exempt from local rent-increase caps.",
+      "effective_date": null,
+      "penalty": "A landlord who evicts or attempts to evict a tenant unlawfully may be subject to substantial civil and/or criminal liability.",
+      "citation": "S.F. Admin. Code § 37.9",
+      "quoted_span": "a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction. Note that the mere expiration of a rental agreement or a change in ownership does not constitute \"just cause\"",
+      "confidence": 0.92,
+      "conflict_note": null
+    }
+  ]
+}

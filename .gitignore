@@ -18,3 +18,4 @@ runs/*
 data/cache/online/
 !data/external/
 data/cache/external/
+outputs/*_dev.json

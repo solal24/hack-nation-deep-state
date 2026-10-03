@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Fair Chance Ordinance – Criminal History Protections in Affordable Housing",
+      "requirement": "San Francisco's Fair Chance Ordinance limits how arrest or conviction history can be used against applicants and residents in decisions about affordable housing, protecting people with a criminal record from being automatically denied or evicted from affordable housing on that basis.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies specifically to affordable housing decisions (not all rental housing); the source page does not specify unit-count, ownership, or building-age conditions."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "S.F. Police Code art. 49",
+      "quoted_span": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+      "confidence": 0.4,
+      "conflict_note": "Source is a general agency webpage summarizing the ordinance by name only; it does not cite a specific code section, give an effective date, or state the substantive screening limits in detail. The section citation (S.F. Police Code art. 49) is supplied from general knowledge of the named ordinance, not from the document text, and should be verified against the ordinance itself."
+    }
+  ]
+}

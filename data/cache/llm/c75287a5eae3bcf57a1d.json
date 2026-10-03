@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Housing Stability Notification Act – Notice of Tenants' Rights and Resources",
+      "requirement": "Before ending a tenancy or post-foreclosure occupancy, a landlord or foreclosing owner must give the tenant a Notice of Tenants' Rights and Resources at the same time as the Notice to Quit or Notice of Lease Non-renewal, and must send a copy of that notice together with a Certificate of Compliance/Service to the City's Office of Housing Stability.",
+      "key_value": null,
+      "sets_limit": false,
+      "coverage_conditions": null,
+      "exemptions": "Exempt properties are residences in any hospital, skilled nursing facility or health facility, and residences in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": "2020-11-06",
+      "penalty": "1st offense: warning; 2nd and subsequent offenses: $300 per day, enforced by the Inspectional Services Department. A violation of the Ordinance does not halt the eviction process.",
+      "citation": "Boston, Mass. Ordinances § 10-11.7",
+      "quoted_span": "requires any landlord planning to end a tenancy\nagreement to provide the tenant with a Notice of Tenants’ Rights and Resources",
+      "confidence": 0.75,
+      "conflict_note": "This is a notice/procedural requirement, not a substantive just-cause standard for eviction; Boston does not otherwise require 'just cause' to end a tenancy under this document."
+    }
+  ]
+}

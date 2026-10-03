@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "14-Day Notice to Quit and Cure Right for Nonpayment of Rent",
+      "requirement": "Before a landlord can end a tenancy for nonpayment of rent under a written lease, the landlord must give the tenant 14 days' written notice to quit. The tenant can stop the eviction by paying or tendering all rent due, plus interest and court costs, to the landlord (or the landlord's attorney) on or before the day the tenant's answer is due in the eviction case. If the tenant's nonpayment was caused by a delay in a government benefit, subsistence or rental payment (other than a salary) reaching the tenant or landlord, the court must continue the hearing at least 7 days to notify the responsible agency, and if all rent, interest and costs are then paid within that time, the tenancy is treated as not terminated.",
+      "key_value": "14 days' notice to quit",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Tenancy is treated as not terminated if nonpayment resulted from a delay in delivery of a government subsistence/rental payment and all rent, interest and costs are tendered after the court grants a continuance of at least 7 days.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Mass. Gen. Laws ch. 186, § 11",
+      "quoted_span": "fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+      "confidence": 0.7,
+      "conflict_note": "Document covers only the nonpayment-of-rent notice-to-quit and cure procedure, not the full set of just-cause eviction grounds (e.g., no-fault, owner move-in) that may exist elsewhere in Massachusetts law."
+    }
+  ]
+}

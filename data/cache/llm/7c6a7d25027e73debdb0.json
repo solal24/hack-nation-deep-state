@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Good Cause Required to Evict or Fail to Renew Lease (Anti-Eviction Act)",
+      "requirement": "A landlord of residential rental property may not refuse to renew a tenant's lease or evict a tenant without good cause, as defined by the statute's list of permitted grounds for eviction. This protection does not apply to owner-occupied buildings of two or three units, motels, hotels, or transient or seasonal units.",
+      "key_value": null,
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Does not apply to owner-occupied two- or three-family dwellings, motels, hotels, or transient/seasonal units."
+      },
+      "exemptions": "Owner-occupied two- and three-family dwellings, motels, hotels, and transient or seasonal units are excluded (see separate rules for owner-occupied two/three-family dwelling evictions).",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 2A:18-61.3",
+      "quoted_span": "No landlord of residential rental properties except t hose in owner occupied two or three \nfamily dwellings, motels or hotels, transient, or seasonal units may fail to renew any lease, \nregardless of whether it is written or oral unless they have good cause not to renew the lease.",
+      "confidence": 0.8,
+      "conflict_note": "The guide cites this provision as '(N.J.S.A. 2A:18:61.3)' with colons rather than the standard 'N.J.S.A. 2A:18-61.3' hyphen format used elsewhere; treated as the same section."
+    },
+    {
+      "jurisdiction": "NJ",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security Deposit Maximum and Annual Increase Limit",
+      "requirement": "A landlord may not collect a security deposit of more than one and one-half times one month's rent, and may not increase the security deposit by more than 10% of the current deposit per year. Combined with the first month's rent, a landlord may not require more than two and one-half times the monthly rent at lease inception.",
+      "key_value": "1.5 months' rent maximum; 10% max annual increase",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Applies to most residential rental properties including mobile homes; excludes owner-occupied two- or three-family dwellings unless tenant opts in by written request 30 days after sending notice to the landlord."
+      },
+      "exemptions": "Owner-occupied two- or three-family dwellings are exempt unless the tenant requests in writing that the law apply, effective 30 days after the request. Seasonal use/rental (125 consecutive days or less) is exempt from certain investment-account provisions.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Prepaid rent in excess of one and one-half times monthly rent is treated as part of the security deposit under case law (Brownstone Arms v. Asher; Reilly v. Weiss).",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 46:8-21.2",
+      "quoted_span": "The maximum-security deposit to be collected by the landlord cannot be more than \none and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional \nyearly security deposit increase may not exceed 10% of the current security deposit.",
+      "confidence": 0.95,
+      "conflict_note": null
+    }
+  ]
+}

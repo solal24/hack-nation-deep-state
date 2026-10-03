@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Housing Stability Notification Act",
+      "requirement": "All landlords in Boston who plan to end a tenancy must give the tenant a Notice of Tenants' Rights and Resources at the same time they serve a Notice to Quit or Notice of non-renewal, and must separately report the notice (with tenant contact info and a copy of the notice) to the City through an online portal. Failure to comply can result in a warning (first offense) or a fine of up to $300 per day (second and subsequent offenses); a violation does not halt the eviction process.",
+      "key_value": "$300 per day (2nd+ offense); warning for 1st offense; up to $300/day for failure to submit to city portal",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to ALL landlords (and foreclosing owners) ending a tenancy agreement, regardless of building type or unit count; no exemptions stated in this source."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": "1st offense: warning; 2nd and subsequent offenses: fine of $300 per day",
+      "citation": "Boston, Mass., Code of Ordinances § 10-11.7",
+      "quoted_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
+      "confidence": 0.85,
+      "conflict_note": "Document does not state the law's original effective/enactment date."
+    }
+  ]
+}

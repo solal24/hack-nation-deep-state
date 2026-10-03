@@ -22,9 +22,9 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 | Step | File | Owner | Status |
 |---|---|---|---|
 | 0 · Enrich addresses | `pipeline/enrich.py` | Ismail | ✅ 489/500 geocoded by Census, 38 postal cities corrected, units known for 468/500 |
-| 1 · Extract rules | `pipeline/extract.py` | _unassigned_ | ⏳ not started |
-| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 v1 on branch `feat/address-lookup`, tested on dev rules |
-| 3 · Change tests T1-T5 | `pipeline/changes.py` | _tbd_ | ⏳ |
+| 1 · Extract rules | `pipeline/extract.py` | Solal | 🟡 branch `feat/extract-rules`: 75 rules from 54 docs, 75/75 quotes verbatim; reads `corpus_extra/` too. Gaps: Hoboken, Newark, JC algorithmic ban, MA ballot question (texts from Elie) |
+| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 branch `feat/extract-rules`: `outputs/lookups.json` for all 500 on real rules; precedence (local rent cap > state cap), per-address conflicts, ambiguous years → unknown; any address via `--free` |
+| 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | 🟡 `outputs/changes.json`: T1 ✅ 250, T3 ✅ dates (conflicts wait for JC/Hoboken texts), T4 ✅ 110, T5 ✅ empty; T2 waits for JC/Hoboken texts |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
 | External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | 🟡 on branch `feat/external-data`: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
 | External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/` | Elie | 🟡 on branch `feat/external-data` (`make external`): 34 CA/NJ/MA housing bills (LegiScan, cross-checked 34/34 with Open States, all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), official texts of 5 enacted bills + verbatim effective-date clause (FAIR Act → 2027-07-01). `watchlist.json` = "What's coming" per state/city. All `provenance=public`, unreviewed, never in the deliverables |
@@ -35,8 +35,11 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 make setup      # Python venv + dependencies
 cp .env.example .env   # add your API key, never commit .env
 make enrich     # step 0
-make engine     # step 2 (add --dev via: .venv/bin/python -m pipeline.engine --dev)
-make all        # everything, once all steps exist
+make extract    # step 1 (LLM via Claude Code login in ~/.claude-enterprise; answers cached in data/cache/llm/)
+make engine     # step 2 -> outputs/lookups.json
+make changes    # step 3 -> outputs/changes.json
+make ingest DOC=X001,X002   # add new law texts from corpus_extra/ end to end
+make extract SOURCES=starter   # official rules.json from the RealPage corpus only
 ```
 One address: `.venv/bin/python -m pipeline.engine --address A0016 --as-of 2026-10-01`
 

@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation Payments for No-Fault Evictions (Owner/Relative Move-in, Demolition, Temporary Capital Improvement, Substantial Rehabilitation)",
+      "requirement": "Landlords who evict tenants for owner/relative move-in, permanent removal of the unit from housing use, temporary capital improvement work, or substantial rehabilitation must pay relocation benefits to each tenant, subject to a maximum per unit, plus an additional amount for each elderly (60+), disabled tenant, or household with minor children.",
+      "key_value": "$8,245.00 per tenant; $24,733.00 max per unit; +$5,497.00 per elderly/disabled tenant or household with minor child(ren) (rates for 3/1/26-2/28/27, adjusted annually)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Relocation payments for temporary capital improvement evictions lasting less than 20 days are governed by California Civil Code Section 1947.9, not by Rent Ordinance Section 37.9C.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Amounts are adjusted and published annually each March 1; the archive lists increasing rates back to 8/10/2006.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "S.F. Admin. Code § 37.9C",
+      "quoted_span": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+      "confidence": 0.75,
+      "conflict_note": "Document is a historical rate archive; it does not state when Section 37.9C's relocation-payment requirement first took effect, only the annually adjusted dollar amounts back to 2006."
+    },
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation Payments for Ellis Act Evictions",
+      "requirement": "Landlords who evict tenants by withdrawing units from the rental market under the Ellis Act must pay relocation benefits to each tenant, subject to a maximum per unit, plus an additional amount for each elderly (62+) or disabled tenant.",
+      "key_value": "$11,110.05 per tenant; $33,330.13 max per unit; +$7,443.90 per elderly (62+)/disabled tenant (rates for 3/1/26-2/28/27, adjusted annually)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Ellis Act relocation payments are set at a higher rate than the payments for owner move-in/demolition/capital-improvement evictions; amounts adjusted annually each March 1.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "S.F. Admin. Code ch. 37",
+      "quoted_span": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+      "confidence": 0.6,
+      "conflict_note": "Document names only 'the Ellis Act' and does not cite a specific Admin Code subsection for this relocation-payment schedule, so citation is given at the chapter level."
+    }
+  ]
+}

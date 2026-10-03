@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Statewide Rent Gouging Cap (AB 1482 successor / SB 567)",
+      "requirement": "An owner of residential real property may not raise the rent on a dwelling or unit, over any 12-month period, by more than 5% plus the change in the regional cost of living (CPI), or 10%, whichever is lower, measured from the lowest rent charged in the prior 12 months, and no more than two increases are allowed within that 12-month period. For a brand-new tenancy (no holdover tenant from the prior tenancy), the owner may set the initial rent freely; the cap only applies to increases after that.",
+      "key_value": "5% + CPI, capped at 10%, max 2 increases per 12 months",
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": true,
+        "exempt_if_built_within_years": 15,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": false,
+        "notes": "Exempt: deed-restricted/government-subsidized affordable housing; dormitories owned by higher-ed institutions and K-12 schools; housing already subject to a local rent/price control ordinance (under Civ. Code Ch. 2.7, Section 1954.50 et seq.) that caps increases below this section's limit; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); single, separately-alienable dwellings (e.g., single-family homes, condos, mobilehomes) whose owner is not a REIT, corporation, or LLC with a corporate member, provided required statutory notice of exemption is given to tenants; a two-unit property where the owner occupies one unit as a principal residence and neither unit is an ADU/JADU. Also does not apply to mobilehome homeowners (as opposed to renters) under Civ. Code Section 798.9."
+      },
+      "exemptions": "See coverage_conditions notes: deed-restricted affordable housing; dorms/K-12 schools; locally rent-controlled housing with a stricter cap; buildings with a certificate of occupancy within the prior 15 years (except mobilehomes); certain non-corporate-owned single, separately-alienable dwellings with required tenant notice; owner-occupied duplexes; mobilehome homeowners.",
+      "overrides_citations": [],
+      "interaction": "This section does not expand or limit local governments' authority to adopt or maintain rent/price control ordinances consistent with the Costa-Hawkins Rental Housing Act (Civ. Code Ch. 2.7, commencing with Section 1954.50); a local ordinance with a stricter (lower) cap controls instead of this section's statewide cap, and nothing in this section authorizes local caps beyond what Costa-Hawkins otherwise permits.",
+      "effective_date": "2024-04-01",
+      "penalty": "Civil liability to the overcharged tenant for injunctive relief, damages equal to the overcharge, reasonable attorney's fees and costs in the court's discretion, and up to treble damages for willful, oppressive, fraudulent, or malicious violations; enforceable by the Attorney General or local city attorney/county counsel; 3-year statute of limitations from accrual.",
+      "citation": "Cal. Civ. Code § 1947.12",
+      "quoted_span": "an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+      "confidence": 0.96,
+      "conflict_note": "The enacting history shows 'Effective January 1, 2024' but 'Operative April 1, 2024, by its own provisions'; application dates for rent increases differ for general tenancies (on/after March 15, 2019, per subd. (h)) versus mobilehome tenancies (on/after February 18, 2021, per subd. (i)). The section sunsets and is repealed as of January 1, 2030 per subd. (o), making its long-term status beyond that date uncertain."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security deposit cap of one month's rent (with limited exceptions)",
+      "requirement": "A landlord generally cannot demand or receive a security deposit worth more than one month's rent, in addition to the first month's rent. Narrow exceptions allow higher deposits for small landlords, long-term leases, and in certain service-member cases, and deposits must be itemized and returned within 21 days of move-out.",
+      "key_value": "1 month's rent (up to 2 months' rent for small landlords: natural persons/LLCs of natural persons owning ≤2 rental properties totaling ≤4 units)",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to residential rental agreements where the property is used as the tenant's dwelling. The higher 2-month deposit cap applies only if the landlord is a natural person (or an LLC whose members are all natural persons) who owns no more than two residential rental properties collectively containing no more than four dwelling units."
+      },
+      "exemptions": "Does not prohibit an advance payment of 6+ months' rent if the lease term is 6 months or longer. A landlord meeting the small-landlord criteria (natural person/family-trust or all-natural-person LLC owning ≤2 properties/≤4 units) may charge up to 2 months' rent, except this higher amount is not allowed against service members. Service members may be charged a higher-than-standard deposit only with written disclosure, and the extra amount must be refunded after 6 months of non-delinquent residency. The one-month cap (as applicable before July 1, 2024) does not apply to deposits collected or demanded before that date. Agreed, separately-paid charges for optional alterations requested by the tenant are not counted as 'security.'",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Interacts with Mil. & Vet. Code § 400 (definition of 'service member') and Code Civ. Proc. § 1161 (termination procedures affecting notice/return timing); subdivision (f) procedures tie into the itemized deduction process under subdivision (b).",
+      "effective_date": "2024-07-01",
+      "penalty": "Bad faith claim or retention of a security deposit (or bad faith demand of replacement security) can subject the landlord to statutory damages of up to twice the deposit amount, in addition to actual damages.",
+      "citation": "Cal. Civ. Code § 1950.5",
+      "quoted_span": "a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.",
+      "confidence": 0.9,
+      "conflict_note": "The current statutory text reflects amendments effective January 1, 2026 (Stats. 2025, Ch. 340 (AB 414)), which added procedural requirements (e.g., service-member disclosure, photo documentation); the underlying one-month deposit cap itself traces to an earlier amendment effective July 1, 2024, per the express carve-out in paragraph (c)(6)."
+    }
+  ]
+}

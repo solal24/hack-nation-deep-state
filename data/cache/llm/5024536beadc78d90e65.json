@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+      "requirement": "It is unlawful, as a violation of the New Jersey Antitrust Act, for a rental property owner to pay for or use a 'coordinator's' algorithmic device or revenue management software that processes competitively sensitive rental data (prices, lease terms, occupancy levels) of multiple landlords to set, recommend, or facilitate coordinated residential rent prices, lease terms, or occupancy levels. It is likewise unlawful for a coordinator or its agents to perform this coordinating function or to facilitate parallel pricing coordination among landlords.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Does not apply to: (1) use of competitively sensitive information solely for research, statistical analysis, or testing not used to set prices/terms; (2) developing an estimated rent amount made available to the public at no cost; (3) a real estate brokerage database available on equal terms to subscribers that does not itself set or recommend rental prices/terms/occupancy or collect data to do so; or (4) a government entity setting or limiting rents through affordability controls (e.g., Section 8, rent control/leveling ordinances, NJHMFA programs).",
+      "overrides_citations": [],
+      "interaction": "Supplements the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.), and is construed as in addition to it, not a replacement; does not authorize conduct otherwise already unlawful. A municipality is prohibited from enacting an ordinance that conflicts with this act, though ordinances explicitly authorized or required by other law remain permitted.",
+      "effective_date": "2027-07-01",
+      "penalty": "Treated as a violation of the New Jersey Antitrust Act, P.L.1970, c.73 (C.56:9-1 et seq.); this act does not limit application of sections 6 through 17 of that Act (C.56:9-6 through 9-17) to such violations.",
+      "citation": "N.J.S.A. 56:9-1 et seq.",
+      "quoted_span": "This act shall take effect on the first day of the twelfth month next following the date of enactment.",
+      "confidence": 0.85,
+      "conflict_note": "The act was approved (enacted) July 20, 2026, and its substantive provisions do not take effect until the first day of the twelfth month following enactment, calculated here as approximately July 1, 2027; the document does not codify a specific C. section number for the new provisions beyond stating they supplement C.56:9-1 et seq."
+    }
+  ]
+}
