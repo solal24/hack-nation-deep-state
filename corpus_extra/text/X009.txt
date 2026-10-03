@@ -1,0 +1,44 @@
+SOURCE: https://webapi.legistar.com/v1/newark/matters/1611507/texts/1559171
+RETRIEVED: 2026-10-03 22:53 UTC
+
+..Title
+AN ORDINANCE AMENDING TITLE XIX, CHAPTER 19:3 OF THE NEWARK MUNICIPAL CODE (RENT CONTROL), PROVISION OF LEGAL SERVICES IN EVICTION PROCEEDINGS, TO REVISE THE DEFINITION OF "INCOME-ELIGIBLE INDIVIDUAL.
+
+..body
+
+      WHEREAS, the City of Newark adopted Title XIX, Chapter 19:3 of the Municipal Code to ensure that City residents facing eviction have access to legal services and protections necessary to promote housing stability and prevent displacement; and
+
+      WHEREAS, the Municipal Council recognizes that income eligibility standards for eviction-related legal services must be structured to effectively capture and serve the residents of the City of Newark for whom such protections were intended; and
+
+      WHEREAS, the City finds that adjusting the income eligibility threshold advances the purpose of the ordinance by expanding access to legal services for Newark residents experiencing housing instability; and
+
+      WHEREAS, the City further finds it necessary and appropriate to vest administrative authority in the Deputy Mayor/Director of the Department of Economic and Housing Development to ensure consistent, efficient, and responsive implementation of income eligibility determinations.
+
+      NOW, THEREFORE, BE IT ORDAINED BY THE MUNICIPAL COUNCIL OF THE CITY OF NEWARK, NEW JERSEY, THAT: 
+
+Note: Additions are shown in Bold and Underlined. Deletions are shown in Strikeouts:
+
+SECTION 1
+
+Title XIX, Rent Control, Chapter 19:3, Provision of Legal Services in Eviction Proceedings, of the Revised General Ordinances of the City of Newark, New Jersey, 2000, as amended and supplemented, is amended by deleting the existing definition of "Income-Eligible Individual" in its entirety and replacing it with the following:
+
+INCOME-ELIGIBLE INDIVIDUAL
+Shall mean an individual whose annual gross household income is not in excess of 200% of the official federal poverty guidelines defined by the United States Department of Health and Human Services, pursuant to Subsection (2) of 42 U.S.C.A. � 9902.
+
+Income-Eligible Individual
+
+Income-Eligible Individual shall mean an individual whose annual gross household income does not exceed three hundred percent (300%) of the official federal poverty guidelines, as published annually by the United States Department of Health and Human Services, pursuant to Subsection (2) of 42 U.S.C.A. � 9902.
+
+The Deputy Mayor/Director of the Department of Economic and Housing Development, or his or her designee, shall have the authority and discretion to establish, interpret, and administer income eligibility criteria, verification standards, and documentation requirements necessary to determine compliance with this definition, consistent with the applicable federal poverty guidelines.
+
+SECTION 2. SEVERABILITY
+If any Section, Subsection, sentence, clause, or phrase of this ordinance is held to be invalid or unconstitutional, such determination shall not affect the remaining portions.
+
+SECTION 3. REPEALER
+All ordinances or parts of ordinances inconsistent with this ordinance are hereby repealed to the extent of such inconsistency.
+
+SECTION 4. EFFECTIVE DATE
+This ordinance shall take effect on June 1, 2026 in accordance with the laws of the State of New Jersey.
+
+STATEMENT
+This ordinance amends Title XIX, Rent Control, Chapter 19:3, Provision of Legal Services in Eviction Proceedings, of the Revised General Ordinances of the City of Newark, New Jersey, 2000, to update the income eligibility standard used to determine access to legal services for Newark residents facing eviction.

@@ -447,7 +447,10 @@ def main():
         return
 
     wanted = set(args.doc.split(",")) if args.doc else None
-    docs = {d: m for d, m in manifest.items() if m.get("text_file") and (not wanted or d in wanted)}
+    # status "reference_only" (corpus_extra): kept for people to read, never extracted (e.g. IP 25-21's petition
+    # text alone would yield a "pending" rent cap; the SJC docket X007 records it as failed).
+    extractable = {d for d, m in manifest.items() if m.get("text_file") and m.get("status") != "reference_only"}
+    docs = {d: m for d, m in manifest.items() if d in extractable and (not wanted or d in wanted)}
     log, records, failed = [], [], []
 
     def run(item):
@@ -473,7 +476,9 @@ def main():
     previous = OUT_ALL if OUT_ALL.exists() else OUT
     if previous.exists():
         redone = {d for d in docs if d not in failed}
-        records = [r for r in json.loads(previous.read_text(encoding="utf-8"))["rules"] if r["source_doc_id"] not in redone] + records
+        # drop previous rules whose document was re-extracted, removed, or set to reference_only
+        records = [r for r in json.loads(previous.read_text(encoding="utf-8"))["rules"]
+                   if r["source_doc_id"] not in redone and r["source_doc_id"] in extractable] + records
     if failed and not args.force:
         print(f"\n{len(failed)} document(s) failed: {failed}. rules.json NOT written (re-run, or --force).")
         return

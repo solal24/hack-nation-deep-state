@@ -161,6 +161,8 @@ def explain(rule, result, missing, reasons, winner=None, conflict_with=None):
     else:
         head = f"Applies{' (building is ' + ', '.join(reasons) + ')' if reasons else ''}."
     note = f" Possible conflict with {', '.join(conflict_with)}: flagged for human review." if conflict_with else ""
+    if rule.get("provenance", "starter") != "starter":   # text fetched online (corpus_extra), not supplied
+        note += " Source retrieved online, outside the supplied corpus; not reviewed by a human."
     return f"{head} {what}.{key}{note}{src}"
 
 
