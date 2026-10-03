@@ -32,28 +32,8 @@ MANIFEST = EXTRA / "manifest.csv"
 CACHE = ROOT / "data/cache/external"
 
 DOCS = {
-    "X004": {
-        "url": "https://cityofjerseycity.civicweb.net/document/429156",
-        "found_via": "jerseycitynj.gov > City Clerk > Ordinances & Resolutions (2019-Present) > 2025 > May 21, 2025",
-        "jurisdictions": "Jersey City, NJ",
-        "bill": "Jersey City Ord. 25-057 (Code ch. 218, new § 218-12)",
-        "bill_status": "adopted (final passage 2025-05-21, 9-0; approved by mayor 2025-05-22)",
-        "bill_dates": "2025-05-07 introduced (first reading, 8-0); 2025-05-21 adopted on second and final reading (9-0); "
-                      "2025-05-22 approved by mayor",
-        "change_tests": "T2, T3",
-    },
-    "X005": {
-        "url": "https://hobokennj.iqm2.com/Citizens/FileOpen.aspx?Type=30&ID=69209",
-        "found_via": "hobokennj.gov news 2025-07-10 'City of Hoboken outlaws algorithmic rent-fixing' -> Hoboken iQM2 "
-                     "legislation file 12291 (meeting 2943, 2025-07-09) -> attachment 'Printout'",
-        "jurisdictions": "Hoboken, NJ",
-        "bill": "Hoboken ordinance amending Code ch. 158 (Rent Increases), new § 158-2 (text heading reads § 154-8)",
-        "bill_status": "adopted 2025-07-09 (unanimous, per the city's iQM2 legislation page); the attached text is the "
-                       "clerk's template copy: ordinance number and vote record are blank in the PDF",
-        "bill_dates": "2025-07-09 adopted by City Council (unanimous); 2025-07-10 announced by the City",
-        "effective_clause": "This Ordinance shall take effect immediately upon passage and publication as provided by law.",
-        "change_tests": "T2, T3",
-    },
+    # X004 (Jersey City Ord. 25-057) and X005 (Hoboken Ord. B-781) are Solal's captures (provenance
+    # manual_official), already ingested: not re-fetched here, so their text and LLM cache stay identical.
     "X006": {
         "url": "https://www.mass.gov/doc/25-21-an-initiative-petition-to-protect-tenants-by-limiting-rent-increases/download",
         "found_via": "mass.gov (Attorney General) > Ballot initiatives submitted for the 2026 statewide election > 25-21",
