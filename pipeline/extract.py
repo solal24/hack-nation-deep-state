@@ -270,7 +270,10 @@ def stable_id(jurisdiction, category, citation):
 # Backend: "claude_cli" (default) = Claude Code headless (`claude -p`) logged into the account in
 # CLAUDE_CLI_CONFIG_DIR (Solal: Enterprise login in ~/.claude-enterprise, no API credits used).
 # "api" = Anthropic API key from .env (pipeline/llm.py).
+from dotenv import load_dotenv
+load_dotenv(ROOT / ".env")  # LLM_BACKEND / ANTHROPIC_API_KEY live in .env (never committed)
 BACKEND = os.getenv("LLM_BACKEND", "claude_cli")
+API_MODEL = os.getenv("EXTRACT_API_MODEL", "claude-sonnet-5")  # same model family as the CLI default
 CLI_CONFIG_DIR = os.path.expanduser(os.getenv("CLAUDE_CLI_CONFIG_DIR", "~/.claude-enterprise"))
 CLI_MODEL = os.getenv("CLAUDE_CLI_MODEL", "sonnet")
 
@@ -315,13 +318,15 @@ def call_claude_cli(prompt):
 def call_llm(prompt):
     """Cached structured extraction. Key = prompt + system + model + schema; atomic writes."""
     CACHE.mkdir(parents=True, exist_ok=True)
-    fingerprint = json.dumps([prompt, SYSTEM, BACKEND, CLI_MODEL, Extraction.model_json_schema()], sort_keys=True)
+    # Cache key ignores the backend (CLI login or API key = same Sonnet model), so switching backend
+    # reuses the 54 cached answers. Kept identical to the original key format for compatibility.
+    fingerprint = json.dumps([prompt, SYSTEM, "claude_cli", CLI_MODEL, Extraction.model_json_schema()], sort_keys=True)
     path = CACHE / f"{hashlib.sha256(fingerprint.encode()).hexdigest()[:20]}.json"
     if path.exists():
         return Extraction.model_validate_json(path.read_text())
     if BACKEND == "api":
         from pipeline.llm import ask_json
-        result = ask_json(prompt, Extraction, system=SYSTEM)
+        result = ask_json(prompt, Extraction, system=SYSTEM, model=API_MODEL)
     else:
         result = call_claude_cli(prompt)
     tmp = path.with_suffix(".tmp")
@@ -476,7 +481,7 @@ def main():
     with LOG.open("a") as f:
         run_id = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
         for entry in log:
-            f.write(json.dumps({"run": run_id, "model": CLI_MODEL if BACKEND == "claude_cli" else "api", **entry}) + "\n")
+            f.write(json.dumps({"run": run_id, "model": CLI_MODEL if BACKEND == "claude_cli" else API_MODEL, **entry}) + "\n")
     accepted = sum(e["accepted"] for e in log)
     print(f"\n{len(rules)} rules -> {OUT.relative_to(ROOT)} · extracted {len(log)} · accepted {accepted} · rejected {len(log) - accepted}"
           + (f" · failed docs {failed}" if failed else ""))

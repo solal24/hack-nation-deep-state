@@ -34,7 +34,7 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 make setup      # Python venv + dependencies
 cp .env.example .env   # add your API key, never commit .env
 make enrich     # step 0
-make extract    # step 1 (LLM via Claude Code login in ~/.claude-enterprise; answers cached in data/cache/llm/)
+make extract    # step 1 (LLM: API key in .env with LLM_BACKEND=api, Sonnet 5; or Claude Code login; answers cached in data/cache/llm/, re-runs cost $0)
 make engine     # step 2 -> outputs/lookups.json
 make changes    # step 3 -> outputs/changes.json
 make ingest DOC=X001,X002   # add new law texts from corpus_extra/ end to end
