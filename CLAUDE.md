@@ -24,6 +24,8 @@ Only edit files owned by your human unless they ask otherwise. If you must touch
 ## Partners (use them, judges notice)
 - **Lovable**: AI app builder (React + Supabase). Use it for the user-facing app
 - **Wajo AI / Fo**: agent that books, buys, pays, calls, emails. Use it for the real-world action in the demo
+- **ElevenLabs** (credits + own challenge, TBD): voice, TTS, voice agents that can place phone calls via API
+- **Bright Data** (credits): web scraping / unblocking / SERP API / ready-made scrapers. Use it to get real data instead of synthetic
 
 ## Stack
 - Frontend: Lovable app (lives in its own Lovable-synced GitHub repo, link it here once created)
