@@ -1,0 +1,689 @@
+SOURCE: https://webapi.legistar.com/v1/newark/matters/1608659/texts/1555618
+RETRIEVED: 2026-10-03 23:09 UTC
+
+..Title
+AN ORDINANCE AMENDING 6PSF-I ADOPTED ON AUGUST 2, 2023, TITLE XIX, RENT CONTROL, CHAPTER 2, RENT CONTROL REGULATIONS; RENT CONTROL BOARD, OF THE REVISED GENERAL ORDINANCES OF THE CITY OF NEWARK, 2000, AS AMENDED AND SUPPLEMENTED, BY MAKING VARIOUS CORRECTIONS.
+
+..body
+
+      WHEREAS, the Municipal Council of the City of Newark (the "City") adopted Ordinance 6PSF-i on August 2, 2023, making various amendments to the Title XIX, Chapter 2; and
+      
+      WHEREAS, it is necessary to amend Ordinance 6PSF-I adopted August 2, 2023, to make various corrections; and  
+      
+      WHEREAS, it is necessary to define the position of Rent Regulation Officer and establish the powers inherent with this office.
+      
+      WHEREAS, it is appropriate and necessary to define the powers of the Rent Control Board and provide the Rent Control Board with equitable powers to assist in carrying out and executing the provisions of the Rent Control Ordinance as fairness requires; and
+      
+      WHEREAS, it is appropriate and necessary to broaden the definition of exemptions to encompass the legislative intent of the State of New Jersey regarding the construction of new multiple unit residential dwellings; and  
+      
+      WHEREAS, it is appropriate to establish procedures, so as to permit landlords to file applications for rent control exemptions upon issuance of a Temporary Certificate of Occupancy; and
+      
+      WHEREAS, it is appropriate and necessary to require landlords to provide notice of rent increases to tenants and the Rent Control Board; and
+      
+      WHEREAS, it is appropriate and necessary to set time restrictions for purposes of rent rebates which may be due to tenants; and
+      
+      WHEREAS, it is appropriate and necessary to conform the requirements for exemption claims for vacant properties to the requirements of applications for substantial rehabilitations; and
+      
+      WHEREAS, it is appropriate and necessary to codify a registration fee as well as penalties for failing to register a residential property with the City on an annual basis; and
+      
+      WHEREAS, it is necessary to increase the penalties for violations of the Rent Control Ordinance as well as application fees for exemption applications, registrations, and improvement applications; and
+      
+      WHEREAS, it is necessary to impose filing requirements for notices of exemption and termination notices from rent control; and
+      
+      WHEREAS, it is appropriate and necessary to include procedures for selection of a chair for the rent control board, as well as the duties of the chair; and 
+      
+      WHEREAS, it is in the best interest of the health, safety and welfare of the residents of the City that these several additions and changes to the Ordinance be made quickly as to permit the Rent Control Office and the Rent Control Board to continue with the delegations of their duties. 
+      
+      NOW, THEREFORE, BE IT ORDAINED BY THE MUNICIPAL COUNCIL OF THE CITY OF NEWARK, NEW JERSEY, THAT:
+      
+Note: Additions are shown as underlined and bold.  Deletions are shown as strikethroughs.
+      
+      SECTION 1.	 
+      
+      19:2-1.	STATEMENT OF POLICY.
+      
+      	a.	The Governing Body of the City of Newark does hereby declare that an emergency continues to exist within the City of Newark with respect to the rental of housing space in dwellings by reason of the demands for increases in rent, which are hereby determined to be excessive, unaffordable, and unwarranted; and
+      
+      	b.	This emergency has been created by the continuing deterioration of a substantial portion of the existing housing stock, insufficient construction of affordable housing units, increasing costs of construction and finance, and, on the demand side, the fact that a substantial portion of current Newark residents rely on fixed or stagnating incomes. This has caused a substantial and increasing shortage of rental housing accommodations for families of low and moderate income and excessively high rents; and
+      
+      	c.	Unless residential rents of tenants are regulated and controlled, such emergency and the further displacement pressures resulting therefrom will produce serious threats to the public health, safety and general welfare of the citizens of the City of Newark; and
+      
+      	d.	The fear of being evicted without just cause and being forced to seek housing in such a market discourages Newark tenants from complaining about excessive and unjustified increases in rent and about the continued deterioration of housing, and this fear also contributes to these persistent harmful conditions; this warrants legislative action by the Governing Body; and
+      
+      	e.	Under the police powers granted to the City of Newark and in order to protect the health, safety and welfare of the citizens of the City of Newark, it is necessary to regulate, control and stabilize rents and create a Rent Control Board for the City of Newark. 
+      
+      19:2-2.	DEFINITIONS.
+      As used in this chapter:
+      
+      AVAILABLE FOR RENT TO TENANTS 
+      
+      Shall mean housing fit for habitation as defined by the statutes, codes and ordinances in effect in the State of New Jersey, County of Essex and City of Newark, and offered for rent, whether occupied or unoccupied.
+      
+      COMPLETION OF CONSTRUCTION 
+      
+      Shall mean the issuance of a Certificate of Occupancy pursuant to the "State Uniform Construction Code Act" P.L. 1975. c.217 (N.J.S.A. 52:27D-133)
+      
+      CONSTRUCTED
+      
+      Shall mean constructed, erected or converted, but excludes rehabilitation of premises rented previously for purposes without an intervening use for other purposes for a period of at least two (2) years prior to conversion. Mere vacancy shall not be considered an intervening use for the purpose of newly constructed multiple dwelling.
+      
+      CONSUMER PRICE INDEX (CPI)
+      
+      Shall mean the Consumer Price Index for All Urban Consumers (CPI-U), as published by the United States Department of Labor's Bureau of Labor Statistics for the New York - Northern New Jersey - Long Island, NY-NJ area.
+      
+      DWELLING  
+      
+      Shall mean any building, structure, trailer or land used as a trailer park, rented or offered for rent to one (1) or more tenants, or family units. A dwelling shall also mean one (1) or more buildings, structures or trailers with a common owner and operated as a single complex, and which are situated on a common lot or on adjacent lots as described in the Tax Map of the Tax Assessor of the City of Newark.
+      
+      EQUITY
+      
+      Shall mean the actual investment in cash by the landlord in the purchase price of the property, as well as those payments that he/she has made to any lender that reduce the lender's claim against the property, less any cash withdrawals.
+      
+      EXEMPTIONS
+      
+      Shall mean dwellings to which this chapter shall not apply. Exempt dwellings include all public housing; any motel or hotel space rented on a day-to-day basis to transients; any dwelling, building or structure, or portion thereof, rented for commercial use and newly constructed multiple dwellings and vacant dwellings as set forth in this Chapter at Subsections 19:2-18.1 and 19:2-18.2, respectively.  Also exempted are those units which have been rehabilitated by the Federal and State Rental Rehabilitation Programs as administered by the U.S. Department of Housing and Urban Development, the New Jersey Department of Community Affairs or the New Jersey Housing Mortgage Finance Agency and will be receiving Section 8 rent subsidies or Federal housing vouchers. In these units, rents will be allowed to be raised, but will not exceed the fair market rents as established by the United States Department of Housing and Urban Development. These units will be exempt only during the unit's tenure in the Section 8 subsidy or Rental Rehabilitation Program. A contract between a landlord and a governmental agency duly providing for that governmental agency to regulate the amount of rent received by that landlord provided that, if the authority of that governmental agency supersedes the authority of the City of Newark to regulate such rents, then the application of this Chapter shall be preempted during the period of governmental agency regulation specified in the contract. Until such a contract begins, and immediately after the contract terminates, this Chapter shall continue to regulate such rents. Upon termination of such a contract, the starting rent for dwelling units under this Section, for purposes of rent control, shall be the last rent received by the landlord prior to the termination of the preemptive governmental agency regulation reduced by an amount equal to the sum of all applicable tax, water, sewer, capital improvement, and any other surcharges as defined by this chapter, and calculated by the Rent Regulation Officer under this chapter. Also exempted are newly constructed multiple dwellings and vacant dwellings as set forth in this chapter at subsections 19:2-18.1 and 19:2-18.2, respectively.
+      
+      FAIR RATE OF RETURN
+      
+      Shall mean a return of five percent (5%) on the landlord's investment in the property, which investment shall be considered herein as the landlord's equity. 
+      
+      HOUSING SERVICES
+      
+      Shall mean repairs, replacement and maintenance, painting, providing light, heat, hot and cold water, elevator service (where applicable), storm windows and screens, superintendent services and any other benefit, privilege or facility connected with the use or occupancy of any proportionate part of services provided to common facilities of the building in which the dwelling is contained.
+      
+      HOUSING SPACE
+      
+      Shall mean that portion of a dwelling rented or offered for rent for living and dwelling purposes to one (1) individual or family unit, together with all privileges, services, furnishings, furniture, equipment, facilities, improvements and common areas connected with the use or occupancy of such portion of the property.
+      
+      HOUSING SPACE AGREEMENT
+      
+      Shall mean an agreement, oral, written or implied, between a landlord and tenant for the use and occupancy of a housing space or housing services or both.
+      
+      LANDLORD 
+      
+      Shall mean an owner, lessor, sublessor or any other person entitled to receive rent for the use and occupancy of any housing space, or an agent or successor of any of the foregoing.
+      
+      MAJOR NEW IMPROVEMENT
+      
+      Shall mean a physical addition or change to the dwelling, which provides all tenants in the dwelling with something not previously provided that improves the quality of life in the dwelling. A replacement of an existing physical element, such as a roof, is not a major new improvement, whether that element was necessary for habitability or provided an amenity not required for habitability. Such a replacement is considered a maintenance expense. A physical addition or change, which does provide something new that benefits the tenants but is required by law to meet minimum standards of health, safety, security or habitability, is also not a major new improvement. A major new improvement must be something new that benefits the tenants, and is not required by law. A major new improvement for the purpose of this chapter is not in any way related to the term 'Capital Improvement' or 'Capital Expenditure' as used in IRS regulations, even if the IRS would categorize such improvements in these ways. 
+      
+      MONTH TO MONTH TENANT
+       
+      Shall mean a tenant for a term of one (1) month whose tenancy shall automatically be extended for each succeeding month, unless terminated as provided by statute.
+      
+      MULTIPLE DWELLING
+      
+      Shall mean and include any building or structure and land appurtenant thereto containing one or more apartments or rented or offered for rent to one or more tenants or family units.
+      
+      NOTICE 
+      
+      Shall mean written notice to a tenant or landlord, which is mailed to the tenant's residence or the landlord's residence or offices by regular mail, of any proceedings or determinations of the Board, unless another method of notice is specified in this chapter.
+      
+      Owner occupied shall mean any dwelling of four (4) units or less in at least one (1) unit of which the owner resides.
+      
+      PERIOD OF AMORTIZATION
+      
+      Shall mean the time during which the principal amount of the loan and interest thereon would be paid entirely through periodic payments, whether or not term of the mortgage loan is for shorter period concluding with a balloon payment. 
+      
+      PERIODIC TENANT
+      
+      Shall mean a tenant for a period of less than one (1) year.
+      
+      Rent 
+      
+      Shall mean the consideration and shall include any bonus, benefits or gratuity demanded or received for or, in connection with, the use or occupancy of housing space or the transfer of a lease of such housing spaces, including, but not limited to monies demanded or paid for parking, pets, the use of furniture, subletting, security deposits and damage and cleaning deposits.
+      
+      Rent Regulation Officer 
+      
+      Shall mean a person selected by the Mayor and the Business Administrator to be in charge of the Office of the Rent Control Board and shall carry out such duties and shall maintain such records as are necessary for the proper functioning of that office. The Rent Regulation Officer receives power through administrative assignment pursuant to Newark Code Chapter 2:10-1.9. The title of "Rent Regulation Officer," for purposes of this Chapter, shall also mean "Administrator." Both "Rent Regulation Officer" and "Administrator" shall be used interchangeably in this Chapter and hold the same meaning and duties pursuant to as defined.
+      
+      REPAIR 
+      
+      Shall mean to reconstruct a building to a sound condition or good state after decay, injury, dilapidation or partial destruction; to remedy, heal, make right, or to mend.
+      
+      SUBSTANDARD MULTIPLE DWELLING
+      
+      Shall mean any multiple dwelling determined to be substandard by the Public Officer. 
+      
+      SUBSTANTIAL COMPLIANCE 
+      
+      Shall mean that the housing space and dwelling are free from all violations of State and Newark health, safety, building, property maintenance, and fire safety codes, statutes, regulations and ordinances, and that air conditioning equipment provided by the landlord is in good working order.  Compliance is to be determined by submission by the landlord of copies of all applicable code inspection reports which shall not be more than six (6) months old at the time of the initial hearing for all applications requesting or objecting to any type of increase or surcharge, and submission by the landlord of evidence that air conditioning equipment supplied by the landlord is in good working order at the time of the initial hearing.  To be in compliance, the reports must show the housing space and dwelling to be free of violations, and any evidence submitted of properly functioning air conditioning equipment is acceptable to the Board.  If one or more violations appear on an inspection report, a follow-up inspection report showing abatement of the violations will establish compliance.  Testimony by appropriate city and state code officials may also be used to supplement and clarify the inspection reports if needed.  If a tenant alleges that a condition exists in violation of any of the above codes in a housing space or in the dwelling subject to an application for any type of increase or surcharge, which does not appear on the last inspection report, then a new inspection, limited to the allegation only, shall be made to determine compliance.
+      
+      SUBSTANTIAL COMPLIANCE
+      
+      Shall mean that the actual housing space/unit undergoes a substantial rehabilitation above normal apartment readiness, i.e. more than routine requirements, and/or cosmetic work, painting, cleaning, or items that would fall under normal property maintenance.
+      TENANT
+      
+      Shall mean a tenant, subtenant, lessee, sublessee, or any other person entitled under the terms of a housing space agreement to the use or occupancy of any housing space.
+      
+      19:2-2.1 	Applicability.
+      
+      All multiple dwellings, as defined in Subsection 19:2-2, are subject to Rent Control pursuant to this Title XIX Rent Control,
+      
+      19:2-3.	RENT INCREASES.
+       	19:2-3.1.	Determination of Rents.
+      
+      	The establishment of rents between a landlord and tenant in all housing spaces shall hereafter be determined by the provisions of this chapter. At the expiration of a lease or at the termination of the lease of a periodic tenant, no landlord may request or receive an increase greater than the percentage increase in the Consumer Price Index (CPI) from the CPI fifteen (15) months prior to the month of the proposed rent increase to the CPI three (3) months prior to the month of the proposed rent increase. In no case shall the allowable rent increase exceed four (4%) percent. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8. 
+      
+      	19:2-3.2.	Increases Limited; Notice of Increase
+      
+      	The rents for any housing space shall not be increased more than the percentages stated above in any consecutive twelve (12) month period irrespective of the number of different tenants occupying the housing space during the twelve (12) month period, any change of ownership of the landlord or vacancy of the housing space.  This provision does not preclude a tenant from challenging the legality of the rent being charged immediately prior to an increase authorized by this section.  Any landlord seeking an increase in rent, including the rent of a period tenant, shall notify the tenant and the Rent Regulation Officer in writing of the proposed rental increase and the proposed percentage increase, the prior year's rent, the allowable rental increase amount, and allowable percentage increase under the provisions of this Ordinance.  Any landlord seeking a rental increase pursuant to this Ordinance shall give the Rent Regulation Officer and the affected tenant written notice of the proposed increase at least 30 days in advance.  No rent increase shall be approved for any landlord who has failed to comply with all of the provisions of the Rent Control Ordinance, including, but not limited to, subsection 19:2-9.8, Registration. 
+      
+      19:2-3.3.	Parking Fees.
+      
+      	The landlord shall report and register all on-site parking fees with the Rent Control Board. Parking fees should be specifically included as being covered under all provisions of the rent control ordinance. 
+      
+      	19:2-3.4.	Substantial Compliance and Registration Compliance for Any Rent Increase. 
+      	
+      No annual rent increase, major new improvement surcharge, tax surcharge, or hardship increase is allowed, if the dwelling is not in substantial compliance and/or has not met registration requirements as specified in subsection 19:2-9.8.
+        
+      19:2-4.	 RENT REBATE.
+      	
+      The landlord shall rebate to the tenant any amount of rent collected in excess of that permissible pursuant to the terms of this chapter by crediting the tenant with the amount of excess rent paid over a period not to exceed fourteen (14) months, or in the event the tenant is no longer in occupancy, by refunding within a one (1) month period.  This provision is not intended to preclude a tenant from seeking judicial remedies under statutory or common law. The rebate to the tenant shall be retroactive to two years from the date of the petition.
+      
+      19:2-5.	 TAX SURCHARGE.
+      
+       	19:2-5.1.	Formula for Surcharge.
+      	A landlord may seek a tax surcharge from a tenant because of an increase in municipal property taxes. The tax surcharge shall not exceed that amount authorized by the following provision: The landlord shall divide one-twelfth (1/12th) of the annual increase in the present property tax over the property tax of the previous year by the total monthly rent roll, and that product shall be multiplied by the monthly rent paid by each tenant to establish the amount of surcharge that each tenant shall be required to pay. The tenant shall not be liable for a tax surcharge exceeding the tenant's percentage of the entire rent roll for the dwelling.  
+      
+      	19:2-5.2.	Petition for Surcharge.
+      
+      	a.	Any landlord seeking a surcharge shall petition the Board for approval and shall give notice to the tenant and the Board, at least thirty (30) days prior to the increase sought, of the calculations involved in computing the tax surcharge, including the present property tax for the dwelling; the property tax for the dwelling for the previous year; total rent rolls of all units, occupied or unoccupied in the dwelling; the percentage of the increase over the total rent roll; the rent of the tenant; and the percentage of his/her present rent compared to the total rent roll.
+      	b.	Prior to making a determination on a landlord's petition for a tax surcharge, the Board shall obtain a report from the Office of Inspection and Enforcement in the Department of Engineering to determine whether there are any outstanding code violations on the subject property. In the event that the report reveals outstanding code violations, the Board shall deny the landlord's application or defer action on the application until the landlord has abated the violations and proof of same has been submitted to the Board.
+      
+      	19:2-5.3.	Payment of Surcharge.
+      
+      	The tax surcharge each tenant is liable for shall be paid in equal monthly payments only after the landlord gives the tenant one (1) month prior notice of the increase as required by statute. 
+      
+      	19:2-5.4.	Appeals.
+      
+      	Any party dissatisfied with the ruling of the Rent Control Board on a Tax Surcharge Application may appeal the matter to the Law Division of the Superior Court in accordance with New Jersey Court Rules within forty-five (45) days of the Board's ruling.
+      
+      19:2-6.	TAX DECREASES.
+      
+       	19:2-6.1.	Apportionment.
+      
+      	If the municipal property taxes are decreased in a given year due to either a decrease in the property tax rate or a lowering of the assessed evaluation of the property by the municipality, then the tenants are entitled to a tax decrease. Apportionment of such decrease shall be in the same manner as apportionment of tax surcharge under subsection 19:2-5.1. 
+      
+      	19:2-6.2.	Tax Appeal, Reduction.
+      
+      	In the event a tax appeal is taken by the landlord and the landlord is successful in the appeal and the taxes reduced, the tenant shall receive seventy-five (75%) percent of the reductions as applied to its tax portion, after deducting all reasonable expenses incurred by the landlord in prosecuting the appeal. 
+      
+      	19:2-6.3.	Rebates.
+      
+      	The landlord shall be deemed to have received his/her rebate upon his/her receipt thereof from the receiver of taxes, or upon the execution of any agreement with the landlord. The tenant must receive notice within fourteen (14) days from when the landlord receives his/her notice of successful appeal. The landlord must notify the tenants within thirty (30) days of the time the landlord receives his/her rebate of the amount he/she has received with the computations on how much the tenant is entitled to. The amount due the tenant shall be forwarded to the tenant within the same thirty (30) day period. 
+      
+      19:2-7. MAJOR NEW IMPROVEMENTS; ADDITIONAL RENT.
+      
+       	19:2-7.1.	Computation of Increase. 
+      	
+      The landlord may seek additional rent (surcharge) for a major new improvement(s) made by him/her in the dwelling or attributable to the dwelling. The landlord shall compute the average cost of the major new improvement(s) per year of useful life by dividing the cost of the completed major new improvement(s) by the number of years of useful life of the improvement(s) provided that the period shall not be less than one (1) year. The useful life is the actual number of years that the major improvement(s) is expected to last before needing replacement. The burden of proof is on the landlord to establish the useful life of the improvement(s). If the major new improvement(s) lowers the landlord's operating costs, the annual cost savings must be subtracted from the annual major new improvement(s) surcharge. The landlord is required to disclose all expected cost savings that will result from the major new improvement(s). No increase shall be permitted for major new improvement(s) affecting more than ten (10) rental units, unless the total cost thereof exceeds two thousand ($2,000.00) dollars. No increase shall be permitted for major new improvement(s) completed more than twenty-four (24) months prior to the date upon which notice to the Board of the improvements has been provided by the landlord. In no case will a major new improvement(s) rent increase be granted if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in subsection 19:1-10. 
+      	
+      19:2-7.2.	Increase Prorated.
+      
+      	The amount of the monthly increase which a landlord may charge shall be prorated among all tenants benefiting from the improvements by dividing one-twelfth (1/12th) of the annual cost of the capital improvements by the total monthly rent roll of the units affected by the improvement in the dwelling, occupied or unoccupied, and that product shall be multiplied by the monthly rent paid by each tenant to establish the amount of capital improvement increase that each tenant shall be required to pay. 
+      
+      	19:2-7.3.	Applicability; Notification.
+       
+      	No tenant shall be liable for a major new improvement(s) increase if he/she receives no benefit from the improvement nor, if he/she benefits, shall he/she be liable for an increase exceeding the percentage of rent paid by him/her as calculated above, and all such rent increases shall be charged for no period greater than the useful life of the improvements. The landlord shall notify the Board and tenants at least sixty (60) days before the effective date of the increase. The notice to the Board shall, on forms provided by the Board, include the amount of increase, a description of the improvement, and the figures used to compute the increase. The Board or a tenant may request a hearing within thirty (30) days of receipt of notice from the landlord. After approval by the Board of a major new improvement surcharge, the landlord shall give to each tenant one (1) month prior notice of the effective date of the major new improvement surcharge as required by statute.
+       
+      	19:2-7.4.	Appeals. 
+      
+      	Either the landlord or tenant may appeal the findings or order of the Rent Control Board regarding a major new improvement application to the Law Division of the Superior Court in accordance with New Jersey Court Rules within forty-five (45) days of the findings or order of the Board.
+      
+      19:2-8.	LANDLORD HARDSHIPS.
+       
+      	19:2-8.1.	Appeal for Increase.
+      
+      	To realize a just and reasonable return on the subject property, a landlord may appeal to the Board for a hardship rent increase if the landlord is unable to meet its reasonable and necessary operating expenses and earn a fair rate of return on his investment by submitting a Hardship Increase Application. The Board will hold a public hearing on the application following the procedure outlined in 19:2-13. Inspections of the dwelling must take place before a hearing. A re-inspection may take place after the hearing as detailed in this section. An application will be granted only if the dwelling meets the definition of substantial compliance and the landlord has met the registration requirements specified in this chapter.
+      
+      	19:2-8.2.	Code Violations.
+      
+      	a.	Inspection; Abatement. Within thirty (30) days after a hardship appeal has been filed, supported by all the information that the Board requires to make its determination, the Board must request that the property be inspected by the Code Enforcement Division of the Department of Engineering for code violations. The inspection reports shall be prepared and filed with the Board within thirty (30) days thereafter.
+      
+      	The Board shall deny an application for an increase when a property fails to meet substantial compliance upon completion of an inspection or re-inspection of the property. The Board may conditionally grant the increase subject to the landlord abating the violations within a reasonable time. However, in no event shall this period of time exceed forty-five (45) days.
+      
+      	b.	Failure to Comply; Refund to Tenants. In the event that such abatement has not taken place within forty-five (45) days, the application will be denied and the landlord will be barred from resubmitting an application for six (6) months. The Board shall revoke any such conditional increase, and the landlord shall be required to restore to the affected tenants all of the additional monies collected pursuant to the increase. The restoration of monies shall be in the form of either a direct refund of all monies collected or a deduction from the next month's rent.
+      
+      	c.	Definition. As used in this Section, code violations shall mean any violations of the existing building (construction), fire, plumbing, electrical or housing codes of the City of Newark then in effect. Violations which the Board may rely upon in implementing this section shall be only those violations which were found to have been in existence at the time of the original inspection as requested by the Board.
+      
+      	d.	Nothing in this Section diminishes the requirement in Subsection 19:2-8.1 that the dwelling be in substantial compliance with all State and Newark codes as defined in Section 19:2-3 prior to granting a hardship increase.
+      
+      	e. 	Notice to Tenants. Thirty (30) days before a public hearing on the landlord's application for a hardship increase, the landlord must place conspicuous notices in all common areas, including, but not limited to, all elevators, the first landing of all stairways and staircases, at security and/or receptionist desks, mail rooms and community rooms. Notices shall also be placed at the entrance(s) of: the building, laundry rooms, gym rooms, recreation rooms and meeting rooms. The notice must detail the proposed percentage increase in rent, a sample calculation of a new rent amount based on the percentage increase, the Rent Increase Factor Table, and the right of tenants and tenant associations to testify against the application as enumerated in Section 19:2-13. In a building or complex where tenants have formed a tenant association, notice must be hand delivered or delivered by Certified Mail Return Receipt Requested to the President of the association. The notices must be typed in a traditional font style such as Arial or Times New Roman. The font size must be between 32 and 48-point font so that a passerby may be able to read the notice from a distance of five (5) feet. Artistic font styles and font styles that are difficult to read, pictures, text in all caps, text in reverse type (white text on a dark background), text that is completely italicized or in bold, and use of more than 2 font styles are prohibited.
+      
+      	19:2-8.3.	Submission of Records and Proofs.
+      
+      	a.  Proofs.  The landlord shall submit proof of expenses for operation, maintenance and repairs, including, but not limited to taxes, employees' salaries, all contracted expenses, insurance, fuel, utilities, maintenance and repairs, and reasonable superintendent and/or management fees, as well as expenses for vacancies, which have been held available for rental, to substantiate any hardship increase application.
+      
+      The landlord shall also submit proof of mortgage principal payments, which are to be considered additional equity investment, and mortgage interest payments. Only interest payments shall be considered an expense, mortgage principle shall not. The landlord shall also supply the details of any refinancing, specifying any change in the amount of principal to be repaid and the amount of any cash withdrawn from the property. 
+      The landlord shall submit the terms of all mortgages held by the landlord, or an equivalent entity, from the date of purchase to the date of application, including cash down payment, cash withdrawal, mortgage interest rate(s), and schedule of principal and interest payments.
+      Expenses which recur periodically where the average period between occurrences is greater than one year must be identified.  Only the portion attributable to the current year, calculated by dividing the total expense by the number of years in the average period between occurrences, may be listed as an expense, and the calculation must be submitted along with the expense. 
+      Amounts allowed for vacancies and for management costs shall be fully documented, and in no event shall allowable expenses in either category exceed five (5%) percent of the landlord's gross income. Management costs shall include all administrative and supervisory costs. The Board shall only allow a vacancy loss for housing spaces that are cleaned, repaired, and offered on the market within two months. Landlord must submit proofs of the same in the form of receipts, contracts, advertisements and lease offers.
+      All expenses defined as capital improvements by the Internal Revenue Service must be submitted and itemized, along with calculations dividing the total expense by the number of years depreciated for Income Tax purposes. One year's depreciation shall be counted during the 12-month hardship period.
+      
+      b.   Affidavits.  Such proof shall be supported by affidavits that the expenses are complete, reasonable and necessary. The following affidavits are required: 1) An affidavit describing any business, family or social relationship between the parties financing the purchase of the building and the landlord and 2) an affidavit signed by a Certified Public Accountant (CPA) stating that the CPA has reviewed and approved of the calculations based on the proofs submitted. 
+      
+      c.  Age of Proofs. The Board shall consider the proofs and expenses for a period not to exceed sixty (60) months, but not less than twelve (12) months prior to the date of the landlord's application. 
+      
+       	19:2-8.4.	Fees not Applicable.
+      
+      	No attorney's fees, accountant's fees or application fees incurred by a landlord in connection with any application to the Board shall be included in determining whether a landlord is entitled to any rent increases. 
+      
+      	19:2-8.5.	Impartial Appraisal.
+      
+      	Whenever a relationship other than a business relationship is found to exist between the parties financing the purchase of the building and the landlord, or for other good cause, the Board may require that the value of the property be appraised by an appraiser to be approved by the Board. The cost of appraisal shall be included as a separate cost in the application fee and paid for by the applicant when so required by the Board at the rent control hearing. 
+      
+      	19:2-8.6.	Apportionment of Increase.
+      
+      	Any increase awarded to the landlord pursuant to this Section by the Board shall be apportioned among the tenants in the following manner: The monthly increase shall be divided by the total monthly rent roll and that product shall be multiplied by the monthly rent paid by each tenant to establish the amount of increase that each tenant shall be required to pay.
+       
+      	19:2-8.7.	Time Period for Increase.
+      
+      	a.	No increase pursuant to this Section shall be authorized with respect to a rental unit more than once in any twelve (12) month period, nor shall the Board conduct a hearing with respect to an application for such a rent increase for a rental unit more than once within a twelve (12) month period.
+      	b.	The Board shall take into account rent increases of any kind, including Major New Improvement Surcharges, during the past twelve (12) months in determining whether to grant an increase, and the amount and terms thereof.
+      
+      	 19:2-8.8.     Excessive Purchase Price; Efficient Operator
+      
+      The Board shall deny all or a part of the relief requested where specific findings of fact support the conclusion that the landlord purchased the dwelling for an excessive price.  Excessive purchase price is hereby defined as the purchase price such that at the time of purchase a reasonable investor could not expect to earn a fair return upon his/her investment. The Board shall also deny any expenses that an efficient operator would not incur.  The Board, in its discretion, may require the landlord provide any information he received from the prior owner or from his own inspection regarding the income and expenses of the property and the physical condition of the property prior to the purchase.  The term property, as used herein, means all buildings and structures, known as the dwelling, including all housing units and all common areas, as well as exterior common areas.
+      
+      19:2-8.9    Appeals
+      
+      Either the landlord or tenant may appeal the findings or order of the Rent Control Board regarding a hardship increase application to the Law Division of the Superior Court in accordance with New Jersey Court Rules within forty-five (45) days of the findings or order by the Board.
+      
+      19:2-9.	 RENT CONTROL BOARD.
+      
+      	
+      
+      19:2-9.1      Membership. 
+      
+      		The Rent Control Board shall consist of five (5) members appointed by the Mayor and approved by the Council. Its composition shall be two (2) tenants, two (2) landlords, and a fifth member who is a homeowner and neither a tenant nor a landlord. The term shall be for a period of two (2) years each, except that one (1) tenant and one (1) landlord appointed to the Board after initial passage of this chapter shall serve for a term of one (1) year. Successive terms, however, shall be for two (2) years. The Board members must reside in the City of Newark. The members of the Board shall receive a salary stipend of not more than three thousand five hundred ($3,500.00) dollars per annum for attending Board meetings. Such salaries shall be paid quarterly and in proportion to the number of meetings attended during each quarter.  One member of the Rent Control Board shall be designated as chairperson by the Mayor. It will be the responsibility of the chair to conduct monthly hearings of the Rent Control Board, conduct roll call, call for votes, and otherwise control all aspects of the monthly hearings. If the designated chair shall be unavailable for a meeting, the Rent Regulation Officer shall have the power to appoint an acting chair.
+      
+      	a.	Stipends. The stipend shall be paid only to the extent that members attend and deliberate on each item on the agenda at each meeting. Therefore, the stipend and salary shall be divided into monthly payments. Each monthly payment will be divided by the number of meetings in a month. Each member shall be paid the divided amount only for those meetings that he or she has attended. In regard to those meetings that are attended by a member, the divided stipend or salary shall be further divided by the number of items on the agenda of the meeting. Each member shall only be paid the divided stipend or fee for each item on the agenda for which he or she deliberates or votes.
+      
+      	b.	Attendance. Whenever a member of the Rent Control Board has not been present at four (4) consecutive meetings of the Board, then the remaining members of the Board shall determine by a majority vote whether the absence of the member shall be excused pursuant to N.J.S.A. 40A:9-12.1(g). If the failure to attend is due to a legitimate illness, the member's absence shall be excused. However, if the Board determines that the illness is so serious that it may affect the member's continued ability to participate at meetings, then the Board shall request the appointing authority to determine whether the member is physically or mentally incapable of service pursuant to N.J.S.A. 40A:9-12.1(d).
+      
+      	c.	Report of Vacancy. In those cases wherein a majority of the Rent Control Board has failed to confirm that the absence of any member at four (4) consecutive meetings is excusable, the chair of the Board shall report the determination of the Board to the appointing authority and shall advise the appointing authority that a vacancy exists. The member in question who has been absent for four (4) consecutive meetings may appear as a witness but may not vote on the issue as to whether the Board will excuse his or her absence. 
+      
+      	19:2-9.2	Interests.
+       
+      		Candidates for the position of Rent Control Board member shall submit a verified statement listing all of their interests and dealings in real property, including, but not limited to, the ownership, sale or management thereof, and their investment in, membership in or association with partnerships, corporations, joint ventures and syndicates engaged in the ownership, sale, or management of real property during the previous three (3) years. 
+      	
+      19:2-9.3	Rules and Regulations.
+      
+      		 The Rent Control Board shall issue and abide by such rules and regulations, including those which are contained in this section as will further the purposes of this act. All rules and regulations shall be subject to the approval of the Municipal Council by ordinance. All rules and regulations, internal staff memoranda, and written correspondence explaining the decisions and policies of the Board shall be kept in the office of the Board and shall be available to the public for inspection and copying. 
+       
+      	19:2-9.4	Meetings. 
+      
+      		The Rent Control Board shall determine the schedule of meetings and hearings as is necessary to carry out the provisions of this Section. Special meetings may be called upon the request of at least two (2) board members. All regularly scheduled meetings shall be conducted in accordance with the provisions of section 19:2-13. 
+       
+      	19:2-9.5	Quorum.
+       
+      		Three (3) Rent Control Board members shall constitute a quorum. Three (3) affirmative votes shall be required for a decision of the Board, including decisions on all motions, orders and rulings of the Board.  
+      
+      	19:2-9.6	Dockets. 
+      
+      		The Rent Control Board shall maintain and keep in its office rent adjustment hearing dockets. The dockets shall list the time, date, place of hearing, the names of the parties involved, the addresses of the dwellings involved, and the final disposition of the petitions heard by the Board. 
+      
+      	19:2-9.7	Language.
+       
+      		All rules, notices, orders, rulings and regulations of the Rent Control Board shall be printed in English and Spanish. Information disseminated to the public by the Board shall be disseminated in English and Spanish. At the request of a Board member, participant or observer, provision shall be made for concurrent oral translation into Spanish of any hearings or meetings of the Board.
+       
+      	19:2-9.8	Registration. 
+      
+      	 a.	Requirement; Forms. The Rent Control Board shall require registration of all dwelling units. In this registration shall be included the following: the address of each dwelling unit, the name and usual address of the manager of the premises, the name and usual address of the owner or the person who is authorized to act for and on behalf of the owner for the purpose of receiving service of process and for the purpose of receiving and receipting for all notice and demands, the rent, and the housing services provided for the unit or the occupants or tenants thereof. The Board shall provide for forms for this purpose. Registration shall be completed on an annual basis. 
+      
+      	b.	Records. A copy of this registration information shall be kept at the office of the Board and shall be open for public inspection and copying. Copies of the registration form shall be kept by the landlord or his/her agent at or adjacent to any dwelling unit as well as a list of any vacant units within such building, of the date on which the unit or units of housing space most recently became vacant, and the current and immediately previous rents of the housing space. These records shall be available for inspection during normal business hours by any tenant or prospective tenant of the housing space to which they pertain.
+       
+      19:2-10.	POWERS OF THE RENT CONTROL BOARD AND THE RENT REGULATION OFFICER.
+      
+      	19:2-10.1	Authorization. 
+      
+      	The Rent Control Board shall be responsible for carrying out the provisions of this chapter, and may request the hiring of such personnel as are needed, shall promulgate such policies, rules and regulations as will further the provisions of this chapter, and shall recommend to the City for adoption such ordinances and bylaws as may be necessary to carry out the purposes of this chapter. 
+       
+      	19:2-10.2	Powers of the Board. 
+      
+      	The powers of the Rent Control Board shall include but not be limited to the following:
+      	a.	To grant a rental increase, decrease, or surcharge under the provisions of this chapter;
+      
+      	b.	To impose a monetary penalty not to exceed five hundred ($500.00) dollars for a violation of any provision of this chapter, after notice, and an opportunity for hearing has been provided to the parties before the Rent Control Board;
+      
+      	c.	To fix at its discretion the effective date of any approved rental increase, decrease or surcharge to be at any reasonable time prior to or after the determination of the Board;
+      
+      	d.	To hold public hearings (see Section 19:2-13);
+      
+      	e.	To obtain, keep and maintain all available records, and all other data and information necessary to the enforcement and application of this chapter;
+      	f.	To promulgate rules and regulations governing all proceedings authorized by this chapter;
+      
+      	g.	To supply information and assistance to landlords and tenants to help them comply with the provisions of this chapter;
+      
+      	h.	To deny, at its discretion, a rent increase if the landlord fails to register all dwellings with the Rent Control Board. (see Section 19:2-9.8); and
+      
+      	i.	To appoint an administrator of the Rent Control Board, for a term to coincide with the administration, at an annual salary as fixed by ordinance and to be paid as other municipal salaries are paid.
+      
+      		1.	The administrator or the administrator's delegate shall review all petitions submitted to the Board.
+      
+      		2.	The administrator may meet with petitioners in order to reconcile any discrepancy in the petition.
+      
+      		3.	The administrator shall attach to the petition a recommendation to be considered by the Board. The recommendations shall be based on the administrator's investigation of the petition.
+      
+      		4.	For good cause, the administrator may grant an adjournment of a matter pending before the Board.
+      
+      		5.	The administrator shall be in charge of the Office of the Rent Control Board and shall carry out such investigations and shall maintain such records as are necessary for the proper functioning of that office.
+      
+           j.  To exercise, in addition to other powers herein granted, all powers necessary and appropriate to carry out and execute the purpose of this entire Chapter, including the right to the exercise of equitable authority to depart from the strict interpretation of the provisions of this Chapter in instances where fairness requires equitable intervention. These powers of equity, however, do not permit the Rent Control Board to act in contravention to the purposes of this Chapter nor in an arbitrary, capricious or unreasonable manner.
+
+      19:2-10.3	Powers of the Rent Regulation Officer. 
+      
+      The powers of the Rent Regulation Officer shall include but not be limited to the following: 
+      
+a. Review all petitions submitted to the Board, or appoint a delegate to review petitions submitted to the Board.
+      
+b. Meet with petitioners in order to reconcile any discrepancy in the petition.
+      
+c. Attach to each petition a recommendation to be considered by the Board. The recommendations shall be based on the Rent Regulation Officer's investigation of the petition.
+      
+d. For good cause, the Rent Regulation Officer may grant an adjournment of a matter pending before the Board.
+      
+e. Collect information and analyzes the housing problems of the community to prevent increases in rents which are exorbitant, speculative, and unwarranted.
+      
+f. Determine the internal organization of the Office of Rent Control and formulate necessary rules and regulations.
+      
+g. Plan, organize, and assign the work of the Office of Rent Control and evaluate employee performance and conduct, enabling the effective recommendation of the hiring, firing, promoting, and disciplining of subordinates.
+      
+h. Give appropriate assignments and instructions to subordinates, provide them with advice and assistance when difficult or unusual problems arise, and check their work to see that proper procedures are followed.
+      
+i. Provide the necessary information to members of the Rent Control Board and determine the vacancy rate of multiple dwellings housing space in the community.
+      
+j. Correlate and summarize all pertinent information regarding properties subject to rent regulation and presents such information, using narrative, comparative statements, and other related data, to the Rent Control Board at a public hearing.
+      
+k. Supply information and assistance to landlords and tenants relative to rent regulations and help them to comply with the provisions of such regulations.
+      
+l. Make the best use of available funds, personnel, equipment, and supplies.
+      
+m. Resolve complaints between tenants and their landlords.
+
+      19:2-11.	CONDOMINIUM; SENIOR CITIZENS AND DISABLED CITIZENS PROTECTED FROM EVICTION. 
+      
+      	19:2-11.1	Applications for Protected Tenancy.
+      
+      	a.	Acceptance by Administrator. The Administrator of the Office of Rent Control shall be empowered to accept applications from senior citizen tenants or disabled tenants for the purpose of determining their eligibility for protected tenancy status from eviction resulting from condominium or cooperative conversions.
+      
+      	b.	Appointment of Hearing Officer. The Administrator may appoint a hearing officer for the purpose of making determinations of these applications. Such determinations shall be guided by the eligibility standards described in the Senior Citizens and Disabled Protected Tenancy Act; N.J.S. 2A:18-61.22.
+      
+      	19:2-11.2	Fees.
+      	
+      	a.	Hearing Officer. A fee of three hundred fifty ($350.00) dollars shall be charged to the landlord when a Hearing Officer is appointed by the Administrator of the Office of Rent Control.
+      
+      	b.	Notification. A fee of thirty ($30.00) dollars shall be charged to the landlord for each tenant that the Rent Control Board is obligated to notify pursuant to this section and pursuant to N.J.S. 2A:18-61.22 et seq. 
+      
+      	19:2-11.3	Appeals Heard by Board. 
+      
+      	The Rent Control Board shall hear all appeals from the determination of the Administrator of the Office of Rent Control or any hearing officer appointed by the Administrator. 
+      
+      19:2-12.	RENT DECREASES.
+      
+       	19:2-12.1	Cause for Reduction.
+       
+      	During the term of this chapter a rent decrease may be granted by the Rent Control Board for any decrease in housing space, services, furniture, furnishings or equipment. A tenant or group of tenants may petition for rent reduction through the Rent Control Board. 
+      
+       	19:2-12.2	Percentage of Reduction Allowed. 
+      
+      	A decrease in services, such as to justify a rent decrease under this section, shall include any cessation or inadequate provision of the vital services listed herein, due to deterioration or improper maintenance of the services, where it is the responsibility of the landlord to provide the services. For the following decreases in services, a petitioner or petitioners rents shall be decreased in accordance with the following percentages of the total rent or rents collected during the period of the decrease in services:
+      
+      	a.	No heat	45%
+      
+      	b.	No water	30%
+      
+      	c.	No hot water (When provision of hot water is the responsibility of the landlord)	10-25%
+      
+      	d.	Roof leaks (Such as to make the apartment, or dwelling unit uninhabitable)	25-75%
+      
+      	e.	Nonfunctioning stoves or refrigerators (where supplied by landlord)	10%
+      	
+      	f.	Faulty electrical fixtures (Such as to constitute a dangerous condition, or threat to the health and safety of the tenants) 10-50%
+      	
+      	g.	Faulty plumbing (Defined as inoperable "fixtures" i.e., tub, sink, toilet, kitchen sink)(15% per fixture, but not to exceed a maximum of 75% of the total rent of all petitioners) 15%
+      	
+      	h.	Inoperable elevator (Shall only apply in buildings over four stories, when inoperability is due to the neglect of the landlord; reduction shall only be applied to tenants of the building living on the fifth floor or above) 10%
+      
+      	19:2-12.3	Minimum Percentage of Decrease.
+       
+      	No petition for a rent decrease, due to a decrease in services, shall be considered under this section, unless the potential decrease in rent for each petitioner, or each tenant in a group petition, shall be greater than forty-four (44%) percent of their rent for the period of the decrease in services, as determined by the administrative branch of the Rent Control Board.
+      
+       	19:2-12.4	Time Periods. 
+      
+      	Evidence of the existence of any alleged decrease in services shall only be considered by the Rent Control Board for a period of thirty (30) days prior to the filing of the petition, and no rent decrease shall be imposed by the Board for any period prior to the thirty (30) days. 
+      
+      	19:2-12.5	Conditional Decrease; Correction. 
+      
+      	If a rent decrease is made conditional upon the landlord's performing whatever repairs are deemed necessary to correct a decrease in services, the landlord may petition, upon completion of seventy-five (75%) percent or more of the repairs ordered, for a reinstitution of all or part of the decreased rents. The petition and any determination made by the Rent Control Board thereon, shall conform to the procedures of the Board, as set forth in Section 19:2-13, for adjustment in rents.  
+      
+      	19:2-12.6	Change of Heating Service.
+      
+      	Where it is found that the landlord has contracted to change the heating service by changing a heating unit or otherwise requiring the tenants to pay for their heat, the Rent Control Board may grant a rent decrease equal to the cost of providing heat as that cost is determined by the Office of Rent Control. (R.O. 1966 C.S. � 15:9B-11)
+      
+       	19:2-12.7	Policy Statement Available. 
+      
+      	The procedures of the Rent Control Board under this section shall be set out in a statement of policy, which shall be available for public inspection at all times in the offices of the Board.
+      
+      19:2-13.	PUBLIC HEARING.
+      
+      	19:2-13.1	Petitions. 
+      	The Rent Control Board shall consider an adjustment of rent for an individual dwelling unit upon receipt of a petition for adjustment of rent filed by the landlord or tenant of such a unit or the Board staff. All petitions shall be filed on forms provided by the Board. No such adjustment shall be granted until after the Board considers the petition at an adjustment hearing. 
+      
+       	19:2-13.2	Notice.
+       
+      	The Rent Control Board shall notify the tenants and landlord of such petition(s). The Board shall notify both parties by regular mail that a petition was filed indicating the time, date and place of the hearing. The hearing shall be scheduled for not earlier than the sixteenth (16th) day after the day of mailing the notice of the hearing, but not later than the sixtieth (60th) day after the filing of the petition. Hearings shall be scheduled for times most convenient for all parties and may be held during the week. Hearings may be postponed or continued for good cause provided that all parties receive timely notice of such action. 
+      
+      	19:2-13.3	Records. 
+      
+      	The Rent Control Board may request either party to a rental adjustment to provide it with all pertinent books, records, and papers. Any documents provided to the Board shall be made available to the parties involved at the office of the Rent Control Board at least seven (7) days prior to the hearing.  
+      
+      	19:2-13.4	Open Hearing.
+       
+      	All rent adjustment hearings shall be open to the public.  
+      
+      	19:2-13.5	Right to Assistance.
+       
+      	All parties to a hearing may have assistance in presenting evidence and developing their position from attorneys, legal workers, tenant union representatives or any persons designated by the parties.  
+      
+      	19:2-13.6	Hearing Record. 
+      
+      	The Rent Control Board shall make available for inspection and copying by any person at his/her own expense an official record which shall constitute the exclusive record for decision on the issues at the hearing. 
+       
+      	19:2-13.7	Decision. 
+      
+      	The Rent Control Board shall make a final decision no later than fifteen (15) days after the conclusion of the hearing. No rent adjustment shall be granted unless supported by the preponderance of the evidence submitted at the hearing. All parties shall be sent a notice of the Board's decision and a copy of the finding of fact and law upon which decision is based. At the same time, parties to the proceeding shall also be notified of their right to judicial review of the decision pursuant to Section 19:2-15. 
+      
+      	19:2-13.8	Hearing Officer. 
+      
+      	The Rent Control Board may at its discretion designate individuals with professional training in law, business administration, or similar field to serve as hearing officers to preside over landlord-tenant hearings when it determines that the number of petitions for hearings before the Board are so great that the Board could not hear them all itself within the time limits prescribed for such action by this chapter. The findings of the hearings conducted by him/her shall be submitted to the Board which, after review, shall make the final ruling. 
+      
+      19:2-14.	RETALIATORY EVICTION.
+      
+      	No landlord shall bring any action to recover possession of a dwelling unit as a reprisal for the tenant's efforts to secure or enforce any right under this chapter. 
+       
+      19:2-15.	APPEAL JUDICIAL REVIEW.
+      
+      A landlord or tenant aggrieved by any action, regulation or determination of the Board may appeal that action, regulation or determination of the Rent Control Board to the Law Division of the Superior Court in accordance with New Jersey Court Rules within forty-five (45) days of the action taken by the Board.
+      
+      19:2-16.         NO EXCESSIVE RENTS.
+      
+      	No landlord shall after the effective date of this chapter charge any rents in excess of what he/she was receiving from the effective date of this chapter except for increases authorized by this chapter.  
+      
+      19:2-17.	UTILITIES SURCHARGE.
+      
+       	19:2-17.1	Grant by Administrator.
+      
+      	a.	Notwithstanding the language contained in Section 19:2-8, where the landlord substantiates through credible proof to the Rent Control Board Administrator that increases in heating expenses and water expenses (not including sewer charges) for the twelve (12) months immediately preceding his/her application are in excess of ten (10%) percent of the heating expenses and water expenses for the prior twelve (12) months, the Administrator shall grant a utilities surcharge to the applying landlord.
+      
+      	b.	However, the increase allowed shall not exceed fifteen (15%) percent of the monthly rent roll of apartments which contain thirty (30) or fewer units; and the increase allowed shall not exceed five (5%) percent of the monthly rent roll of apartments which contain more than thirty (30) units but less than two hundred one (201) units; and, the increase allowed shall not exceed three (3%) percent of the monthly rent roll of apartments which contain more than two hundred (200) units. The percentage increase allowed shall be a percentage of the monthly rent roll in the month in which the application is submitted.
+      
+      	19:2-17.2	Notification of Tenants. 
+      
+      	When the application of the landlord and all documentation required by the Administrator for the Rent Control Board to make the determination have been submitted, the Administrator shall notify the tenants of the application for utilities surcharge. The notice shall contain a copy of the application and shall be mailed to the affected tenants within fourteen (14) days of receipt of landlord's completed application. The landlord's completed application must include a certified statement from the fuel heating dealer for the building indicating the number of gallons delivered, cost per gallon and total cost, for the twelve (12) months immediately preceding the application and for the previous twelve (12) month period. It shall also include a statement describing the landlord's water bills from the Division of Billing and Customer Service in the City of Newark for the twenty-four (24) months immediately preceding the date of application. 
+      
+      	19:2-17.3	Time Limit for Decision. 
+      
+      	The decision of the Administrator of the Rent Control Board shall be rendered within sixty (60) days of the filing of the completed application. Failure of the Administrator to render a decision within sixty (60) days shall result in the application being deemed granted. 
+      
+      	19:2-17.4	Appeal by Landlord. 
+      
+      	If the requested increase is denied by the Administrator of the Rent Control Board, the landlord may lodge an appeal with the Rent Control Board.  
+      
+      	19:2-17.5	Failure to Provide Heat, Water.
+       
+      	After the date of application, a finding that heat or water is not provided to the building in conformance with the applicable law shall be a basis for a denial of an increase pursuant to this Section of the rent control ordinance. 
+      
+      	19:2-17.6	Formula for Surcharge. 
+      
+      	If the required increase is granted, the landlord shall establish the surcharge to be paid by each tenant by dividing the monthly utilities surcharge granted, by the total rent roll, and then multiplying that product by the monthly rent paid by each tenant. 
+       
+      	19:2-17.7	Notice to Tenants.
+       
+      	The landlord shall notify all tenants in writing of the approved increase. Such notice shall be served upon the tenants at least one (1) month prior to the effective date of the increase. The landlord shall file with the Administrator of the Rent Control Board a copy of the notice that was served upon the tenants.  
+       
+      19:2-18.	NEW CONSTRUCTION, VACANT PROPERTIES, SUBSTANTIAL REHABILITATION AND SUBSTANTIALLY REHABILITATED VACANT UNITS.
+      
+       	19:2-18.1.	New Construction.
+      
+      	a.	The provisions of the Rent Control Ordinance, which limit the periodic or regular increases in base rentals of dwelling units shall not apply to newly constructed multiple dwellings for a period of time not to exceed the period of amortization of any initial mortgage loan obtained for the multiple dwelling, or for thirty (30) years following completion of construction, whichever is less. However, prior to occupancy by any tenant and after applying for and receiving a Certificate of Occupancy or a Temporary Certificate of Occupancy from the City of Newark (certifying that the building, or portions thereof with respect to a Temporary Certificate of Occupancy, conforms to the Zoning Ordinances of the City of Newark, codified in Title XLI, Zoning and Land Use Regulations, the Uniform Construction Code of the City of Newark and State of New Jersey and all applicable health and housing codes in the City of Newark and State of New Jersey), the landlord of any newly constructed dwelling shall apply to the Rent Control Board for a Certification that the dwelling, or portion thereof with respect to Temporary Certificates of Occupancy, is granted an exemption from any restrictions in the rent that the landlord may charge. The application to the Rent Control Board shall include a bona fide copy of the Certificate of Occupancy or Temporary Certificate of Occupancy, without which the application shall not be acceptable and may not be acted upon by the Rent Control Board. The unrestricted initial rent that shall be charged shall also appear on the petition. If the application is acceptable, the Rent Control Board must show, within thirty (30) days of receiving the application, why the landlord is not eligible for the exemption, otherwise, the exemption shall be deemed to have been granted. The exemption period shall begin on the first day of occupancy by a tenant or thirty (30) days after the landlord's application is received by the Rent Control Board, whichever occurs first. If a Temporary Certificate of Occupancy is issued for any portion of the building and submitted with an application for an exemption, a subsequent and separate application for exemption must be made for any remaining portions of the building. Operation of any other housing space in the remaining portions of the building not covered by the Temporary Certificate of Occupancy will not be exempt from the Rent Control Ordinance unless an exemption application is filed for those portions and is approved by the Rent Control Board. In situations where a Temporary Certificate of Occupancy is used for an exemption, the date of the beginning of the first exemption controls all subsequent filings for exemptions within the same building. 
+      
+      	b.	In the event that there is no initial mortgage financing, the period of the exemption from rent control shall be thirty (30) years from the completion of the construction.
+      
+      	c.	Any exemption from rent control granted pursuant to this Section will remain with the property. Any change in ownership of the property will not affect the exemption. The exemption period of time will not be altered, however, and shall remain pursuant to Sections 19:2-18.1(a) and (c). 
+      
+      	19:2-18.2.	Vacant Properties.
+      
+      	a.	Exemption. Dwellings which become vacant after the effective date of this section and remain vacant for a minimum of eighteen (18) months or dwellings which are already vacant on the effective date of this section shall be exempt for a period of five (5) years from any restrictions in the rent that the landlord may charge, if the Rent Control Board determines that the cost of reconstruction or rehabilitation during a twelve (12) month period has exceeded fifty (50%) percent of either the undepreciated cost or the fair market value of the dwelling and that the dwelling has received a Certificate of Occupancy and meets all applicable State and municipal health and housing codes. 
+      
+      	b.	Completion Prior to Application. The substantial rehabilitation of the dwelling or portions thereof shall be completed prior to the date of application to the Rent Control Board for exemption under this Section.
+      
+      	c.	Time Limit for Submission. Petitions for an exemption under this section, whether filed with a Certificate of Occupancy or a Temporary Certificate of Occupancy, shall be submitted no later than two (2) years from the date of the acquisition of the first permit from the City of Newark for the substantial reconstruction or rehabilitation.
+      
+      	d.	Requirements for Valid Petition. The petition forms provided by the Office of Rent Control shall require that the owner submit some tangible evidence an appraisal as to the undepreciated cost or the fair market value of the dwelling. The appraisal shall issued by a member of an appraisal institute such as the American Institute of Real Estate Appraisers, The Society of Real Estate Appraisers, The American Society of Appraisers, or the Independent Order of Fee Appraisers. The petition shall also require a written description of the reconstruction or substantial rehabilitation of the building.  The petitioner shall submit copies of all permits required for the rehabilitation of the building, including, but not limited to electrical, plumbing and construction permits issued by the Construction Official, as well as a detailed rehabilitation or reconstruction plan, a copy of which shall have been filed with the Construction Official on the date of the application for the permits described herein. The plan referred to herein shall include a description of the property improvements, a cost estimate and a construction completion schedule. Where the substantially rehabilitated building involves no more than four (4) apartment units a plan shall not be required. as well as a Petitioner shall also submit a bona fide copy of a Certificate of Occupancy or Temporary Certificate of Occupancy for the dwelling or portion thereof in the case of a Temporary Certificate of Occupancy issued by the City of Newark, certifying that the substantially rehabilitated building or portion thereof conforms to the Zoning Ordinances of the City of Newark codified in Title XLI, Zoning and Land Use Regulations, the Uniform Construction Code of the City of Newark and State of New Jersey and all applicable health and housing codes of the City of Newark and State of New Jersey, without which the petition shall not be valid and may not be acted upon by the Rent Control Board. A continued Certificate of Occupancy shall not be allowable for these purposes. The unrestricted initial rent that shall be charged shall appear on the petition, as well as a sworn and notarized affidavit executed by the landlord stating that he/she did not in any way, manner or method evict the prior tenants from the dwelling in question for the purpose of being considered under this Section. If a Temporary Certificate of Occupancy is issued for any portion of the building and submitted with an application for an exemption, a subsequent and separate application for exemption must be made for any remaining portions of the building. Operation of any other housing space in the remaining portions of the building not covered by the Temporary Certificate of Occupancy will not be exempt from the Rent Control Ordinance unless an exemption application is filed for those portions and is approved by the Rent Control Board. In situations where a Temporary Certificate of Occupancy is used for an exemption, the date of the beginning of the first exemption controls all subsequent filings for exemptions within the same building. In no instance shall any application be permitted beyond the two (2) year limitation referenced in Section 19:2-18.2(c).  The Board shall determine that the reconstruction or rehabilitation shall have been completed in accordance with the requirements of the Uniform Construction Code.  The Board shall also determine that the items described in the rehabilitation plan do not consist of items involving repairs that would be undertaken on an ongoing basis or annual basis in regard to the normal maintenance of the building. If the Board determines that any of the costs of the rehabilitation involve normal maintenance, those costs shall be disallowed in computing the cost of rehabilitation.  The determination of the Board shall also take into account an inspection conducted by a representative from the Department of Engineering after the date of the application.
+      
+      	e. 	Application
+      
+      	The application shall be certified as being accepted by the Administrator within fourteen (14) days of its receipt. Any application which does not contain a plan (if required), a Certificate of Occupancy or Temporary Certificate of Occupancy, or other documents required by the Administrator shall be returned to the applicant within fourteen (14) days. Any application that is not certified as accepted in writing by the Administrator shall be presumed to be denied by the Administrator. An applicant may file a request for a hearing before the Rent Control Board from the decision of the Administrator.  Any application that is accepted by the Rent Control Board Administrator shall be submitted to the Board in accordance with the procedures outlined in Section 19:2-13.
+      
+      	e.f.	Notification of Tenants. At least ninety (90) days prior to the expiration of the five (5) year exemption from rent control, the landlord shall notify the tenants and the Rent Control Board that the tenancy shall be subject to rent charge restrictions upon the expiration of the exemption period.
+       
+      	19:2-18.3.	Substantial Rehabilitation.
+      
+      	Dwellings which are substantially reconstructed or rehabilitated shall not be restricted in regard to the initial rent charged if the Rent Control Board has made the following determinations:
+      Substantially reconstructed or rehabilitated dwellings shall not be restricted in initial rent charged, if the Rent Control Board has made the following determinations:
+      
+      	a.	The Board shall determine that the cost of reconstruction or rehabilitation during a twelve (12) month period exceeds fifty (50%) percent of the fair market value of the property. The fair market value shall be established by an appraisal issued by a member of an appraisal institute such as the American Institute of Real Estate Appraisers, The Society of Real Estate Appraisers, The American Society of Appraisers, or the Independent Order of Fee Appraisers.
+      
+      	b.	The Board shall determine that the reconstruction or rehabilitation shall have been completed in accordance with the requirements of the Uniform Construction Code.
+      
+      	The petitioner shall submit copies of all permits required for the rehabilitation of the building, including, but not limited to electrical, plumbing and construction permits issued by the Construction Official, as well as a detailed rehabilitation or reconstruction plan, a copy of which shall have been filed with the Construction Official on the date of the application for the permits described herein. Where the substantially rehabilitated building involves no more than four (4) apartment units a plan shall not be required.
+      
+      	c.	The Board shall determine that a Certificate of Occupancy or Temporary Certificate of Occupancy for the dwelling or portion thereof in the case of a Temporary Certificate of Occupancy has been issued by the City of Newark certifying that the building or portion thereof has been rehabilitated in accordance with the plan submitted to the Construction Official by the applicant and certifying that the substantially rehabilitated building conforms to the zoning ordinances of the City of Newark codified in Title XLI, the Uniform Construction Code of the City of Newark and the State of New Jersey, as well as all applicable housing codes and health codes of the City of Newark and State of New Jersey. 
+      
+      If a Temporary Certificate of Occupancy is issued for any portion of the building and submitted with an application for an exemption, a subsequent and separate application for exemption must be made for any remaining portions of the building. Operation of any other housing space in the remaining portions of the building not covered by the Temporary Certificate of Occupancy will not be permitted to set an unrestricted initial rent, unless and until a separate application is filed for those remaining portions and is approved by the Rent Control Board. In no instance shall any application be permitted beyond the two (2) year limitation referenced in Section 19:2-18.3(f).
+      	
+      The Board's determination shall take into account an inspection conducted by a representative from the Department of Engineering after the date of the application.
+      	
+      The plan referred to herein shall include a description of the property improvements, a cost estimate and a construction completion schedule.
+      
+      	d.	The Board shall further determine that the items described in the rehabilitation plan do not consist of items involving repairs that would be undertaken on an ongoing basis or annual basis in regard to the normal maintenance of the building. If the Board determines that any of the costs of the rehabilitation involve normal maintenance, those costs shall be disallowed in computing the cost of rehabilitation.
+      	e.	The substantial rehabilitation of the dwelling or portions thereof shall be completed prior to the date of application to the Rent Control Board for an exemption under this section.
+      
+      	f.	Petitions for an exemption under this section, whether filed with a Certificate of Occupancy or a Temporary Certificate of Occupancy, shall be submitted no later than two (2) years from the date of acquisition of the first permit from the City of Newark for the substantial reconstruction or rehabilitation. The unrestricted initial rent that shall be charged shall also appear on the petition.
+      
+      	g.	The application shall be certified as being accepted by the Administrator within fourteen (14) days of its receipt. Any application, which does not contain a plan (if required), a Certificate of Occupancy or other documents required by the Administrator shall be returned to the applicant within fourteen (14) days. Any application that is not certified as accepted in writing by the Administrator shall be presumed to be denied by the Administrator. An applicant may file a request for a hearing before the Rent Control Board from the decision of the Administrator.
+      
+      	h.	Any application that is accepted by the Rent Control Board Administrator shall be submitted to the Board in accordance with the procedures outlined in Section 19:2-13. In addition, the petitioner shall give each tenant one (1) month prior notice of the effective date of any unrestricted rental increase approved by the Rent Control Board. 
+      
+      	19:2-18.4.	Substantially Rehabilitated Vacant Apartment Units.
+      
+      	a.	Maximum Rent Increase. Any landlord that rehabilitates a vacant apartment unit by spending a total amount equal to at least twelve (12) months of actual monthly rent per unit will be entitled to a maximum of ten percent (10%) increase in the actual monthly rent.	
+      
+            b.	Application for Increase. The application for an increase shall be supported by an affidavit describing the amount expended on each room of the apartment and stating that such expenses are reasonable, necessary and complete for the purpose of rehabilitating the apartment unit. Expenses described in this application shall not be used to support any other application before the Board.
+      
+      	c.	Notice of Application Posted. A notice of any application for a rent increase under this section shall be posted in a conspicuous place in the apartment building by the landlord on the date of the application.
+      
+      	d.	Objections Heard. The determination to grant such increase shall be made by the Administrator, unless an objection is filed by the current tenant, the prior tenant, or a member of the public. If an objection is duly filed, the application shall be set down for a hearing before the Board.
+      
+      	e.	Inspection; Abatement of Violations. An inspection by the Office of Inspections and Enforcement in the Department of Engineering of the City of Newark shall be completed prior to granting an application. Any code violations found to exist, including the absence and/or inadequacy of required smoke and fire alarm devices, shall be abated prior to granting the application.
+      
+      	f.	Number of Increases Limited. The landlord may be granted only one (1) increase under this section for the same apartment unit in any twelve (12) month period.
+      
+      	g.	Unlawful Entry; Penalty. Any landlord, who shall gain access to an apartment by forcibly evicting a tenant contrary to the provisions of N.J.S.A. 2A:18-61.1 et seq. for the purpose of vacating and rehabilitating the apartment shall be guilty of an unlawful entry and detainer, as defined in N.J.S.A. 2A:39-2, and may be subject to treble damages pursuant to N.J.S.A. 2A:39-8.
+       
+      	19:2-18.5.	City Auction Manual Required Notice.
+      
+      	In all auction manuals prepared for use by the Office of Property Management there shall be included the following notice:
+      
+      NOTICE TO PROSPECTIVE HOMEOWNERS
+      
+      	Pursuant to the provisions of this act, person(s), who acquire City-owned dwellings (if the dwellings are not substandard multiple dwelling or newly constructed multiple dwelling) in the City of Newark shall be exempted for a period of five (5) years from any restrictions in the rent that the landlord may charge provided that:
+      
+      	a.	The dwelling was vacant as of December 17, 1983; or
+      
+      	b.	The dwelling became vacant after December 17, 1983, and remained vacant for a minimum of eighteen (18) months; and
+      
+      	c.	The prospective homeowner's rehabilitation costs during the twelve (12) month period after the sale have exceeded fifty (50%) percent of the cost or fair market value of the dwelling and the dwelling is in conformance with all local and State health and housing codes and regulations as prescribed by the Revised General Ordinances of the City of Newark subsection 19:2-18.2.
+      
+      	19:2-18.6.	Application Submission.
+      
+      	All applications for rent control exemption must be made through the Rent Control Board, City Hall, Newark, New Jersey. 
+      
+      19:2-19.	VIOLATIONS.
+      
+      	a.	Violation of any provisions of this chapter or misrepresentation of facts before a hearing of the Rent Control Board, shall be punished, upon conviction in accordance with N.J.S.A. Section 40:49-5, by a fine of not more than five hundred ($500.00) dollars of not less than $100.00 but not exceeding two thousand dollars ($2,000.00) or imprisonment for not more than ninety (90) days or both. A violation affecting more than one (1) housing space shall be considered a separate violation as to each housing space. 
+      
+      	b.	Alternatively, upon conviction, In addition, the Municipal Court may impose a monetary penalty not to exceed five hundred ($500.00) two thousand dollars ($2,000.00) for each violation of any provision of this chapter. after a notice and an opportunity to be heard are provided to the parties before the Board. Any penalty imposed by the Municipal Court shall be calculated separately from any fine imposed for violation of this Section. 
+       
+      19:2-20.	LIBERALLY CONSTRUED.
+      
+      	This chapter being necessary for the welfare of the City and its inhabitants, shall be liberally construed to effectuate the purposes thereof.  
+      
+      19:2-21.	EXTENSION.
+      
+      	All rent for the rental of housing space and services in dwellings to which this chapter is applicable are hereby controlled at the rent level received by the landlord, as of the first date that this chapter was adopted, on September 4, 1985, and no rental increases shall hereafter be instituted, except as provided in this chapter as amended and supplemented. This chapter shall continue in full force and effect from October 19, 1988. 
+      
+      19:2-22.	LIMITATION ON INCREASES.
+      
+      	a.	Since an immediate rent increase of more than twenty-five (25%) percent above the prior monthly rent may be considered unconscionable and imposes a hardship on a tenant, the Rent Control Board shall not grant increases exceeding twenty-five (25%) percent in any one (1) year for any tenant.
+      
+      	b.	For the purpose of determining whether the rent increase exceeds twenty-five (25%) percent of the monthly rent, all increases pursuant to Section 19:2-3, Rent Increases, 19:2-7, Major New Improvements and 19:2-8, Landlord Hardships, occurring within twelve (12) months prior to the effective date of the increase shall be added to determine if that amount exceeds twenty-five (25%) percent of the prior monthly rent.
+      
+      19:2-23.	APPLICATION AND INSPECTION FEES.
+      
+      	The following fees shall be charged for rent control applications and inspections, which shall be payable by the applicant upon presentation of the application:
+      
+      	a.	Major new improvement applications (19:2-7); $25.00 $250.00
+      	b.	Hardship application (19:2-8); $5.00 (Per apartment)
+      Maximum	$1,000.00
+      
+      	c.	Annual Registration; $50.00 plus $10.00 per dwelling unit.
+      
+      	d.	Late registration (to be assessed for each year beyond due date of annual registration; in addition to yearly Annual Registration fees); $100.00 per year, plus $20.00 per unit.
+      
+      	c.	e.  Late registration fee for any building not registered at least ninety (90) days prior to any application for increase (in addition to annual registration fees and penalties, when applicable) (fee to be waived, if building was registered within ninety (90) days after landlord accepted title to premises); $100.00
+      
+      	d.	f.  Inspections; $5.00 (Per room) Maximum	$100.00
+      
+      	e.	g. 	Rent rebate applications (19:2-4); prevailing party to be reimbursed for fee by unsuccessful party; $15.00
+      
+      	f.	h. Rent decrease for decrease in services (19:2-12); prevailing party to be reimbursed for fee by unsuccessful party; $15.00
+      
+      	g.	i. New construction, vacant properties, substantial rehabilitation, and substantially rehabilitated vacant units (19:2-18) applications;	$25.00 $250.00
+      
+      	h.	j. Tax or utilities surcharge applications (19:2-5, 19:2-17); $15.00
+      
+      19:2-24.	LEASING OF PREMISES LOCATED IN EXEMPTED MULTIPLE DWELLINGS; EXEMPTION STATEMENT AND NOTICES.
+      
+      	The owner of any multiple dwelling exempted from a rent control or rent leveling ordinance pursuant to this chapter, shall, prior to entering into any lease with a person(s) for tenancy of any premises located in the multiple dwelling, furnish the prospective tenant(s) with a written statement that the multiple dwelling in which the premises is located is exempt from rent control or rent leveling for such time as may remain in the exemption period. Each lease offered to a prospective tenant(s) for any dwelling unit therein during the period the multiple dwelling is so exempted shall contain a provision notifying the tenant(s) of the exemption.  
+      
+      19:2-24.1.	Statement of Owner's Claim of Exemption; Filing; Contents; Notice of Termination.
+      
+      	The owner of any multiple dwelling claiming an exemption from a rent control or rent leveling ordinance pursuant to this chapter shall file with the Municipal Construction Official and the Office of Rent Control, at least thirty (30) days prior to the issuance of a Certificate of Occupancy or Temporary Certificate of Occupancy for the newly constructed multiple dwelling or portions thereof, a written statement of the owner's claim of exemption from an ordinance under this chapter, including therein a statement of the date upon which the exemption period so claimed shall commence (including, for exemption claims based on new construction pursuant to Section 19:2-18.1, proof of the beginning of the amortization period of any initial mortgage loan), such information as may be necessary to effectively locate and identify the multiple dwelling for which the exemption is claimed, and a statement of the number of rental dwelling units in the multiple dwelling for which the exemption is claimed. The owner shall, at least thirty (30) days prior to the date of the termination of the exemption period afforded pursuant to this chapter, file with the Municipal Construction Official and the Office of Rent Control a notice of the date of termination of the exemption period for the affected multiple dwelling. 
+
+
+STATEMENT
+
+      This Ordinance amends Title XIX Rent Control, Chapter 19, Rent Control Regulations; Rent Control Board, Section 19:2-2, Definitions, by making various corrections.

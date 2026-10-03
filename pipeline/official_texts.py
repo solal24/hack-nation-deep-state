@@ -55,6 +55,18 @@ DOCS = {
         "change_tests": "T5",
     },
     # Newark: the attached PDFs are scans (no text layer); Legistar stores the ordinance text itself.
+    # The supplied corpus has no Newark text at all (D070-D072 are ecode360, check-terms).
+    "X010": {
+        "url": "https://webapi.legistar.com/v1/newark/matters/1608659/texts/1555618",
+        "json_field": "MatterTextPlain",
+        "found_via": "Newark Legistar matter 24-1160 (https://newark.legistar.com, LegislationDetail ID=1608659), "
+                     "stored matter text, version 1; the certified ordinance PDF attachment is the signed copy",
+        "jurisdictions": "Newark, NJ",
+        "bill": "Newark ordinance 24-1160 amending 6PSF-I: Title XIX Rent Control, Chapter 2 (Rent Control "
+                "Regulations; Rent Control Board), full chapter text incl. § 19:2-3 rent increases (CPI, max 4%)",
+        "bill_status": "adopted 2024-09-18 (Legistar status 'Adopted'); later amended by 26-0532 (X008)",
+        "bill_dates": "2024-08-15 introduced; 2024-09-18 adopted",
+    },
     "X008": {
         "url": "https://webapi.legistar.com/v1/newark/matters/1611524/texts/1559191",
         "json_field": "MatterTextPlain",
