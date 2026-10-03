@@ -14,3 +14,4 @@ node_modules/
 !data/cache/
 runs/*
 !runs/.gitkeep
+outputs/*_dev.json
