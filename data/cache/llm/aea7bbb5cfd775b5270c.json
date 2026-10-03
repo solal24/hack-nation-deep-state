@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Prohibition Against Algorithmic Rent-Fixing in the Rental Housing Market",
+      "requirement": "Landlords in Hoboken are banned from using software, algorithms, or data-sharing platforms to collect and analyze nonpublic competitor rental data (like prices, occupancy levels, and security deposits less than 365 days old) to coordinate or set rental prices, lease terms, or occupancy levels with other landlords.",
+      "key_value": "Fine up to $2,000 or up to 90 days community service",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to landlords renting any residential dwelling unit (primary residence), excluding medical/long-term care or detention facilities."
+      },
+      "exemptions": "Does not apply to use of publicly available information or information 365 days or older; excludes medical/long-term care or detention facilities.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": true,
+      "interaction": null,
+      "effective_date": "2025-07-09",
+      "penalty": "Penalties as prescribed under N.J.S.A. 40:49-5, or a fine not exceeding $2,000.00, or a period of community service not exceeding ninety (90) days.",
+      "citation": "Hoboken City Code § 158-2",
+      "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing.",
+      "confidence": 0.85,
+      "conflict_note": "The ordinance title states it adds a new Section 158-2 to Chapter 158, but the operative body text is headed '§ 154-8,' creating an internal citation discrepancy in the document."
+    }
+  ]
+}
