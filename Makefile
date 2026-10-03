@@ -1,6 +1,6 @@
 PY ?= .venv/bin/python
 
-.PHONY: setup enrich extract engine changes eval all ingest online online-check
+.PHONY: setup enrich extract engine changes eval all ingest online online-check external
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
@@ -30,3 +30,6 @@ online:        ## external data: one address outside the sample -> data/addresse
 
 online-check:  ## accuracy of the online lookup vs the supplied sample (10 addresses per city)
 	$(PY) -m pipeline.online_address --validate 10
+
+external:      ## external data: state bills (LegiScan + Open States), council items (Legistar), enacted bill texts -> data/external/
+	$(PY) -m pipeline.legislation && $(PY) -m pipeline.council && $(PY) -m pipeline.bill_texts

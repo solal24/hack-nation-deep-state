@@ -27,7 +27,7 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 | 3 · Change tests T1-T5 | `pipeline/changes.py` | _tbd_ | ⏳ |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
 | External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | 🟡 on branch `feat/external-data`: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
-| External data · law texts, legislative APIs | `starter/corpus/supplemental/` (planned) | Elie | ⏳ |
+| External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/` | Elie | 🟡 on branch `feat/external-data` (`make external`): 34 CA/NJ/MA housing bills (LegiScan, cross-checked 34/34 with Open States, all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), official texts of 5 enacted bills + verbatim effective-date clause (FAIR Act → 2027-07-01). `watchlist.json` = "What's coming" per state/city. All `provenance=public`, unreviewed, never in the deliverables |
 | App | Lovable | _tbd_ | ⏳ |
 
 ## Run it
