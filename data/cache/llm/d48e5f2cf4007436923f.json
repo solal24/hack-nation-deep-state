@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security Deposit Cap, Handling, and Optional Fee-in-Lieu",
+      "requirement": "A landlord may not require a security deposit greater than the first month's rent, and the deposit must be placed in an interest-bearing bank account in Massachusetts, accompanied by a written statement of the premises' condition, and returned (with interest) within 30 days after tenancy ends, subject to itemized deductions for unpaid rent/taxes or tenant-caused damage. As of an August 1, 2025 amendment, the Executive Office of Housing and Livable Communities may also authorize a landlord and tenant to agree to a recurring or scheduled fee in lieu of a deposit instead, but the fee must be optional, cannot be set based on the tenant's income, race, gender, disability, immigration status, household size or credit score, and the combined total of any such fee plus any deposit actually paid cannot exceed one month's rent.",
+      "key_value": "1 month's rent (deposit cap); fee-in-lieu alternative also capped at 1 month's rent combined total",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to residential tenancies generally; excludes vacation/recreational tenancies of 100 days or less. No building size, age, or ownership-based coverage conditions stated."
+      },
+      "exemptions": "Does not apply to a lease, rental, occupancy or tenancy of 100 days or less for a vacation or recreational purpose. Fee-in-lieu option requires EOHLC regulations and is optional for both landlord and tenant, who may opt back into paying the full deposit instead.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "The fee-in-lieu mechanism (added effective 2025-08-01) operates alongside, not instead of, the underlying 1-month-rent deposit cap; a lessor who fails to comply with deposit-handling rules (e.g., separate account, timely itemized return) forfeits the right to retain any portion of the deposit.",
+      "effective_date": null,
+      "penalty": "Lessor forfeits right to retain deposit for noncompliance; tenant may recover treble damages plus interest, court costs, and attorney's fees for wrongful withholding or failure to pay required interest.",
+      "citation": "Mass. Gen. Laws ch. 186, § 15B",
+      "quoted_span": "a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2)",
+      "confidence": 0.9,
+      "conflict_note": "Document shows two versions of clause (1)(b)'s introductory text: one effective until August 1, 2025 and one as amended effective August 1, 2025; the underlying 1-month deposit cap is unchanged between versions, only the fee-in-lieu authorization and 'agent of the lessor' language were added."
+    },
+    {
+      "jurisdiction": "MA",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Cap on Upfront Charges at Commencement of Tenancy",
+      "requirement": "At or before the start of a tenancy, a landlord or their agent may not require a tenant or prospective tenant to pay more than: (i) the first full month's rent, (ii) the last full month's rent at the same rate as the first month, (iii) a security deposit equal to one month's rent (or, where authorized, a fee in lieu of deposit), and (iv) the cost of purchasing and installing a key and lock. No separate application or screening fee beyond these amounts may be charged.",
+      "key_value": "Allowed upfront charges limited to: first month's rent + last month's rent + 1 month's rent security deposit + key/lock cost; no other fees permitted",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to residential tenancies generally; no building size, age, or ownership-based coverage conditions stated."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "This upfront-charge cap incorporates the security deposit cap and its fee-in-lieu alternative described separately under the security-deposits rule for this same section.",
+      "effective_date": null,
+      "penalty": "Any lease provision conflicting with this section, or any tenant waiver of it, is void as against public policy; demanding amounts in excess of these caps violates the statute.",
+      "citation": "Mass. Gen. Laws ch. 186, § 15B",
+      "quoted_span": "no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+      "confidence": 0.8,
+      "conflict_note": "The clause's introductory wording was amended effective August 1, 2025 to add 'or agent of the lessor,' but the substantive list of allowed charges (i)-(iv) is unchanged between the pre- and post-amendment text shown in the document."
+    }
+  ]
+}

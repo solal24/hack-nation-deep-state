@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security Deposit Law — maximum deposit and annual increase cap",
+      "requirement": "A New Jersey landlord is not required to collect a security deposit, but if one is collected it cannot exceed one and one-half times one month's rent (combined with any pet deposit), and any yearly increase to the deposit may not exceed 10% of the current deposit amount. Prepaid rent (including last month's rent) counts toward this cap, so total upfront charges (security deposit plus first month's rent) cannot exceed two and one-half times the monthly rent.",
+      "key_value": "max 1.5x monthly rent; annual increase cap 10% of current deposit",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 3,
+        "excludes_single_family": false,
+        "notes": "Applies to most residential rental properties including mobile homes; owner-occupied two- or three-family dwellings are exempt, though a tenant there may opt in 30 days after written request to the landlord."
+      },
+      "exemptions": "Owner-occupied two- or three-family dwellings are exempt unless the tenant requests coverage in writing (effective 30 days later). Seasonal use/rental (125 days or fewer) is exempt from the trust-account investment provisions.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Advance rent payments (including last month's rent), however labeled, are treated as part of the security deposit and count toward the 1.5x cap per Brownstone Arms v. Asher and Reilly v. Weiss.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 46:8-21.2",
+      "quoted_span": "The maximum-security deposit to be collected by the landlord cannot be more than one and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional yearly security deposit increase may not exceed 10% of the current security deposit.",
+      "confidence": 0.92,
+      "conflict_note": null
+    },
+    {
+      "jurisdiction": "NJ",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Good cause required for eviction or non-renewal of residential leases",
+      "requirement": "A landlord of residential rental property may not refuse to renew a lease, or evict a tenant, without good cause as defined under New Jersey's eviction law. This applies regardless of whether the lease is written or oral.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 3,
+        "excludes_single_family": false,
+        "notes": "Does not apply to owner-occupied two- or three-family dwellings, motels, hotels, or transient/seasonal units."
+      },
+      "exemptions": "Owner-occupied two- or three-family dwellings, motels, hotels, and transient or seasonal rental units are excluded; those tenancies are addressed separately under evictions for owner-occupied two- and three-family dwellings.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "N.J.S.A. 2A:18-61.3",
+      "quoted_span": "No landlord of residential rental properties except those in owner occupied two or three family dwellings, motels or hotels, transient, or seasonal units may fail to renew any lease, regardless of whether it is written or oral unless they have good cause not to renew the lease.",
+      "confidence": 0.75,
+      "conflict_note": "Full list of statutory 'good causes' for eviction is detailed in a later section of the source document not included in this excerpt; citation format in source ('2A:18:61.3') normalized here."
+    }
+  ]
+}

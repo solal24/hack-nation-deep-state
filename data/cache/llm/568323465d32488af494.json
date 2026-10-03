@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation Assistance Payment – Owner Move-In Eviction",
+      "requirement": "When a landlord evicts a tenant for an owner move-in (so the owner or a qualifying relative can occupy the unit), the landlord must pay the tenant a relocation assistance payment. The amount is adjusted annually for inflation; effective January 1, 2026 the standard payment is $19,413, plus an additional $6,471 for qualifying households.",
+      "key_value": "$19,413 standard relocation payment + $6,471 additional for qualifying households (1.5% CPI increase for 2026)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Payments are indexed to the 12-month change in the CPI for All Urban Consumers, San Francisco-Oakland-San Jose region; the Rent Board publishes the yearly inflationary increase.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Berkeley Municipal Code ch. 13.76",
+      "quoted_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction.",
+      "confidence": 0.6,
+      "conflict_note": "Document is a Rent Board news adjustment notice naming the ordinance ('Rent Stabilization and Good Cause for Eviction Ordinance') but no specific section number, so citation is given at chapter level. The stated January 1, 2026 date is when this year's CPI-adjusted amounts take effect, not necessarily the original enactment date of the underlying relocation-assistance requirement, which this document does not state."
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation Assistance Payment – Ellis Act Eviction",
+      "requirement": "When a landlord evicts tenants under the Ellis Act to remove a property from the rental housing market, the landlord must pay the same relocation assistance payments as for owner move-in evictions. Effective January 1, 2026 the standard payment is $19,413, plus an additional $6,471 for qualifying households.",
+      "key_value": "$19,413 standard relocation payment + $6,471 additional for qualifying households (1.5% CPI increase for 2026)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Payments are indexed to the 12-month change in the CPI for All Urban Consumers, San Francisco-Oakland-San Jose region, same as the owner move-in relocation payment under the Rent Stabilization and Good Cause for Eviction Ordinance; the Rent Board publishes the yearly inflationary increase.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Berkeley Municipal Code ch. 13.77",
+      "quoted_span": "The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market.",
+      "confidence": 0.6,
+      "conflict_note": "Document is a Rent Board news adjustment notice naming the ordinance ('Ellis Implementation Ordinance') but no specific section number, so citation is given at chapter level. The stated January 1, 2026 date is when this year's CPI-adjusted amounts take effect, not necessarily the original enactment date of the underlying relocation-assistance requirement, which this document does not state."
+    }
+  ]
+}

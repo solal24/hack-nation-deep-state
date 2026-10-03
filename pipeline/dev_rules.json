@@ -37,7 +37,7 @@
       "coverage_conditions": null, "overrides": [], "effective_date": "2027-07-01",
       "citation": "P.L.2026, c.43", "source_doc_id": "D069", "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
       "quoted_span": "DEV FIXTURE placeholder span, not verified",
-      "conflict_flag": true, "conflict_note": "May preempt the Jersey City and Hoboken local bans."
+      "preempts_local": true, "conflict_note": "May preempt the Jersey City and Hoboken local bans."
     },
     {
       "team_rule_id": "dev-MA-ALG-P", "jurisdiction": "MA", "level": "state", "category": "algorithmic_rent_setting",

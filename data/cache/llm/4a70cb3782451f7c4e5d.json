@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Maximum Allowable Rent Increase",
+      "requirement": "A landlord covered by the Rent Stabilization Ordinance cannot raise rent by more than 3% of the current rent or 80% of the change in the Consumer Price Index (CPI), whichever is less. For the period September 1, 2026 through August 31, 2027, the maximum allowable rent increase under this formula is 2.87%.",
+      "key_value": "3% of current rent or 80% of CPI change, whichever is less (2.87% for 9/1/2026-8/31/2027)",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Landlords and tenants may file petitions with the City to contest rent increases that exceed the allowable amount, or to seek rent reductions for decreased housing services or habitability violations.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+      "quoted_span": "The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+      "confidence": 0.75,
+      "conflict_note": "Document does not give a specific municipal code section number for the ordinance; citation reflects the ordinance's common name as used on the city's page."
+    },
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Just Cause Eviction Requirement and Relocation Assistance",
+      "requirement": "A landlord must have a valid, legally recognized reason (just cause) to evict a tenant, such as nonpayment of rent, lease violations, or the landlord's intent to move into the unit. For certain no-fault eviction reasons, the landlord may be required to pay the tenant's relocation assistance costs.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Relocation assistance obligation applies only when the landlord evicts for certain (no-fault) reasons; document does not specify the dollar amount or formula for relocation assistance.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+      "quoted_span": "Your landlord must have a valid reason to evict you. This could be for not paying rent, breaking the lease, or if the landlord wants to move into the property themselves.",
+      "confidence": 0.7,
+      "conflict_note": "Document does not give a specific municipal code section number for the ordinance; citation reflects the ordinance's common name as used on the city's page. No specific list of just causes or relocation assistance amounts is provided in the source text."
+    }
+  ]
+}

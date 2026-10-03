@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "San Diego, CA",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing Ordinance",
+      "requirement": "Landlords may not use an algorithmic device (software that uses nonpublic competitor data to recommend rental rates or occupancy levels) to set rental rates or occupancy levels for residential rental property in San Diego. It is also unlawful for anyone to sell, license, or otherwise provide such a device to a landlord.",
+      "key_value": "Civil penalties up to $1,000 per violation",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Does not apply to software that publishes reports on rental rates/occupancy from aggregated historical nonpublic competitor data that is more than 90 days old (or from publicly available information) and does not recommend future rates/occupancy; also does not apply to software used to set rental rates or income limits under local, state, or federal affordable housing program guidelines.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation in a civil action against the landlord; each month of a continuing violation and each affected property counts as a separate violation; a prevailing tenant recovers costs and reasonable attorney's fees, and lease provisions barring recovery of attorney's fees are unenforceable as to such claims.",
+      "citation": "San Diego Municipal Code § 98.1103",
+      "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
+      "confidence": 0.85,
+      "conflict_note": "Document is a staff report and draft ordinance (O-2025-107) with the ordinance number and date of final passage left blank, indicating it had not yet been adopted by Council as of this document (introduced ~Feb 2025); status recorded as pending based on the document itself since no later enactment confirmation was available for verification."
+    }
+  ]
+}

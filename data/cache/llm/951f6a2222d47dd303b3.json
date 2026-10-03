@@ -1,0 +1,42 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Cap on upfront charges and security deposit; optional fee in lieu of deposit",
+      "requirement": "At or before the start of a tenancy, a landlord (or the landlord's agent) may not require payment of more than: first month's rent, last month's rent, a security deposit capped at one month's rent (held in an interest-bearing escrow account with required receipts/condition statement), and the cost of a key and lock. As of the Aug. 1, 2025 amendment, the executive office of housing and livable communities may also authorize, by regulation, an optional monthly (or other) fee in lieu of a security deposit, which must be disclosed, is capped in total (with any partial deposit) at one month's rent, must be offered to every approved applicant without regard to income/credit/other protected factors, and which the tenant may opt out of by paying the standard deposit instead.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Does not apply to any lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose (subsection 9).",
+      "overrides_citations": [],
+      "interaction": "The fee-in-lieu-of-security-deposit option is not self-executing: it depends on regulations to be promulgated by the executive office of housing and livable communities (in consultation with the Attorney General's office), which set the specific terms for offering such a fee.",
+      "effective_date": "2025-08-01",
+      "penalty": "A lessor who fails to escrow the deposit as required, fails to timely provide an itemized list of damages, uses a lease provision conflicting with this section, fails to transfer the deposit to a successor owner, or fails to timely return the deposit/balance forfeits the right to retain any portion of the deposit; the tenant may recover treble damages (or treble the unpaid interest) plus court costs and reasonable attorney's fees (subsections 6-7).",
+      "citation": "Mass. Gen. Laws ch. 186, § 15B",
+      "quoted_span": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following",
+      "confidence": 0.9,
+      "conflict_note": "The document shows two versions of subsection (1)(b): text in force until Aug. 1, 2025 read 'no lessor may require...'; the amended text (2025 Mass. Acts ch. 9, §§54-55, per Sec. 136) reads 'no lessor or agent of the lessor may require...' and adds the fee-in-lieu-of-deposit framework. As of the 2026-10-01 query date the amended version is the operative text, though implementing regulations for the fee-in-lieu option were still pending as of this page's text."
+    },
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "No upfront fees beyond rent, deposit, and key/lock cost",
+      "requirement": "Because the statute exhaustively lists the only amounts a landlord may collect at or before the start of a tenancy (first and last month's rent, a security deposit or fee in lieu thereof, and the key/lock cost), landlords are barred from charging a separate application fee, screening fee, or other upfront charge not on that list.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": "Does not apply to leases/tenancies of 100 days or less for vacation or recreational purposes (subsection 9).",
+      "overrides_citations": [],
+      "interaction": "Interacts with the security-deposit cap in the same subsection (1)(b); the key/lock cost and the (post-Aug. 2025) optional fee in lieu of deposit are the only additional permitted charges.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Mass. Gen. Laws ch. 186, § 15B",
+      "quoted_span": "no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following",
+      "confidence": 0.65,
+      "conflict_note": "The statute does not use the terms 'application fee' or 'screening fee' explicitly; this rule is an inference from the exhaustive list of permissible upfront charges in subsection (1)(b)."
+    }
+  ]
+}

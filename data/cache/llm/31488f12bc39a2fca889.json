@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "An Act relative to preventing algorithmic rent fixing in the rental housing market (H.5222)",
+      "requirement": "This pending Massachusetts bill would address the use of algorithmic rent-fixing/pricing software in the rental housing market. As of the query date it has only been reported favorably by the Joint Committee on Housing and referred to House Ways and Means; the bill text with specific substantive restrictions is not included in this source.",
+      "key_value": null,
+      "sets_limit": false,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "MA H.5222",
+      "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+      "confidence": 0.35,
+      "conflict_note": "Only the bill's title and procedural history (referred to committee, new draft of H1564) are available in this source; no substantive bill text (e.g., specific definitions, caps, or enforcement mechanisms for algorithmic rent-setting) was provided, so the scope of the restriction cannot be confirmed beyond the title."
+    }
+  ]
+}

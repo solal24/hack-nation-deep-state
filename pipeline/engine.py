@@ -20,10 +20,12 @@ ADDRESSES = ROOT / "data/addresses_enriched.csv"
 RULES = ROOT / "outputs/rules.json"
 DEV_RULES = ROOT / "pipeline/dev_rules.json"
 DEFAULT_AS_OF = "2026-10-01"
+DISCLAIMER = "Not legal advice. Prototype summary of public law for the Hack-Nation challenge; verify with the cited source."
 
 FACT_LABELS = {
     "year_built": "year built",
     "certificate_of_occupancy_date": "certificate of occupancy date (the year built falls in the cutoff year)",
+    "exact_construction_date": "exact construction date (the year built falls in the cutoff year)",
     "units": "number of units",
     "owner_occupancy": "whether the owner lives in the building",
 }
@@ -62,14 +64,18 @@ def jurisdiction_stack(row):
 # ---------- coverage: three-valued logic ----------
 
 def _year_test(year, cutoff_iso, uses_co, before=True):
-    """Is the building built before (or after) the cutoff? -> (True|False|None, missing_fact)."""
+    """Is the building built before (or after) the cutoff date? -> (True|False|None, missing_fact).
+    We only know the YEAR built, so the year that contains the cutoff is ambiguous -> unknown.
+    A Jan 1 cutoff is not ambiguous: 'before 1980-01-01' = built in 1979 or earlier."""
     if year is None:
         return None, "year_built"
     cutoff_year = int(cutoff_iso[:4])
-    if year == cutoff_year and uses_co:
-        return None, "certificate_of_occupancy_date"
-    ok = year < cutoff_year or (year == cutoff_year and not uses_co) if before else year > cutoff_year
-    return ok, None
+    jan1 = cutoff_iso[4:10] in ("", "-01", "-01-01")
+    if not jan1 and year == cutoff_year:
+        return None, "certificate_of_occupancy_date" if uses_co else "exact_construction_date"
+    if before:
+        return year < cutoff_year, None
+    return (year >= cutoff_year) if jan1 else (year > cutoff_year), None
 
 
 def evaluate_coverage(cond, facts, as_of):
@@ -105,6 +111,9 @@ def evaluate_coverage(cond, facts, as_of):
         n = cond["max_units"]
         v = True if hi is not None and hi <= n else False if lo is not None and lo > n else None
         add(v, "units", f"at most {n} units")
+    if cond.get("excludes_single_family"):
+        v = True if lo is not None and lo >= 2 else False if hi is not None and hi < 2 else None
+        add(v, "units", "not a single-family home")
     if cond.get("excludes_owner_occupied_min_units"):
         n = cond["excludes_owner_occupied_min_units"]  # owner-occupied buildings with <= n units are exempt
         v = True if lo is not None and lo > n else None
@@ -133,20 +142,35 @@ def status_on(rule, as_of):
     return "applies"
 
 
-def explain(rule, result, missing, reasons, winner=None):
-    where = rule["jurisdiction"]
+def explain(rule, result, missing, reasons, winner=None, conflict_with=None):
+    """One plain sentence: what the rule says + why this result + citation + retrieval date."""
+    what = rule.get("requirement", "").strip().rstrip(".")
+    key = f" Key value: {rule['key_value']}." if rule.get("key_value") else ""
+    retrieved = (rule.get("retrieved_at") or "")[:10]
+    src = f" [{rule.get('citation')}{'; source retrieved ' + retrieved if retrieved else ''}]"
     if result == "unknown":
         facts = ", ".join(FACT_LABELS.get(m, m) for m in missing)
-        return f"{where} rule; coverage depends on {facts}, which the data does not include."
-    if result == "not_yet_effective":
-        return f"Enacted in {where} but takes effect on {rule.get('effective_date')}."
-    if result == "pending":
-        return f"Pending in {where}: a bill or proposal, not law."
-    if result == "superseded":
+        head = f"May apply: coverage depends on {facts}, which the data does not include."
+    elif result == "not_yet_effective":
+        head = f"Enacted but not yet in force: takes effect {rule.get('effective_date')}."
+    elif result == "pending":
+        head = "Pending bill or proposal, not law."
+    elif result == "superseded":
         by = f" ({winner['title']}, {winner['citation']})" if winner else ""
-        return f"Covered, but a stricter local rule governs this category here{by}."
-    cond = f" (building is {', '.join(reasons)})" if reasons else ""
-    return f"{where} rule applies{cond}."
+        head = f"Covered, but the stricter local rule governs here{by}."
+    else:
+        head = f"Applies{' (building is ' + ', '.join(reasons) + ')' if reasons else ''}."
+    note = f" Possible conflict with {', '.join(conflict_with)}: flagged for human review." if conflict_with else ""
+    return f"{head} {what}.{key}{note}{src}"
+
+
+# Local rent control governs the state rent cap (e.g. SF/LA/Berkeley over Cal. Civ. Code § 1947.12, which
+# exempts units under stricter local rent control). Only cap-vs-cap: both rules must set a limit with a value.
+LOCAL_GOVERNS = {"rent_increase_limits"}
+
+
+def is_cap(rule):
+    return bool(rule.get("sets_limit")) and bool(rule.get("key_value"))
 
 
 def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
@@ -167,21 +191,48 @@ def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
         out[rule["team_rule_id"]] = {
             "team_rule_id": rule["team_rule_id"], "result": result,
             "missing_facts": missing if covered is None else [],
-            "reasons": reasons, "conflict_flag": bool(rule.get("conflict_flag")),
+            "reasons": reasons, "conflict_flag": False, "conflict_with": [],
             "_rule": rule,
         }
-    # precedence: a rule that applies (or may apply) supersedes the rules it overrides
+
+    def supersede(loser, winner):
+        loser.update(result="superseded", superseded_by=winner["team_rule_id"], missing_facts=[])
+
+    # precedence 1: explicit overrides extracted from the law text
     for res in list(out.values()):
-        if res["result"] in ("applies", "unknown"):
+        if res["result"] == "applies":
             for other_id in res["_rule"].get("overrides") or []:
                 other = out.get(other_id)
-                if other and other["result"] == "applies" and res["result"] == "applies":
-                    other["result"] = "superseded"
-                    other["superseded_by"] = res["team_rule_id"]
+                if other and other["result"] in ("applies", "unknown"):
+                    supersede(other, res)
+    # precedence 2: a local rule that applies AND sets a limit governs the state rule of the same category
+    for res in out.values():
+        r = res["_rule"]
+        if res["result"] == "applies" and r.get("level") == "city" and r["category"] in LOCAL_GOVERNS and is_cap(r):
+            for other in out.values():
+                o = other["_rule"]
+                if o.get("level") == "state" and o["category"] == r["category"] and is_cap(o) \
+                        and other["result"] in ("applies", "unknown"):
+                    supersede(other, res)
+    # conflicts, per address: a state rule that preempts local law + a local rule of the same category here
+    live = ("applies", "unknown", "not_yet_effective", "pending")
+    for res in out.values():
+        r = res["_rule"]
+        if r.get("preempts_local") and res["result"] in live:
+            for other in out.values():
+                o = other["_rule"]
+                if o.get("level") == "city" and o["category"] == r["category"] and other["result"] in live:
+                    res["conflict_flag"] = other["conflict_flag"] = True
+                    res["conflict_with"].append(o.get("citation"))
+                    other["conflict_with"].append(r.get("citation"))
+        elif r.get("conflict_flag") and not r.get("preempts_local"):  # the source itself shows conflicting values/dates
+            res["conflict_flag"] = True
+            res["conflict_with"].append("another published value or date for this rule")
     for res in out.values():
         winner = out.get(res.get("superseded_by"), {}).get("_rule")
-        res["explanation"] = explain(res["_rule"], res["result"], res["missing_facts"], res["reasons"], winner)
-    return [{k: v for k, v in r.items() if k not in ("_rule", "reasons")} for r in out.values()]
+        res["explanation"] = explain(res["_rule"], res["result"], res["missing_facts"], res["reasons"],
+                                     winner, res["conflict_with"])
+    return [{k: v for k, v in r.items() if k not in ("_rule", "reasons", "conflict_with")} for r in out.values()]
 
 
 # ---------- any address (outside the 500) ----------
@@ -260,6 +311,7 @@ def main():
             print(f"  {r['result']:<18} {r['team_rule_id']:<14} {r['explanation']}{flag}")
         return
 
+    print(DISCLAIMER)
     if args.address:
         row = addresses[args.address]
         print(f"{row['address_id']} · {row['street_address']}, {row['postal_city']} -> {row['legal_city']} "
@@ -272,8 +324,9 @@ def main():
     lookups = {aid: [{k: r[k] for k in ("team_rule_id", "result", "explanation", "conflict_flag")}
                      for r in lookup(row, rules, args.as_of)]
                for aid, row in addresses.items()}
-    out = ROOT / ("outputs/lookups_dev.json" if args.dev else "outputs/lookups.json")
-    out.write_text(json.dumps({"as_of": args.as_of, "lookups": lookups}, indent=2))
+    name = "lookups" + ("_dev" if args.dev else "") + ("" if args.as_of == DEFAULT_AS_OF else f"_{args.as_of}")
+    out = ROOT / f"outputs/{name}.json"  # never overwrite the deliverable with another as_of
+    out.write_text(json.dumps({"as_of": args.as_of, "disclaimer": DISCLAIMER, "lookups": lookups}, indent=2))
     counts = {}
     for rows in lookups.values():
         for r in rows:

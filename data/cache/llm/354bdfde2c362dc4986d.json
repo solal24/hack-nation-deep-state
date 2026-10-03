@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Income-standard and credit-history screening restrictions for rental applicants (Gov. Code § 12955)",
+      "requirement": "Landlords may not use a financial or income standard for rental housing that fails to count the combined income of unmarried co-applicants the same way it would count married applicants' combined income. When an applicant has a government rent subsidy, the landlord's income-eligibility standard must be based only on the portion of rent the tenant personally pays, and if the landlord uses the applicant's credit history, it must let the applicant instead provide alternative proof of ability to pay (e.g., benefit records, pay stubs, bank statements) and reasonably consider that evidence.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Does not limit a housing provider's ability to request information to verify employment, request landlord references, or verify identity; making a written or oral inquiry about the level or source of a person's income is not itself discrimination.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "This provision (subd. (o), added/amended by SB 267, Stats. 2023 Ch. 776) applies specifically where there is a government rent subsidy; the aggregate-income rule (subd. (n)) applies more generally to rental income standards.",
+      "effective_date": "2024-01-01",
+      "penalty": null,
+      "citation": "Cal. Gov. Code § 12955",
+      "quoted_span": "Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay",
+      "confidence": 0.75,
+      "conflict_note": "The document shows subd. (n)'s aggregate-income rule and subd. (o)'s credit-history/subsidy rule as part of the same section; only the 2023 amendment (SB 267, effective 2024-01-01, adding/revising subd. (o)) has a stated effective date in this text, so the original effective date of subd. (n) is not confirmed here."
+    }
+  ]
+}

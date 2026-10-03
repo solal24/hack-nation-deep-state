@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security Deposit Maximum, Return, and Documentation Requirements (AB 12)",
+      "requirement": "Starting July 1, 2024, landlords may charge a security deposit of no more than one month's rent for unfurnished or furnished units. A small-landlord exception allows up to two months' rent. Deposits (minus lawful deductions for unpaid rent, tenant-caused damage beyond normal wear and tear, cleaning, and, if the lease allows, repair/replacement of furniture or personal property) must be returned within 21 days of move-out, accompanied by an itemized statement and supporting documentation (invoices/receipts); since January 1, 2025 landlords must also provide proof repairs were completed, and since April 1, 2025 must photograph the unit before making repair/cleaning deductions. State law also requires landlords to offer tenants a move-out walk-through inspection in the last two weeks of tenancy to allow correction of issues before deductions are taken.",
+      "key_value": "1 month's rent (up to 2 months' rent for qualifying small landlords); must be returned within 21 days of move-out",
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": "Landlords who own only two rental properties totaling four units or fewer may charge up to two months' rent for furnished or unfurnished units, if ownership is held by a natural person, family trust, or an LLC whose members are all natural persons. Before July 1, 2024, landlords could charge up to two months' rent for unfurnished units and three months' rent for furnished units.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Last month's rent counts as part of the security deposit; first month's rent does not. The Rent Board states it cannot determine in a given case whether a landlord may lawfully charge one or two months' rent for a new tenancy.",
+      "effective_date": "2024-07-01",
+      "penalty": null,
+      "citation": "Cal. Civ. Code § 1950.5",
+      "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+      "confidence": 0.85,
+      "conflict_note": "The source page does not itself resolve how the small-landlord exception is verified for a given tenancy; it also layers in later amendments (proof-of-repairs requirement effective 2025-01-01 and photo-documentation requirements effective 2025-04-01 and 2025-07-01) without separately citing those amending bills, so all are folded into this one Civ. Code § 1950.5 record per the one-record-per-citation rule."
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Berkeley Security Deposit Interest Requirement",
+      "requirement": "For tenancies in units fully or partially covered by Berkeley's Rent Stabilization Ordinance, landlords must pay tenants interest on the security deposit at the end of each year, and a prorated amount of interest if the tenant moves out before year-end.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": false,
+        "notes": "Applies to units fully or partially covered by Berkeley's Rent Stabilization Ordinance (coverage of that ordinance is defined elsewhere, not in this document)."
+      },
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Applies on top of the statewide Cal. Civ. Code § 1950.5 deposit-cap and return rules; the Rent Board refers readers to a separate interest-rate/calculator page for the applicable rate, which this document does not state.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Berkeley Municipal Code ch. 13.76",
+      "quoted_span": "landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year",
+      "confidence": 0.55,
+      "conflict_note": "This source page names only 'Berkeley's Rent Ordinance' without a specific section number; the chapter-level citation (BMC ch. 13.76, the Rent Stabilization and Eviction for Good Cause Ordinance) is inferred rather than quoted from this document, and the applicable interest rate is not stated here."
+    }
+  ]
+}

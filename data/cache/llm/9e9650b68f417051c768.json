@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Ban on algorithmic devices used to set rents or occupancy levels",
+      "requirement": "Landlords in San Francisco may not sell or use algorithmic devices (software that analyzes nonpublic competitor rental data) to recommend what rent to charge for a vacant unit or to manage occupancy levels. Tenants or the City Attorney may sue to enforce the ban.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": "2024-10-14",
+      "penalty": "Civil action may be brought by a tenant or the City Attorney against a violating entity.",
+      "citation": "S.F. Admin. Code § 37.10C",
+      "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.",
+      "confidence": 0.9,
+      "conflict_note": null
+    }
+  ]
+}

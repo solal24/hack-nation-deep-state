@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Broker's fee may only be charged to the party who hired the broker",
+      "requirement": "A tenant cannot be charged a real estate broker's fee for finding a rental unless the tenant is the one who hired the broker; if the landlord or landlord's agent engaged the broker, the landlord must pay the fee.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Also requires that a broker or salesperson contract solely with either the tenant, to find a rental and negotiate on the tenant's behalf, or solely with the landlord or landlord's agent, to find a tenant, not both sides of the same deal. This supersedes the prior version of this section, effective until August 1, 2025, which only required licensure for anyone finding dwelling accommodations for a fee and did not address who pays the fee.",
+      "effective_date": "2025-08-01",
+      "penalty": null,
+      "citation": "Mass. Gen. Laws ch. 112, § 87DDD1/2",
+      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "confidence": 0.75,
+      "conflict_note": "The document shows two versions of Section 87DDD1/2: one effective until August 1, 2025 (licensing requirement only) and one as amended by St. 2025, c.9, Sec. 43, effective August 1, 2025 (adds the fee-payment restriction and single-side contracting rule). This record reflects the post-August 1, 2025 version, current as of the 2026-10-01 query date."
+    }
+  ]
+}

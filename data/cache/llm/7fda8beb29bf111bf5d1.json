@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "An Act prohibiting algorithmic rent setting",
+      "requirement": "A Massachusetts Senate bill would prohibit the use of algorithmic rent-setting software in the rental housing market. As of the document date it has only been reported favorably out of the Joint Committee on Housing and referred to Senate Ways and Means; it has not been enacted.",
+      "key_value": null,
+      "sets_limit": true,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "MA S.2983",
+      "quoted_span": "An Act prohibiting algorithmic rent setting",
+      "confidence": 0.55,
+      "conflict_note": "Document is a bill-tracking/status page only; it contains the bill's title and procedural history but not the operative statutory text, so specific scope, definitions, and any numeric limits could not be confirmed."
+    }
+  ]
+}

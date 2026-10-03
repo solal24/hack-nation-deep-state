@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Statewide annual rent increase cap (AB 1482 / SB 567)",
+      "requirement": "An owner of residential real property cannot raise the rent on a covered unit by more than 5% plus the local change in the cost of living (CPI), or 10%, whichever is lower, in any 12-month period, and can only impose up to two such increases within that 12-month period. The cap does not apply to the initial rent set for a new tenancy once prior tenants have vacated.",
+      "key_value": "5% + CPI, max 10%",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": true,
+        "exempt_if_built_within_years": 15,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 2,
+        "excludes_single_family": true,
+        "notes": "Excludes deed-restricted affordable housing, dormitories/K-12 school housing, housing subject to a stricter local rent-control ordinance, housing with a certificate of occupancy issued within the previous 15 years, single-family homes/condos alienable separately from title where the owner is not a REIT, corporation, or LLC with a corporate member (and required notice is given), owner-occupied duplexes, and mobilehome homeowners (as opposed to mobilehome space renters)."
+      },
+      "exemptions": "Deed-restricted affordable housing; dormitories owned/operated by higher-education institutions or K-12 schools; housing subject to a local rent/price-control ordinance under Costa-Hawkins (Civ. Code § 1954.50 et seq.) that caps increases below this section's limit; housing issued a certificate of occupancy within the prior 15 years (unless a mobilehome); single-family residences/condos alienable separately from other units where the owner is not a REIT, corporation, or LLC with a corporate member and required statutory notice is given; a two-unit property where the owner occupies one unit as a principal residence; mobilehome homeowners under Civ. Code § 798.9.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "This section neither expands nor limits the authority of local governments to adopt or maintain local rent/price control under the Costa-Hawkins Rental Housing Act (Civ. Code § 1954.50 et seq.); stricter local rent caps continue to apply and are expressly carved out as exempt from this statewide cap, and this section does not authorize new local rent limits not otherwise permitted under Costa-Hawkins.",
+      "effective_date": "2019-03-15",
+      "penalty": "Civil liability to the overcharged tenant for injunctive relief, actual damages equal to the rent overcharge, court-discretion attorney's fees and costs, and up to treble damages for willful, oppressive, fraudulent, or malicious violations; the Attorney General or local city attorney/county counsel may also enforce the section and seek injunctive relief (presumed irreparable harm), subject to a 3-year statute of limitations.",
+      "citation": "Cal. Civ. Code § 1947.12",
+      "quoted_span": "an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+      "confidence": 0.97,
+      "conflict_note": "The current section text is the result of a 2023 repeal-and-reenactment (Stats. 2023, Ch. 290 (SB 567)), formally 'Effective January 1, 2024' and 'Operative April 1, 2024,' but subdivision (h)(1) expressly states the rent-cap rule 'shall apply to all rent increases subject to subdivision (a) occurring on or after March 15, 2019,' which is the original effective date under the predecessor AB 1482 version of this section; effective_date here reflects that original 2019 date rather than the 2024 reenactment date. The section is also scheduled to sunset and be repealed as of January 1, 2030 absent further legislative action."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "RSO Allowable Rent Increase Cap (Once per 12 Months)",
+      "requirement": "For properties covered by the Rent Stabilization Ordinance, a landlord may raise rent only once every 12 months, by an allowable rent increase percentage set by LAHD. As of February 2, 2026, landlords may no longer tack on an extra percentage increase for utilities, and the prior 10% surcharge for an added dependent is no longer permitted (a 10% increase for a non-dependent additional tenant is still allowed, chargeable within 60 days of learning of the added tenant). Landlords may also pass through fixed monthly surcharges for unit registration ($1.61, with the actual annual fee at $38.75 since 1/1/2020), 50% of the Systematic Code Enforcement Fee (since 1/1/2022), and a $3.00 smoke/carbon-monoxide detector surcharge; rent increases above the allowable percentage require LAHD approval under specific programs (capital improvements, primary renovation, seismic retrofit, rehabilitation, or a 'just and reasonable' income-based increase).",
+      "key_value": "1 increase per 12-month period, by the LAHD-published allowable %; utility surcharge add-on eliminated 2/2/2026; $1.61/mo registration surcharge ($38.75 annual fee basis since 1/1/2020); $3.00 smoke detector surcharge",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": "1978-10-01",
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": 2,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": true,
+        "notes": "Covers apartments, condos/townhomes (rent amount unregulated for tenancies starting after 12/31/1995), duplexes, 2+ single-family units on one parcel, certain hotel/rooming-house rooms, units attached to commercial buildings, ADUs/JADUs, and mobile homes/RVs in mobile home parks; standalone single-family homes are not covered."
+      },
+      "exemptions": "Rent may be raised to market rate upon voluntary move-out, eviction for nonpayment or lease violation, eviction for noncompliance with a Tenant Habitability Plan, eviction per City Attorney order, or execution of a Tenant Buyout Agreement. Luxury exemption available if monthly rent on or before 5/31/1978 exceeded a threshold.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "A prior citywide rent-increase moratorium applied 3/30/2020 through 1/31/2024, during which increases were prohibited; landlords who collected unauthorized additional-tenant surcharges during that window were required to give written notice by 3/1/2024.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Los Angeles Mun. Code § 151.00",
+      "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage",
+      "confidence": 0.8,
+      "conflict_note": "Document does not state the numeric allowable increase percentage itself (referenced via an external PDF) or the RSO's original enactment date; several surcharge amendments (utility surcharge removal, dependent surcharge repeal) took effect 2/2/2026 and are reflected as the current rule."
+    },
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "RSO Just Cause for Eviction, Notice Filing, and Relocation Assistance",
+      "requirement": "Landlords of RSO-covered rental units may only terminate a tenancy for an enumerated legal cause: tenant at-fault causes (nonpayment of rent, lease violation, nuisance/damage, illegal use, failure to renew a similar agreement, denial of reasonable access, unapproved subtenancy) or no-fault causes (owner/family move-in, resident manager move-in, demolition/permanent removal from the rental market, government order, conversion to affordable housing). All termination notices must be filed with LAHD within three business days of service on the tenant. No-fault evictions require a filed Landlord Declaration of Intent to Evict, a 30- or 60-day written notice (up to 120 days or a 1-year extension in some cases), and payment of tenant relocation assistance.",
+      "key_value": "Notice filing within 3 business days of service; no-fault notice of 30-60 days (up to 120 days or 1-year extension)",
+      "sets_limit": false,
+      "coverage_conditions": {
+        "built_before": "1978-10-01",
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": 2,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": null,
+        "excludes_single_family": true,
+        "notes": "Same RSO building coverage as rent increase rules (apartments, condos/townhomes, duplexes, 2+ single-family units on one parcel, certain rooming-house rooms, ADUs/JADUs, mobile homes/RVs)."
+      },
+      "exemptions": "Properties not covered by the RSO are still subject to the City's separate Just Cause Ordinance, which the document references but does not cite by section number.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Los Angeles Mun. Code § 151.09",
+      "quoted_span": "must be filed with the Los Angeles Housing Department (LAHD) within\nthree (3) business days of service on the tenant",
+      "confidence": 0.82,
+      "conflict_note": "The document names a separate citywide 'Just Cause Ordinance' covering non-RSO properties but gives no section citation for it, so it is not extracted as its own record."
+    }
+  ]
+}

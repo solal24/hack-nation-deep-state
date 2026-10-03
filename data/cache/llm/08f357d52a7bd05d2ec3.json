@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Fair Chance in Housing Act — criminal record screening restrictions",
+      "requirement": "NJ housing providers cannot ask about or consider an applicant's criminal record until after making a conditional offer of tenancy (except methamphetamine-manufacturing convictions on federally assisted housing and lifetime sex-offender-registry status). After a conditional offer, a provider may only consider: certain serious violent/sexual felonies (no time limit), 1st-degree indictable offenses within the prior 6 years, 2nd/3rd-degree offenses within 4 years, and 4th-degree offenses within 1 year. Arrests without conviction, expunged or pardoned convictions, vacated convictions, juvenile adjudications, and sealed records can never be considered. A conditional offer may only be withdrawn based on a qualifying record if necessary to fulfill a substantial, legitimate, nondiscriminatory interest, following an individualized assessment and with written notice and appeal rights to the applicant.",
+      "key_value": "Lookback: permanent bar for enumerated violent/sexual felonies; 6 years (1st degree); 4 years (2nd/3rd degree); 1 year (4th degree)",
+      "sets_limit": true,
+      "coverage_conditions": {
+        "built_before": null,
+        "built_after": null,
+        "built_cutoff_uses_co_date": false,
+        "exempt_if_built_within_years": null,
+        "min_units": null,
+        "max_units": null,
+        "excludes_owner_occupied_min_units": 4,
+        "excludes_single_family": false,
+        "notes": "Applies to any 'housing provider' (landlord, owner, lessor, sublessor, assignee or agent) renting a 'rental dwelling unit'; landlords who rent to or screen out applicants with criminal records in compliance with the act are granted civil immunity."
+      },
+      "exemptions": "Does not apply to owner-occupied premises of 4 or fewer dwelling units (excluded from definition of 'rental dwelling unit'); methamphetamine-manufacturing convictions on federally assisted housing premises and lifetime sex-offender-registry status may be asked about pre-offer; arrests/charges without conviction, expunged, pardoned, vacated, juvenile adjudications, and sealed records may never be considered.",
+      "overrides_citations": [],
+      "preempts_local": false,
+      "conflicting_sources": false,
+      "interaction": "Enforced exclusively through administrative complaint to the Division on Civil Rights (no private court action); an applicant placed in a unit via a director's order may be evicted, notwithstanding the Anti-Eviction Act, P.L.1974, c.49 (C.2A:18-61.1 et seq.), with 45 days' notice if the housing provider later wins an appeal overturning the violation finding.",
+      "effective_date": "2022-01-01",
+      "penalty": "Civil penalty enforced by the Division on Civil Rights: up to $1,000 for a first violation in 5 years, up to $5,000 for a second within 5 years, up to $10,000 for three-plus within 7 years; director may also order return of application fee, cease-and-desist, or (where feasible) issuance of a conditional offer/comparable unit.",
+      "citation": "N.J.S.A. 46:8-56",
+      "quoted_span": "a.  A housing provider shall not, either before\nor after the issuance of a conditional offer, evaluate an applicant based on\nany of the following types of criminal records:",
+      "confidence": 0.9,
+      "conflict_note": null
+    }
+  ]
+}
