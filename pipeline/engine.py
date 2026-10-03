@@ -184,17 +184,81 @@ def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
     return [{k: v for k, v in r.items() if k not in ("_rule", "reasons")} for r in out.values()]
 
 
+# ---------- any address (outside the 500) ----------
+
+COVERED_CITIES = {"Los Angeles, CA", "San Francisco, CA", "San Diego, CA", "Berkeley, CA", "Santa Ana, CA",
+                  "Jersey City, NJ", "Hoboken, NJ", "Newark, NJ", "Boston, MA", "Cambridge, MA"}
+COVERED_STATES = {"CA", "NJ", "MA"}
+STATE_CODES = {"06": "CA", "34": "NJ", "25": "MA"}
+
+
+def resolve_free_address(text, year_built=None, units=None):
+    """Free-text address -> a row shaped like addresses_enriched.csv (live Census geocoding).
+    Building facts come from the user (None = 'I don't know'); provenance = 'user'."""
+    import requests  # only needed for live lookups
+    resp = requests.get("https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress", timeout=60, params={
+        "address": text, "benchmark": "Public_AR_Current", "vintage": "Current_Current",
+        "layers": "Incorporated Places,Counties,States", "format": "json"})
+    resp.raise_for_status()
+    matches = resp.json()["result"]["addressMatches"]
+    if not matches:
+        return None
+    m = matches[0]
+    g = m["geographies"]
+    state_fips = (g.get("States") or [{}])[0].get("STATE") or (g.get("Counties") or [{}])[0].get("STATE", "")
+    state = STATE_CODES.get(state_fips, (g.get("States") or [{}])[0].get("STUSAB", ""))
+    place = (g.get("Incorporated Places") or [{}])[0].get("NAME")
+    from pipeline.enrich import legal_city  # same naming rule as the 500
+    return {
+        "address_id": "USER", "street_address": m["matchedAddress"], "postal_city": "", "state": state,
+        "zip": m["addressComponents"].get("zip", ""), "legal_city": legal_city(place, state) or "",
+        "legal_city_source": "census_live", "year_built": str(year_built or ""),
+        "units_min": str(units or ""), "units_max": str(units or ""),
+        "units_source": "user" if units else "unknown", "provenance": "user",
+    }
+
+
+def coverage_scope(row):
+    """Is this address inside what our corpus covers? -> (in_scope, note)."""
+    if row["state"] not in COVERED_STATES:
+        return False, f"{row['state'] or 'This state'} is not covered by our sources (CA, NJ, MA only)."
+    if row.get("legal_city") not in COVERED_CITIES:
+        where = row.get("legal_city") or "an unincorporated area"
+        return True, f"Only state-level rules are covered here: {where} is not one of our 10 cities, so local rules may be missing."
+    return True, ""
+
+
 # ---------- CLI ----------
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--as-of", default=DEFAULT_AS_OF)
     ap.add_argument("--address", help="address_id from the sample, e.g. A0001")
+    ap.add_argument("--free", help='any address, e.g. "350 Massachusetts Ave, Cambridge, MA 02139"')
+    ap.add_argument("--year", type=int, help="year built, given by the user (with --free)")
+    ap.add_argument("--units", type=int, help="number of units, given by the user (with --free)")
     ap.add_argument("--dev", action="store_true", help="use dev_rules.json (engine testing only)")
     args = ap.parse_args()
 
     rules = load_rules(dev=args.dev)
     addresses = load_addresses()
+
+    if args.free:
+        row = resolve_free_address(args.free, args.year, args.units)
+        if row is None:
+            print("Address not found by the Census geocoder. Check spelling or add the ZIP code.")
+            return
+        in_scope, note = coverage_scope(row)
+        print(f"{args.free} -> {row['street_address']} · legal city {row['legal_city'] or '(unincorporated)'} "
+              f"· built {row['year_built'] or '?'} · units {row['units_min'] or '?'} · as of {args.as_of} · provenance: user")
+        if note:
+            print(f"  ⚠ {note}")
+        if not in_scope:
+            return
+        for r in lookup(row, rules, args.as_of):
+            flag = " ⚑ conflict" if r["conflict_flag"] else ""
+            print(f"  {r['result']:<18} {r['team_rule_id']:<14} {r['explanation']}{flag}")
+        return
 
     if args.address:
         row = addresses[args.address]

@@ -23,7 +23,7 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 |---|---|---|---|
 | 0 · Enrich addresses | `pipeline/enrich.py` | Ismail | ✅ 489/500 geocoded by Census, 38 postal cities corrected, units known for 468/500 |
 | 1 · Extract rules | `pipeline/extract.py` | _unassigned_ | ⏳ not started |
-| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 v1 on branch `feat/address-lookup`, tested on dev rules |
+| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 v1 on branch `feat/address-lookup`: 500 sample addresses + any address (live Census + user facts, scope warnings), tested on dev rules |
 | 3 · Change tests T1-T5 | `pipeline/changes.py` | _tbd_ | ⏳ |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
 | External data (missing law texts, APIs) | `starter/corpus/supplemental/` (planned) | Elie | ⏳ |
