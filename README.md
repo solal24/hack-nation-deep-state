@@ -22,14 +22,14 @@ The LLM only reads the law; plain code decides what applies, so every answer is 
 | Step | File | Owner | Status |
 |---|---|---|---|
 | 0 · Enrich addresses | `pipeline/enrich.py` | Ismail | ✅ 489/500 geocoded by Census, 38 postal cities corrected, units known for 468/500 |
-| 1 · Extract rules | `pipeline/extract.py` | Solal | 🟡 branch `feat/extract-rules`: 75 rules from 54 docs, 75/75 quotes verbatim; reads `corpus_extra/` too. Gaps: Hoboken, Newark, JC algorithmic ban, MA ballot question (texts from Elie) |
+| 1 · Extract rules | `pipeline/extract.py` | Solal | 🟡 77 rules (75 RealPage + Jersey City Ord. 25-057 and Hoboken Ord. B-781, official city texts in `corpus_extra/`), all quotes verbatim. Gaps: MA ballot question IP 25-21 (T5 failed record), Newark |
 | 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | 🟡 branch `feat/extract-rules`: `outputs/lookups.json` for all 500 on real rules; precedence (local rent cap > state cap), per-address conflicts, ambiguous years → unknown; any address via `--free` |
-| 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | 🟡 `outputs/changes.json`: T1 ✅ 250, T3 ✅ dates (conflicts wait for JC/Hoboken texts), T4 ✅ 110, T5 ✅ empty; T2 waits for JC/Hoboken texts |
+| 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | ✅ T1 250 · T2 Hoboken 40 / Jersey City 50 / Newark 0 · T3 140 + 90 conflict flags · T4 110 pending · T5 empty (failed record still missing) |
 | 4 · Evaluation | `eval/` | _tbd_ | ⏳ |
 | External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | 🟡 on branch `feat/external-data`: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
 | External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/`, `corpus_extra/` | Elie | 🟡 `make external`: 34 CA/NJ/MA housing bills (LegiScan, latest action cross-checked 34/34 with Open States; all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), `watchlist.json` = what's coming per state/city. Enacted bill texts not already in the supplied corpus → `corpus_extra/` X001-X003 (AB 414, SB 1160, SB 763), ready for `make ingest`. Still missing for T2/T3/T5: JC + Hoboken algorithmic ordinances, MA ballot question |
 | App entry point | `pipeline/answer.py` | Elie | 🟡 `answer(address, as_of)` → verdicts (official rules) + unreviewed extra rules + what's coming + every warning; refuses out-of-scope addresses with a reason; `make answer-check` = 7 self-tests |
-| App | Lovable | _tbd_ | ⏳ |
+| App | Lovable + `pipeline/app_bundle.py` → `outputs/app/navigator_data.json` | Solal | 🟡 Lovable project building the base app |
 
 ## Run it
 ```bash
