@@ -1,0 +1,9 @@
+{
+  "states_coverage": true,
+  "built_before": "1979-06-13",
+  "built_after": null,
+  "built_cutoff_uses_co_date": true,
+  "min_units": null,
+  "excludes_single_family": false,
+  "quoted_span": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies that are eligible for a rent increase under the Costa-Hawkins Rental Housing Act, and some tenancies where the rent is regulated by another government agency."
+}

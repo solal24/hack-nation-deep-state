@@ -163,6 +163,9 @@ def explain(rule, result, missing, reasons, winner=None, conflict_with=None, dis
     else:
         head = f"Applies{' (building is ' + ', '.join(reasons) + ')' if reasons else ''}."
     note = f" Possible conflict with {', '.join(conflict_with)}: flagged for human review." if conflict_with else ""
+    cs = rule.get("coverage_source")   # building coverage linked from the city's program text (coverage_link)
+    if cs and result in ("applies", "unknown"):
+        note += f" Which buildings are covered: per {cs.get('citation') or cs.get('source_url')} (doc {cs['doc_id']})."
     if rule.get("provenance", "starter") != "starter":   # text fetched online (corpus_extra), not supplied
         note += " Source retrieved online, outside the supplied corpus; not reviewed by a human."
     return f"{head} {what}.{key}{note}{src}"

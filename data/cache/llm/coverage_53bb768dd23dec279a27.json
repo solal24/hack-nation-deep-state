@@ -1,0 +1,9 @@
+{
+  "states_coverage": false,
+  "built_before": null,
+  "built_after": null,
+  "built_cutoff_uses_co_date": false,
+  "min_units": null,
+  "excludes_single_family": false,
+  "quoted_span": null
+}
