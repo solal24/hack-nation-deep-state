@@ -2,10 +2,17 @@
 
 Hack-Nation 7th Global AI Hackathon (Oct 3-4, 2026) · **Challenge 2, powered by RealPage**. _Not legal advice._
 
-## Links
-- **Live API** behind the app: https://covenant-api-ri6o.onrender.com/health (free plan: the first call after 15 idle minutes can take up to a minute)
-- **Method note** (one page): [METHOD_NOTE.md](METHOD_NOTE.md)
-- **Deliverables:** [outputs/rules.json](outputs/rules.json) · [outputs/lookups.json](outputs/lookups.json) · [outputs/changes.json](outputs/changes.json)
+## Deliverables: where to find them
+| Deliverable | Where | What is inside |
+|---|---|---|
+| Structured rules | [outputs/rules.json](outputs/rules.json) | 88 rules, each with its citation, quoted text, source link and retrieval date |
+| Address lookups | [outputs/lookups.json](outputs/lookups.json) ([direct download](https://raw.githubusercontent.com/solal24/hack-nation-deep-state/main/outputs/lookups.json), 5.9 MB: too large for GitHub to display) | All 500 sample addresses on Oct 1, 2026: 8,541 answers, each with an explanation |
+| Change tests | [outputs/changes.json](outputs/changes.json) | T1 to T5: affected addresses and conflict flags |
+| Method note (one page) | [METHOD_NOTE.pdf](METHOD_NOTE.pdf) · [METHOD_NOTE.md](METHOD_NOTE.md) | Approach, checks, results, limits |
+| Audit log | [outputs/extract_log.jsonl](outputs/extract_log.jsonl) | Every extraction decision, including rejected rules |
+| Live API behind the app | https://covenant-api-ri6o.onrender.com/health | Free plan: the first call after 15 idle minutes can take up to a minute |
+
+Everything we submit is in `outputs/` and at the root of this repo. The files in `starter/submission_templates/` are the organizers' empty templates, not our results. The other files in `outputs/` (`rules_all.json`, `lookups_dev.json`, `app/`) are working files for the pipeline and the app.
 
 ## What it does
 For one building on one date, Covenant says **which rental rules apply** in six categories (rent increase limits, just-cause eviction, security deposits, application fees, screening restrictions, algorithmic rent-setting), **quotes the official text** for each, and answers **"unknown" plus the missing fact** when the records cannot decide. The app then orders the answer by who is reading: renter, landlord or public office.
@@ -81,7 +88,7 @@ pipeline/      our code, one file per step
 data/          addresses_enriched.csv, caches (Census, model answers), external data
 outputs/       rules.json, lookups.json, changes.json (the deliverables), extract_log.jsonl, app/ (app data)
 PLAN.md        plan, methodology, lanes, timeline, data contracts
-METHOD_NOTE.md one-page method note
+METHOD_NOTE.md / .pdf  one-page method note
 ```
 
 ## Team
