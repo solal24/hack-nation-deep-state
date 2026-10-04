@@ -232,7 +232,7 @@ def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
         winner = out.get(res.get("superseded_by"), {}).get("_rule")
         res["explanation"] = explain(res["_rule"], res["result"], res["missing_facts"], res["reasons"],
                                      winner, res["conflict_with"])
-    return [{k: v for k, v in r.items() if k not in ("_rule", "reasons", "conflict_with")} for r in out.values()]
+    return [{k: v for k, v in r.items() if k not in ("_rule", "reasons")} for r in out.values()]
 
 
 # ---------- any address (outside the 500) ----------
