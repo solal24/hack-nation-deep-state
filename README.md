@@ -1,78 +1,92 @@
-# Rental Housing Law Navigator · Team Deep State
+# Covenant · Rental Housing Law Navigator · Team Deep State
 
-Hack-Nation 7th Global AI Hackathon (Oct 3-4, 2026) · **Challenge 2, powered by RealPage**.
-**Submission deadline: Sun Oct 4, 9:00 AM ET.** _Not legal advice._
+Hack-Nation 7th Global AI Hackathon (Oct 3-4, 2026) · **Challenge 2, powered by RealPage**. _Not legal advice._
+
+## Links
+- **Live API** behind the app: https://covenant-api-ri6o.onrender.com/health (free plan: the first call after 15 idle minutes can take up to a minute)
+- **Method note** (one page): [METHOD_NOTE.md](METHOD_NOTE.md)
+- **Deliverables:** [outputs/rules.json](outputs/rules.json) · [outputs/lookups.json](outputs/lookups.json) · [outputs/changes.json](outputs/changes.json)
 
 ## What it does
-For any apartment address and any date, it answers **which housing rules apply** (rent increase limits, just-cause eviction, security deposits, application fees, screening restrictions, algorithmic rent-setting), **with an exact, verified citation**, and says **"unknown" plus the missing fact** when the data can't decide. Then it answers the user's **intent** depending on who they are: renter, landlord, legislator or public office.
+For one building on one date, Covenant says **which rental rules apply** in six categories (rent increase limits, just-cause eviction, security deposits, application fees, screening restrictions, algorithmic rent-setting), **quotes the official text** for each, and answers **"unknown" plus the missing fact** when the records cannot decide. The app then orders the answer by who is reading: renter, landlord or public office.
 
-Scope: 3 states (CA, NJ, MA) · 10 cities · 500 sample addresses · change tests T1-T5. Full plan and methodology: [PLAN.md](PLAN.md).
+Scope: 10 cities in California, New Jersey and Massachusetts · 500 sample addresses · change tests T1-T5. Plan and methodology: [PLAN.md](PLAN.md).
 
 ## How it works
 ```
-starter/corpus ──► extract (LLM, quotes verified verbatim) ──► outputs/rules.json
 starter/addresses ► enrich (Census: legal city, county, ZIP; units from use codes) ──► data/addresses_enriched.csv
+starter/corpus ───► extract (LLM, every quote located verbatim in its source) ──────► outputs/rules.json
 rules + addresses ► engine (deterministic: true/false/unknown, dates, precedence) ──► outputs/lookups.json
-change tests ─────► changes (as-of runs) ──► outputs/changes.json
-outputs ──────────► Lovable app (role → address → verdict + sources, EN/ES)
+change tests ─────► changes (as-of runs before and after each test) ───────────────► outputs/changes.json
+outputs ──────────► app_bundle ──► web app (same engine ported to TypeScript, EN/ES)
+any address ──────► api (Census + public parcel records + the same engine, no LLM) ► web app
 ```
-The LLM only reads the law; plain code decides what applies, so every answer is reproducible and explainable.
+The model only reads the law. Plain code decides what applies, so every answer is reproducible and explainable.
 
-## Status
-| Step | File | Owner | Status |
+## Results
+| | |
+|---|---|
+| Rules | 88 (84 in force, 2 pending, 1 not yet effective, 1 failed), from 48 documents |
+| Quotes | 88 of 88 found word for word in their source; a rule whose quote is not found is rejected |
+| Addresses | 500 answered; 493 geocoded by the Census, 38 mailing cities corrected, unit counts known for 467 |
+| Answers on Oct 1, 2026 | 8,541: 7,164 apply · 819 unknown · 220 pending · 198 superseded · 140 not yet effective |
+| Change tests | T1 250 · T2 Hoboken 40 / Jersey City 50 / Newark 0 · T3 140 + 90 conflict flags · T4 110 pending · T5 recorded as failed, no Massachusetts rent cap |
+| App engine vs pipeline | 0 mismatches over 34,166 answers (500 buildings, 4 dates), shown on the app's `/qa` page |
+
+## What we built, step by step
+| Step | File | Owner | What it does |
 |---|---|---|---|
-| 0 · Enrich addresses | `pipeline/enrich.py` | Ismail | Done: 493/500 geocoded by Census (4 via number ranges), 7 by postal city with county/city IDs inferred from the same city, 38 postal cities corrected, units known for 468/500 (1 supplied-vs-use-code conflict kept as a range) |
-| 1 · Extract rules | `pipeline/extract.py` | Solal | Done: 88 rules (74 RealPage + 14 from official texts in `corpus_extra/`: Jersey City, Hoboken, Newark, MA SJC ruling, San Diego enacted code), all quotes verbatim. Coverage linking (`pipeline/coverage_link.py`): city rent-cap rules taken from rate pages get the program's building coverage from a sibling rule or a verbatim-checked sentence of the city's supplied docs (SF 1979-06-13 from D079, LA 1978-10-01, Berkeley 1980, Santa Ana 1995) |
-| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | Done: `outputs/lookups.json` for all 500; precedence (local rent cap > state cap), per-address conflicts, ambiguous years or disputed unit counts → unknown; rent caps only on buildings their program covers; any address via `--free` |
-| 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | Done: T1 250 · T2 Hoboken 40 / Jersey City 50 / Newark 0 · T3 140 + 90 conflict flags · T4 110 pending · T5 failed record (IP 25-21), 0 MA caps |
-| 4 · Evaluation | `eval/` | _tbd_ | To do |
-| External data · addresses outside the sample | `pipeline/online_address.py`, `pipeline/parcels.py` → `data/addresses_online.csv` | Elie | Done: Census + same assessor source as the sample for all 9 cities; reproduces 89/89 sample facts (`make online-check`); `provenance=public` + warning, never in the deliverables |
-| External data · legislation monitor | `pipeline/legislation.py`, `pipeline/council.py`, `pipeline/bill_texts.py` → `data/external/`, `corpus_extra/` | Elie | Done: `make external`: 34 CA/NJ/MA housing bills (LegiScan, latest action cross-checked 34/34 with Open States; all 6 change-test bills tracked), Boston + Newark council items (Legistar; other cities have no public feed), `watchlist.json` = what's coming per state/city. Enacted bill texts not already in the supplied corpus → `corpus_extra/` X001-X003 (AB 414, SB 1160, SB 763) |
-| External data · official texts | `pipeline/official_texts.py` → `corpus_extra/` | Elie | Done and ingested: X004 Jersey City Ord. 25-057, X005 Hoboken ch. 158 (Solal's captures), X007 SJC docket SJC-13893 (rescript striking IP 25-21), X008-X010 Newark rent control (Legistar stored text), X011 San Diego Mun. Code §§ 98.1101-98.1104 as enacted (O-21955, eff. 2025-06-21; the supplied D076 is the Feb 2025 proposal, so the ban was wrongly 'pending'). X006 IP 25-21 petition kept for reference only (not extracted) |
-| App entry point | `pipeline/answer.py` | Elie | Done: `answer(address, as_of)` → verdicts + unreviewed extra rules + what's coming + every warning; refuses out-of-scope addresses with a reason; `make answer-check` = 7 self-tests |
-| App | Lovable + `pipeline/app_bundle.py` → `outputs/app/navigator_data.json` | Solal | In progress: Lovable app on the bundle (88 rules, 500 addresses, warnings included) |
+| 0 · Enrich addresses | `pipeline/enrich.py` | Ismail | 493/500 geocoded by the Census (4 via number ranges), 7 placed by postal city with county and city IDs inferred from the same city, 38 postal cities corrected, units known for 467/500 (257 supplied, 210 read from use codes), plus 1 supplied-vs-use-code conflict kept as a range, not guessed |
+| 1 · Extract rules | `pipeline/extract.py` | Solal | The model fills the supplied rule schema; each quote is located in the source and replaced by the exact excerpt (rejected, retried once, if not found); duplicates merged; audit log in `outputs/extract_log.jsonl`; model answers cached, so a rerun costs nothing and gives the same result |
+| 1b · Coverage linking | `pipeline/coverage_link.py` | Elie | A city's rent cap often comes from a rates page that never says which buildings are covered. The cap gets the program's building conditions from a sibling rule or a verbatim-checked sentence of the city's documents (SF 1979-06-13, LA 1978-10-01, Berkeley 1980, Santa Ana 1995), so it is not applied to new construction |
+| 2 · Engine (address → laws) | `pipeline/engine.py` | Solal | Coverage in three-valued logic (true / false / unknown), status on the as-of date, precedence (local rent cap over state cap), per-address conflict flags; ambiguous years or disputed unit counts give "unknown" |
+| 3 · Change tests T1-T5 | `pipeline/changes.py` | Solal | Runs the engine on all 500 addresses at each test's dates; affected addresses and conflict flags in `outputs/changes.json` |
+| 4 · App data | `pipeline/app_bundle.py` | Solal | One data file for the app: rules, addresses, results at four dates, coverage, unknowns, changes, upcoming legislation ranked by certainty |
+| Any address | `pipeline/online_address.py`, `pipeline/parcels.py`, `pipeline/answer.py` | Elie | Census geocoder plus the same public assessor dataset the sample used, for 9 cities; a parcel is accepted only if house number and street match; out-of-scope addresses are refused with a reason; every fact carries a "public data, not verified" warning |
+| Live API | `pipeline/api.py`, `render.yaml` | Solal | Serves `answer()` to the app. Standard library only, no LLM, no key |
+| Official texts | `pipeline/official_texts.py`, `pipeline/bill_texts.py` → `corpus_extra/` | Elie | 11 official texts fetched one page at a time from government sites (no crawling), each with its source URL and retrieval time |
+| Legislation monitor | `pipeline/legislation.py`, `pipeline/council.py` | Elie | 34 state bills (LegiScan, latest action cross-checked with Open States), Boston and Newark council items (Legistar). Shown only under "Coming up", marked "not reviewed", never an input to the deliverables |
+| Web app | Lovable (React, TypeScript) | Solal | Address report with quoted evidence and a link to the official text, guided questions for missing facts, as-of date, portfolio, changes, coverage, legislation radar, English and Spanish |
+
+## Checks
+- **Quotes:** `python -m pipeline.extract --verify-only` re-checks every quote against its source, without the model.
+- **Change tests:** `make changes` prints the T1-T5 results and its own assertions.
+- **App entry point:** `make answer-check` runs 7 self-tests and checks that nothing from outside the supplied data is shown without its warning.
+- **Live address lookup:** `make online-check` compares the public lookup with the supplied sample.
+- **App engine:** the `/qa` page of the app compares the TypeScript engine with the pipeline's results on every answer.
+- We did not build a hand-labeled gold set, and no lawyer reviewed the output.
+
+## Sources outside the starter pack
+33 of the 87 supplied documents are links without text. We added 11 official texts (Jersey City, Hoboken and Newark ordinances, the Massachusetts court ruling, San Diego's enacted code). 14 of the 88 rules come from them; they carry `provenance` other than `starter` in `rules.json` and a warning in the app. T2, T3 and T5 depend on them. `make extract` without `SOURCES=all` rebuilds `rules.json` from the supplied corpus only.
 
 ## Run it
 ```bash
-make setup      # Python venv + dependencies
-cp .env.example .env   # add your API key, never commit .env
-make enrich     # step 0
-make extract    # step 1 (LLM: API key in .env with LLM_BACKEND=api, Sonnet 5; or Claude Code login; answers cached in data/cache/llm/, re-runs cost $0)
-make engine     # step 2 -> outputs/lookups.json
-make changes    # step 3 -> outputs/changes.json
-make ingest DOC=X001,X002   # add new law texts from corpus_extra/ end to end
-make extract SOURCES=all       # official rules.json incl. corpus_extra (only if organizers allow; default: RealPage corpus only)
-make external   # external data: bills, council items, enacted bill texts
-make online ADDR="300 Summit Ave, Jersey City, NJ"   # address outside the 500 (public parcel data)
+make setup                 # Python venv + dependencies
+cp .env.example .env       # add your API key, never commit .env
+make all SOURCES=all       # enrich -> extract -> engine -> changes: rebuilds the submitted outputs
+                           # (model answers are cached in data/cache/llm/, so this costs nothing)
+make ingest DOC=X001,X002  # add new law texts from corpus_extra/ end to end
+make external              # bills, council items, enacted bill texts
+make online ADDR="300 Summit Ave, Jersey City, NJ"   # an address outside the 500 (public parcel data)
+.venv/bin/python -m pipeline.api                     # the live API, on port 8000
 ```
 One address: `.venv/bin/python -m pipeline.engine --address A0016 --as-of 2026-10-01`
-What the app shows (any address, with warnings): `.venv/bin/python -m pipeline.answer "50 Bowdoin St, Boston, MA"`
+What the app shows for any address, with warnings: `.venv/bin/python -m pipeline.answer "50 Bowdoin St, Boston, MA"`
 
 ## Repo layout
 ```
-starter/    RealPage starter pack (corpus, addresses, schema, tests). Never edited
-pipeline/   our code, one file per step (+ llm.py, dev_rules.json for engine testing only)
-eval/       our gold set and checks
-data/       addresses_enriched.csv (+ Census cache)
-outputs/    rules.json, lookups.json, changes.json (the deliverables)
-PLAN.md     plan, methodology, lanes, timeline, data contracts
+starter/       RealPage starter pack (corpus, addresses, schema, tests). Never edited
+corpus_extra/  official texts we added, with a manifest (source URL, retrieval time, provenance)
+pipeline/      our code, one file per step
+data/          addresses_enriched.csv, caches (Census, model answers), external data
+outputs/       rules.json, lookups.json, changes.json (the deliverables), extract_log.jsonl, app/ (app data)
+PLAN.md        plan, methodology, lanes, timeline, data contracts
+METHOD_NOTE.md one-page method note
 ```
 
 ## Team
-| Name | Role | GitHub |
+| Name | Lane | GitHub |
 |---|---|---|
-| Solal Abitbol | Address → laws (engine) | @solal24 |
-| Ismail Ameur | Data processing | @IsmaA24 |
-| Elie Abou-Fadel | External data | @eaboufadel3 |
-
-## Working together
-- `git pull` before you start, one branch per feature (`feat/<name>`), merge to `main` only when it runs
-- **Update the Status table in this README whenever a step changes**
-- Never commit API keys (`.env` only), never hand-edit `outputs/rules.json`
-
-## Submission checklist
-- [ ] `outputs/rules.json`, `outputs/lookups.json` (all 500), `outputs/changes.json` (T1-T5)
-- [ ] Live demo link, "Not legal advice" on every screen
-- [ ] One-page method note
-- [ ] Videos if required by Hack-Nation (confirm)
-- [ ] Submitted before 9:00 AM ET (target 8:30)
+| Solal Abitbol | Rule extraction, engine, change tests, web app | @solal24 |
+| Ismail Ameur | Address data: geocoding, legal city, unit counts | @IsmaA24 |
+| Elie Abou-Fadel | External data: official texts, live address lookup, legislation monitor, coverage linking | @eaboufadel3 |
