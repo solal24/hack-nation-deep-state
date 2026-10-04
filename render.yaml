@@ -1,0 +1,12 @@
+# Render blueprint: live API for the app (pipeline/api.py). No keys needed.
+services:
+  - type: web
+    name: covenant-api
+    runtime: python
+    plan: free
+    buildCommand: pip install requests
+    startCommand: python -m pipeline.api
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
