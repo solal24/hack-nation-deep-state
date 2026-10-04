@@ -60,16 +60,17 @@ COVERED_STATES = {"CA": "California", "NJ": "New Jersey", "MA": "Massachusetts"}
 def check_scope(geo):
     """Raise OutOfScope with a distinct reason when we won't answer for this geocoded address."""
     where = geo["matched_address"]
+    with_records = ", ".join(sorted(SUPPORTED_CITIES))
+    cities = ", ".join(sorted(SUPPORTED_CITIES | {"Santa Ana, CA"}))   # the ten cities whose laws we have
     if geo["state"] not in COVERED_STATES:
         raise OutOfScope("outside_states",
-                         f"{where} is outside our coverage. We only have housing law for California, New Jersey and "
-                         f"Massachusetts, so we can't say which rules apply there.")
-    cities = ", ".join(sorted(SUPPORTED_CITIES))
+                         f"{where} is outside our coverage. We only have housing law for ten cities, so we can't "
+                         f"say which rules apply there. We cover: {cities}.")
     if geo["legal_city"] == "Santa Ana, CA":
         raise OutOfScope("santa_ana_no_building_data",
                          f"{where} is in Santa Ana. Its local laws are in our sources, but no public parcel data with "
                          f"building facts (year built, number of units) exists for Santa Ana, and those facts decide "
-                         f"which rules cover a building. We only answer where we can check both: {cities}.")
+                         f"which rules cover a building. Public building records exist for: {with_records}.")
     if not geo["legal_city"]:
         raise OutOfScope("unincorporated",
                          f"{where} is in an unincorporated area of {geo['county'] or COVERED_STATES[geo['state']]}, "
