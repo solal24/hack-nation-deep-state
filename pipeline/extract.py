@@ -45,6 +45,7 @@ CHUNK_CHARS = 45000
 CATEGORIES = ["rent_increase_limits", "just_cause_eviction", "security_deposits",
               "application_screening_fees", "screening_restrictions", "algorithmic_rent_setting"]
 STATUSES = ["in_force", "not_yet_effective", "pending", "failed"]
+STAGE = {"pending": 0, "not_yet_effective": 1, "in_force": 2, "failed": 2}   # legal stage, for duplicate merging
 STATES = {"CA": "California", "NJ": "New Jersey", "MA": "Massachusetts"}
 CITIES = {"Los Angeles": "CA", "San Francisco": "CA", "San Diego": "CA", "Berkeley": "CA", "Santa Ana": "CA",
           "Jersey City": "NJ", "Hoboken": "NJ", "Newark": "NJ", "Boston": "MA", "Cambridge": "MA"}
@@ -417,8 +418,13 @@ def assemble(records):
             continue
         # A supplied-corpus rule always wins over a corpus_extra duplicate (so rules.json never loses it),
         # then the highest confidence.
+        # Exception: an official corpus_extra text showing the same law at a later legal stage (a supplied staff
+        # report says "pending", the city's code shows it enacted) wins, keeping its outside-corpus warning.
         rank = lambda x: (x.get("provenance", "starter") == "starter", x["confidence"])
         keep, other = (r, best[k]) if rank(r) > rank(best[k]) else (best[k], r)
+        if keep.get("provenance", "starter") == "starter" != other.get("provenance", "starter") \
+                and STAGE.get(other["status"], 0) > STAGE.get(keep["status"], 0):
+            keep, other = other, keep
         also = set(keep.get("also_in") or []) | set(other.get("also_in") or []) | {other["source_doc_id"]}
         keep["also_in"] = sorted(also - {keep["source_doc_id"]})
         keep["overrides_citations"] = sorted(set(keep.get("overrides_citations") or []) | set(other.get("overrides_citations") or []))
@@ -483,6 +489,8 @@ def main():
         print(f"\n{len(failed)} document(s) failed: {failed}. rules.json NOT written (re-run, or --force).")
         return
     rules = assemble(records)
+    from pipeline.coverage_link import link   # rate pages without building coverage get the city program's
+    print(f"coverage linking: {link(rules, log=lambda m: None)} rules")
     OUT_ALL.write_text(json.dumps({"rules": rules}, indent=2, ensure_ascii=False), encoding="utf-8")
     official = rules if OFFICIAL_SOURCES == "all" else [r for r in rules if r.get("provenance", "starter") == "starter"]
     OUT.write_text(json.dumps({"rules": official}, indent=2, ensure_ascii=False), encoding="utf-8")

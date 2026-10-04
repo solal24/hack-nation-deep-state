@@ -1,0 +1,9 @@
+{
+  "states_coverage": true,
+  "built_before": "1980-01-01",
+  "built_after": null,
+  "built_cutoff_uses_co_date": true,
+  "min_units": null,
+  "excludes_single_family": false,
+  "quoted_span": "New Construction Units (units with a certificate of occupancy issued after 1980)"
+}

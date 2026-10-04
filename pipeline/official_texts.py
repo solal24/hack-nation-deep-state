@@ -61,6 +61,19 @@ DOCS = {
                       "2026-07-21 rescript issued to trial court",
         "change_tests": "T5",
     },
+    # San Diego: the supplied corpus has only the Feb 2025 staff report + draft ordinance (D076), so extraction
+    # reads the ban as "pending"; the enacted text (D074) is link-only on a publisher site. The city's own
+    # Municipal Code PDF carries the adopted text and its history notes (O-21955, effective 2025-06-21).
+    "X011": {
+        "url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+        "found_via": "City of San Diego official Municipal Code (docs.sandiego.gov/municode), Chapter 9, Article 8, "
+                     "Division 11: Prohibition of Anti-Competitive Automated Rent Price-Fixing",
+        "jurisdictions": "San Diego, CA",
+        "bill": "San Diego Municipal Code §§ 98.1101-98.1104 (Ord. O-21955 N.S.)",
+        "bill_status": "enacted: added 2025-05-22 by O-21955 N.S., effective 2025-06-21 (per the code's history notes)",
+        "bill_dates": "2025-02-27 staff report (D076); 2025-05-22 adopted (O-21955 N.S.); 2025-06-21 effective",
+        "effective_clause": "added 5-22-2025 by O-21955 N.S.; effective 6-21-2025.",
+    },
     # Newark: the attached PDFs are scans (no text layer); Legistar stores the ordinance text itself.
     # The supplied corpus has no Newark text at all (D070-D072 are ecode360, check-terms).
     "X010": {

@@ -185,7 +185,9 @@
       "requirement": "The Annual General Adjustment, the percentage by which a landlord of a fully-covered rental unit may raise rent each year, is capped at 5% even if the Rent Ordinance's CPI-based formula would otherwise produce a higher figure.",
       "key_value": "5% (cap on CPI-based Annual General Adjustment)",
       "coverage_conditions": {
-        "notes": "Applies only to fully-covered rental units (units with a rent ceiling). Measure BB also newly brought most government-owned/subsidized units (e.g., Section 8, Shelter Plus Care, LIHTC) into full or partial coverage, and narrowed the shared-kitchen/bath exemption to cases where the landlord resided on the property before the tenancy began."
+        "notes": "Applies only to fully-covered rental units (units with a rent ceiling). Measure BB also newly brought most government-owned/subsidized units (e.g., Section 8, Shelter Plus Care, LIHTC) into full or partial coverage, and narrowed the shared-kitchen/bath exemption to cases where the landlord resided on the property before the tenancy began.",
+        "built_before": "1980-01-01",
+        "built_cutoff_uses_co_date": true
       },
       "exemptions": "Does not restrict a landlord's use of previously 'banked' (unused) AGAs from prior years to raise rent by more than 5% in a single year, up to the unit's rent ceiling.",
       "overrides": [],
@@ -206,7 +208,13 @@
       "penalty": null,
       "also_in": [
         "D009"
-      ]
+      ],
+      "coverage_source": {
+        "method": "corpus",
+        "doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "New Construction Units (units with a certificate of occupancy issued after 1980)"
+      }
     },
     {
       "team_rule_id": "r-4b59a848",
@@ -218,7 +226,9 @@
       "requirement": "Each year the Berkeley Rent Stabilization Board sets an Annual General Adjustment that eligible landlords may use to raise the permanent rent ceiling on rent-controlled units, based on 65% of the increase in the Bay Area Consumer Price Index (CPI) for the prior July-June period. For 2026 the AGA is 1.0%, applicable no earlier than January 1, 2026.",
       "key_value": "65% of CPI increase (July-June), capped/set annually; 2026 AGA = 1.0%",
       "coverage_conditions": {
-        "notes": "Applies to units subject to Berkeley rent control (rent-ceiling units); excludes units where the tenancy began on/after 2025-01-01 with rent set under Costa-Hawkins vacancy decontrol."
+        "notes": "Applies to units subject to Berkeley rent control (rent-ceiling units); excludes units where the tenancy began on/after 2025-01-01 with rent set under Costa-Hawkins vacancy decontrol.",
+        "built_before": "1980-01-01",
+        "built_cutoff_uses_co_date": true
       },
       "exemptions": "Does not apply to adjust the rent of tenancies that began on or after January 1, 2025 and whose rent was set pursuant to the Costa-Hawkins Rental Housing Act (state vacancy-decontrol law). Conditions for qualifying for the increase and required tenant notice are set out in Rent Board Regulation 1148.",
       "overrides": [],
@@ -236,7 +246,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": "Document is a public notice summarizing the Board's adopted AGA Order/Regulation 1148 rather than the municipal code text itself; exact effective date of the underlying 65%-of-CPI formula (Nov. 2004 ballot measure) is approximate.",
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "corpus",
+        "doc_id": "D006",
+        "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+        "quoted_span": "New Construction Units (units with a certificate of occupancy issued after 1980)"
+      }
     },
     {
       "team_rule_id": "r-b29f0c0c",
@@ -1017,7 +1033,10 @@
       "requirement": "Landlords of units covered by the Los Angeles Rent Stabilization Ordinance (RSO) may raise rent once a year by an annually-announced percentage; for the period July 1, 2025 through June 30, 2026 that allowable increase is 3%. Starting February 2, 2026, landlords can no longer tack on an additional percentage increase for utilities on top of the allowable increase.",
       "key_value": "3%",
       "coverage_conditions": {
-        "notes": "Applies only to rental units subject to the LA Rent Stabilization Ordinance (RSO); tenants/landlords can check coverage via the City's ZIMAS lookup tool. Non-RSO properties are subject to different, state-law-based allowable increases."
+        "notes": "Applies only to rental units subject to the LA Rent Stabilization Ordinance (RSO); tenants/landlords can check coverage via the City's ZIMAS lookup tool. Non-RSO properties are subject to different, state-law-based allowable increases.",
+        "built_before": "1978-10-01",
+        "min_units": 2,
+        "excludes_single_family": true
       },
       "exemptions": null,
       "overrides": [],
@@ -1035,7 +1054,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": "Document does not cite the specific RSO section number; '§ 151.06' is inferred as the generally known rent-adjustment section of the ordinance and should be verified. Also, the stated 3% rate applies only to the July 2025-June 2026 period, which had already ended by the 2026-10-01 query date; the document does not give the rate for the following period.",
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-892b0167",
+        "citation": "Los Angeles Mun. Code § 151.00",
+        "doc_id": "D041"
+      }
     },
     {
       "team_rule_id": "r-892b0167",
@@ -2010,7 +2035,9 @@
       "title": "Utility Cost Surcharge Cap",
       "requirement": "If a landlord proves heating and water costs rose more than 10% year-over-year, the Rent Control Board Administrator must grant a utility surcharge, but it is capped at a percentage of the monthly rent roll that varies by building size.",
       "key_value": "Surcharge capped at 15% of rent roll (≤30 units), 5% (31-200 units), or 3% (>200 units)",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "exempt_if_built_within_years": 30
+      },
       "exemptions": "Surcharge may be denied if the Board finds heat or water is not being provided in conformance with applicable law after the date of application.",
       "overrides": [],
       "overrides_citations": [],
@@ -2028,7 +2055,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-6b3fdaa6",
@@ -2039,7 +2072,9 @@
       "title": "Rent Increase Cap for Substantially Rehabilitated Vacant Units",
       "requirement": "A landlord who rehabilitates a vacant apartment unit by spending at least 12 months' worth of actual monthly rent on the unit may increase the rent by up to 10%, limited to one such increase per unit in any 12-month period.",
       "key_value": "10% max increase, limited to 1 per unit per 12 months",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "exempt_if_built_within_years": 30
+      },
       "exemptions": null,
       "overrides": [],
       "overrides_citations": [],
@@ -2057,7 +2092,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-cdb5d558",
@@ -2101,7 +2142,8 @@
       "requirement": "Landlords may not raise rent for a housing space at lease expiration or termination of a periodic tenancy by more than the percentage increase in the Consumer Price Index measured from 15 months prior to 3 months prior to the proposed increase, and in no case may the increase exceed 4%.",
       "key_value": "CPI increase (15mo to 3mo prior), capped at 4%",
       "coverage_conditions": {
-        "notes": "Applies to all multiple dwellings as defined in the ordinance (buildings with one or more apartments rented to tenants); exemptions apply to public housing, hotels/motels, commercial space, newly constructed multiple dwellings, vacant dwellings, and certain subsidized/Section 8 units."
+        "notes": "Applies to all multiple dwellings as defined in the ordinance (buildings with one or more apartments rented to tenants); exemptions apply to public housing, hotels/motels, commercial space, newly constructed multiple dwellings, vacant dwellings, and certain subsidized/Section 8 units.",
+        "exempt_if_built_within_years": 30
       },
       "exemptions": "Public housing; hotel/motel day-to-day rentals; commercial space; newly constructed multiple dwellings (per 19:2-18.1); vacant dwellings (per 19:2-18.2); units in Federal/State Rental Rehabilitation Programs receiving Section 8 subsidies (rent capped at HUD fair market rent during subsidy tenure); units under governmental agency rent-regulation contracts that preempt City regulation during the contract term.",
       "overrides": [],
@@ -2120,7 +2162,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-3b332ab3",
@@ -2131,7 +2179,9 @@
       "title": "Tax Surcharge Passed Through to Tenants",
       "requirement": "A landlord may seek an additional rent surcharge from tenants to cover increases in municipal property taxes, calculated proportionally based on each tenant's share of the total rent roll, subject to Board approval and 30 days' notice.",
       "key_value": "surcharge = (annual tax increase / 12) / total monthly rent roll x tenant's monthly rent",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "exempt_if_built_within_years": 30
+      },
       "exemptions": "Denied or deferred if outstanding code violations exist on the property until abated.",
       "overrides": [],
       "overrides_citations": [],
@@ -2149,7 +2199,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-c3bdb949",
@@ -2160,7 +2216,9 @@
       "title": "Major New Improvement Surcharge",
       "requirement": "A landlord may charge tenants an additional rent surcharge to recover the cost of a major new improvement, prorated by useful life and apportioned among benefiting tenants, with caps on scope and timing.",
       "key_value": "No increase for improvements affecting more than 10 units unless total cost exceeds $2,000; no increase if completed more than 24 months before notice to Board",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "exempt_if_built_within_years": 30
+      },
       "exemptions": "No increase permitted if dwelling is not in substantial compliance or landlord has not met registration requirements.",
       "overrides": [],
       "overrides_citations": [],
@@ -2178,7 +2236,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-ef881e9d",
@@ -2189,7 +2253,9 @@
       "title": "Hardship Rent Increase for Fair Rate of Return",
       "requirement": "A landlord unable to earn a fair rate of return (5% on equity investment) may apply to the Rent Control Board for a hardship rent increase above the normal CPI cap, subject to Board hearing, inspection for code compliance, and documentation requirements.",
       "key_value": "Fair rate of return = 5% on landlord's equity investment",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "exempt_if_built_within_years": 30
+      },
       "exemptions": "Denied if dwelling not in substantial compliance; denied in whole or part if landlord purchased dwelling at excessive price or incurred expenses an efficient operator would not incur.",
       "overrides": [],
       "overrides_citations": [],
@@ -2207,35 +2273,45 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": null,
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-cdb5d558",
+        "citation": "Newark, NJ Code § 19:2-22",
+        "doc_id": "X010"
+      }
     },
     {
       "team_rule_id": "r-813eef26",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
-      "status": "pending",
-      "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing Ordinance",
-      "requirement": "Landlords may not use an algorithmic device (software that uses nonpublic competitor data to recommend rental rates or occupancy levels) to set rental rates or occupancy levels for residential rental property in San Diego. It is also unlawful for anyone to sell, license, or otherwise provide such a device to a landlord.",
+      "status": "in_force",
+      "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing",
+      "requirement": "It is illegal for anyone to sell or license an algorithmic rent-pricing device to a landlord in San Diego, and it is illegal for a landlord to use such a device to set rental rates or occupancy levels.",
       "key_value": "Civil penalties up to $1,000 per violation",
       "coverage_conditions": null,
-      "exemptions": "Does not apply to software that publishes reports on rental rates/occupancy from aggregated historical nonpublic competitor data that is more than 90 days old (or from publicly available information) and does not recommend future rates/occupancy; also does not apply to software used to set rental rates or income limits under local, state, or federal affordable housing program guidelines.",
+      "exemptions": "Does not include software publishing reports from aggregated historical nonpublic data more than 90 days old or public information that does not recommend future rates; software used to set rates under affordable housing program guidelines; or software used in appraisals that does not recommend rates during runtime.",
       "overrides": [],
       "overrides_citations": [],
       "interaction": null,
-      "effective_date": null,
+      "effective_date": "2025-06-21",
       "citation": "San Diego Municipal Code § 98.1103",
-      "source_doc_id": "D076",
-      "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
-      "retrieved_at": "2026-10-01T22:37Z",
-      "provenance": "starter",
-      "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
-      "confidence": 0.85,
+      "source_doc_id": "X011",
+      "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+      "retrieved_at": "2026-10-04T00:56Z",
+      "provenance": "elie_manual",
+      "review_status": "to_review",
+      "quoted_span": "It is unlawful for a person to sell, license, or otherwise provide an algorithmic \ndevice to a landlord. \n(b) It is unlawful for a landlord to use an algorithmic device to set rental rates or \noccupancy levels for residential rental property.",
+      "confidence": 0.97,
       "sets_limit": true,
       "preempts_local": false,
       "conflict_flag": false,
-      "conflict_note": "Document is a staff report and draft ordinance (O-2025-107) with the ordinance number and date of final passage left blank, indicating it had not yet been adopted by Council as of this document (introduced ~Feb 2025); status recorded as pending based on the document itself since no later enactment confirmation was available for verification.",
-      "penalty": "A tenant may seek injunctive relief, damages, or civil penalties of up to $1,000 per violation in a civil action against the landlord; each month of a continuing violation and each affected property counts as a separate violation; a prevailing tenant recovers costs and reasonable attorney's fees, and lease provisions barring recovery of attorney's fees are unenforceable as to such claims."
+      "conflict_note": null,
+      "penalty": "Civil penalties of up to $1,000 per violation, plus injunctive relief, damages, and attorney's fees/costs to prevailing party; each month of continued use and each property constitutes a separate violation.",
+      "also_in": [
+        "D076"
+      ]
     },
     {
       "team_rule_id": "r-91516db6",
@@ -2453,7 +2529,10 @@
       "title": "Annual Allowable Rent Increase under San Francisco Rent Ordinance",
       "requirement": "Landlords covered by the San Francisco Rent Ordinance may raise rent only up to the annually published allowable percentage set by the Rent Board; for March 1, 2026 through February 28, 2027 that allowable increase is 1.6%.",
       "key_value": "1.6% for 3/1/2026-2/28/2027",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "built_before": "1979-06-13",
+        "built_cutoff_uses_co_date": true
+      },
       "exemptions": null,
       "overrides": [],
       "overrides_citations": [],
@@ -2473,7 +2552,13 @@
       "penalty": null,
       "also_in": [
         "D080"
-      ]
+      ],
+      "coverage_source": {
+        "method": "corpus",
+        "doc_id": "D079",
+        "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+        "quoted_span": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies that are eligible for a rent increase under the\nCosta-Hawkins Rental Housing Act,\nand some tenancies where the rent is regulated by another government agency."
+      }
     },
     {
       "team_rule_id": "r-ca728e25",
@@ -2632,7 +2717,9 @@
       "title": "Maximum Allowable Rent Increase",
       "requirement": "A landlord covered by the Rent Stabilization Ordinance cannot raise rent by more than 3% of the current rent or 80% of the change in the Consumer Price Index (CPI), whichever is less. For the period September 1, 2026 through August 31, 2027, the maximum allowable rent increase under this formula is 2.87%.",
       "key_value": "3% of current rent or 80% of CPI change, whichever is less (2.87% for 9/1/2026-8/31/2027)",
-      "coverage_conditions": null,
+      "coverage_conditions": {
+        "built_before": "1995-02-01"
+      },
       "exemptions": null,
       "overrides": [],
       "overrides_citations": [],
@@ -2649,7 +2736,13 @@
       "preempts_local": false,
       "conflict_flag": false,
       "conflict_note": "Document does not give a specific municipal code section number for the ordinance; citation reflects the ordinance's common name as used on the city's page.",
-      "penalty": null
+      "penalty": null,
+      "coverage_source": {
+        "method": "sibling",
+        "rule_id": "r-5581c66c",
+        "citation": "Santa Ana Mun. Code § 8-2600",
+        "doc_id": "D085"
+      }
     }
   ]
 }
