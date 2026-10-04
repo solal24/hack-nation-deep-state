@@ -919,9 +919,11 @@
   },
   "T5": {
     "rule_mapping": {
-      "MA-RENT-P1": []
+      "MA-RENT-P1": [
+        "r-cf8880c2"
+      ]
     },
-    "notes": "Recorded as failed: NO failed record extracted yet. Local rent caps applying in ['MA']: 0 (must be 0). Missing rules (not extracted yet): ['MA-RENT-P1'].",
+    "notes": "Recorded as failed: ['r-cf8880c2']. Local rent caps applying in ['MA']: 0 (must be 0).",
     "affected_address_ids": [],
     "conflict_flag_address_ids": []
   }

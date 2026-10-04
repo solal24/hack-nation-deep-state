@@ -130,10 +130,15 @@ def stats(rules, rows, results):
     }
 
 
+from pipeline.answer import EXTRA_RULE_WARNING  # same wording as answer()
+
+
 def main():
     rules = load_rules()
     addresses = load_addresses()
     out_rules = [{k: r.get(k) for k in RULE_FIELDS} for r in rules]
+    for r in out_rules:   # rules from texts fetched online (corpus_extra): the app must show this next to them
+        r["warning"] = EXTRA_RULE_WARNING if (r.get("provenance") or "starter") != "starter" else None
 
     out_addr = []
     for aid, row in addresses.items():

@@ -30,8 +30,8 @@ RULES_ALL = ROOT / "outputs/rules_all.json"
 WATCHLIST = ROOT / "data/external/watchlist.json"
 
 USER_WARNING = "Based on building facts you entered, which have not been verified. Not legal advice."
-EXTRA_RULE_WARNING = ("Rule extracted from a public document outside the supplied corpus and not yet reviewed by a "
-                      "human; it is not part of our official answer. Not legal advice.")
+EXTRA_RULE_WARNING = ("Rule extracted from a public document we retrieved online, outside the supplied corpus, and "
+                      "not yet reviewed by a human. Not legal advice.")
 YEAR_KEYS = {"built_before", "built_after", "exempt_if_built_within_years"}
 UNIT_KEYS = {"min_units", "max_units", "excludes_single_family", "excludes_owner_occupied_min_units"}
 
@@ -67,7 +67,13 @@ def facts_used(rule):
     return [f for f, keys in (("year_built", YEAR_KEYS), ("units", UNIT_KEYS)) if keys & {k for k, v in cond.items() if v}]
 
 
+def from_outside_corpus(rule):
+    """Rule extracted from a document we fetched (corpus_extra), not from the supplied corpus."""
+    return rule.get("provenance", "starter") != "starter"
+
+
 def verdict(res, rule, prov, row, extra=False):
+    extra = extra or from_outside_corpus(rule)   # by origin, so it holds even if SOURCES=all makes it official
     used = facts_used(rule)
     basis = {f: prov[f] for f in used}
     warnings = []
@@ -82,6 +88,7 @@ def verdict(res, rule, prov, row, extra=False):
             "quoted_span": rule.get("quoted_span"), "source_url": rule.get("source_url"),
             "source_retrieved_at": rule.get("retrieved_at"),
             "rule_source": "supplied corpus" if not extra else f"public ({rule.get('provenance')})",
+            "rule_provenance": rule.get("provenance", "starter"),
             "review_status": rule.get("review_status"), "depends_on_facts": basis, "warnings": warnings}
 
 
@@ -100,6 +107,9 @@ def check_warnings(resp):
     addr = resp.get("address") or {}
     if addr.get("provenance") not in (None, "supplied") and not addr.get("warning"):
         problems.append(f"address {addr.get('address_id')}: provenance {addr.get('provenance')} without warning")
+    for v in resp.get("verdicts", []) + resp.get("additional_rules_unreviewed", []):
+        if v["rule_provenance"] != "starter" and EXTRA_RULE_WARNING not in v["warnings"]:
+            problems.append(f"rule {v['team_rule_id']} from {v['rule_provenance']} without the outside-source warning")
     for v in resp.get("verdicts", []):
         if set(v["depends_on_facts"].values()) & {"public", "user"} and not v["warnings"]:
             problems.append(f"verdict {v['team_rule_id']}: depends on {v['depends_on_facts']} without warning")
@@ -161,20 +171,20 @@ def show(resp):
         print(f"  ? {a['confirm']}")
     print(f"\nVerdicts ({len(resp['verdicts'])}, official rules):")
     for v in resp["verdicts"]:
-        flag = " ⚠" if v["warnings"] else ""
+        flag = " [!]" if v["warnings"] else ""
         print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]}{flag}")
     if resp["additional_rules_unreviewed"]:
         print(f"\nAdditional rules from public sources, unreviewed ({len(resp['additional_rules_unreviewed'])}):")
         for v in resp["additional_rules_unreviewed"]:
-            print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]} ⚠")
+            print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]} [!]")
     wc = resp["whats_coming"]
     print(f"\nWhat's coming: {len(wc['state_bills'])} state bills · {len(wc['city_council'])} council items "
           f"(council: {wc['city_council_monitoring'][:60]})")
     for i in wc["state_bills"][:5] + wc["city_council"][:3]:
-        print(f"  {i['status']:<12} {i.get('bill') or i.get('item')}: {i['title'][:70]} ⚠")
+        print(f"  {i['status']:<12} {i.get('bill') or i.get('item')}: {i['title'][:70]} [!]")
     print("\nWarnings shown to the user:")
     for w in resp["warnings"]:
-        print(f"  ⚠ {w}")
+        print(f"  WARNING: {w}")
 
 
 SELFTEST = [

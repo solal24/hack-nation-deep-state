@@ -282,7 +282,7 @@ def main():
             print(f"  ? you typed {q!r}: confirm this is the right street before trusting the facts below")
         if r["provenance"] == "public":
             print(f"  parcel: {r['parcel_match']} {r['parcel_id']} via {r['source_dataset']}")
-            print(f"  ⚠ {r['warning']}")
+            print(f"  WARNING: {r['warning']}")
     if OUT.exists():
         print(f"\n-> {OUT.relative_to(ROOT)}")
 
