@@ -171,20 +171,20 @@ def show(resp):
         print(f"  ? {a['confirm']}")
     print(f"\nVerdicts ({len(resp['verdicts'])}, official rules):")
     for v in resp["verdicts"]:
-        flag = " ⚠" if v["warnings"] else ""
+        flag = " [!]" if v["warnings"] else ""
         print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]}{flag}")
     if resp["additional_rules_unreviewed"]:
         print(f"\nAdditional rules from public sources, unreviewed ({len(resp['additional_rules_unreviewed'])}):")
         for v in resp["additional_rules_unreviewed"]:
-            print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]} ⚠")
+            print(f"  {v['result']:<18} {v['category']:<27} {(v['title'] or '')[:60]} [!]")
     wc = resp["whats_coming"]
     print(f"\nWhat's coming: {len(wc['state_bills'])} state bills · {len(wc['city_council'])} council items "
           f"(council: {wc['city_council_monitoring'][:60]})")
     for i in wc["state_bills"][:5] + wc["city_council"][:3]:
-        print(f"  {i['status']:<12} {i.get('bill') or i.get('item')}: {i['title'][:70]} ⚠")
+        print(f"  {i['status']:<12} {i.get('bill') or i.get('item')}: {i['title'][:70]} [!]")
     print("\nWarnings shown to the user:")
     for w in resp["warnings"]:
-        print(f"  ⚠ {w}")
+        print(f"  WARNING: {w}")
 
 
 SELFTEST = [

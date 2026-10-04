@@ -106,7 +106,7 @@ def main():
     for tid, e in out.items():
         n = len(e["affected_address_ids"])
         exp = expected.get(tid)
-        ok = "" if exp is None else ("  ✅" if n == exp else f"  ❌ expected {exp}")
+        ok = "" if exp is None else ("  OK" if n == exp else f"  FAIL expected {exp}")
         print(f"  {tid}: affected {n}, conflict flags {len(e['conflict_flag_address_ids'])}{ok} · {e['notes']}")
     t2 = out.get("T2", {}).get("per_rule", {})
     if t2:

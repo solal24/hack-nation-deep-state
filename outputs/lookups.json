@@ -23425,8 +23425,8 @@
       },
       {
         "team_rule_id": "r-a5451893",
-        "result": "applies",
-        "explanation": "Applies (building is at most 3 units). In owner-occupied two- and three-family dwellings, a tenant can only be removed by court order, and only for specific causes: staying after lease expiration, failing to pay rent, disorderly conduct destroying other tenants' peace and quiet, willful destruction/damage, constant violation of written rules, or violating a lease re-entry provision. Required notice to quit varies by tenancy type and cause. Key value: Notice to quit: none required for nonpayment of rent; 3-day notice for disorderly/destructive/rule-violation causes; 1 month for month-to-month tenancy; 3 months for at-will or year-to-year tenancy. [N.J.S.A. 2A:18-61.2; source retrieved 2026-10-01]",
+        "result": "unknown",
+        "explanation": "May apply: coverage depends on number of units, on which the sources disagree (2 to 93 units). In owner-occupied two- and three-family dwellings, a tenant can only be removed by court order, and only for specific causes: staying after lease expiration, failing to pay rent, disorderly conduct destroying other tenants' peace and quiet, willful destruction/damage, constant violation of written rules, or violating a lease re-entry provision. Required notice to quit varies by tenancy type and cause. Key value: Notice to quit: none required for nonpayment of rent; 3-day notice for disorderly/destructive/rule-violation causes; 1 month for month-to-month tenancy; 3 months for at-will or year-to-year tenancy. [N.J.S.A. 2A:18-61.2; source retrieved 2026-10-01]",
         "conflict_flag": false
       },
       {

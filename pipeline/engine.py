@@ -142,7 +142,7 @@ def status_on(rule, as_of):
     return "applies"
 
 
-def explain(rule, result, missing, reasons, winner=None, conflict_with=None):
+def explain(rule, result, missing, reasons, winner=None, conflict_with=None, disputed=None):
     """One plain sentence: what the rule says + why this result + citation + retrieval date."""
     what = rule.get("requirement", "").strip().rstrip(".")
     key = f" Key value: {rule['key_value']}." if rule.get("key_value") else ""
@@ -151,6 +151,8 @@ def explain(rule, result, missing, reasons, winner=None, conflict_with=None):
     if result == "unknown":
         facts = ", ".join(FACT_LABELS.get(m, m) for m in missing)
         head = f"May apply: coverage depends on {facts}, which the data does not include."
+        if disputed and set(missing) <= set(disputed):   # the data has the fact, but its sources disagree
+            head = f"May apply: coverage depends on {facts}, on which the sources disagree ({'; '.join(disputed.values())})."
     elif result == "not_yet_effective":
         head = f"Enacted but not yet in force: takes effect {rule.get('effective_date')}."
     elif result == "pending":
@@ -180,6 +182,8 @@ def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
     facts = facts or facts_from_row(row)
     stack = jurisdiction_stack(row)
     out = {}
+    disputed = ({"units": f"{row['units_min']} to {row['units_max']} units"}
+                if row.get("units_source") == "conflict" else None)   # enrich: supplied units vs use code
     for rule in rules:
         if rule["jurisdiction"] not in stack:
             continue
@@ -233,7 +237,7 @@ def lookup(row, rules, as_of=DEFAULT_AS_OF, facts=None):
     for res in out.values():
         winner = out.get(res.get("superseded_by"), {}).get("_rule")
         res["explanation"] = explain(res["_rule"], res["result"], res["missing_facts"], res["reasons"],
-                                     winner, res["conflict_with"])
+                                     winner, res["conflict_with"], disputed)
     return [{k: v for k, v in r.items() if k not in ("_rule", "reasons", "conflict_with")} for r in out.values()]
 
 
@@ -305,11 +309,11 @@ def main():
         print(f"{args.free} -> {row['street_address']} · legal city {row['legal_city'] or '(unincorporated)'} "
               f"· built {row['year_built'] or '?'} · units {row['units_min'] or '?'} · as of {args.as_of} · provenance: user")
         if note:
-            print(f"  ⚠ {note}")
+            print(f"  WARNING: {note}")
         if not in_scope:
             return
         for r in lookup(row, rules, args.as_of):
-            flag = " ⚑ conflict" if r["conflict_flag"] else ""
+            flag = " [conflict]" if r["conflict_flag"] else ""
             print(f"  {r['result']:<18} {r['team_rule_id']:<14} {r['explanation']}{flag}")
         return
 
@@ -319,7 +323,7 @@ def main():
         print(f"{row['address_id']} · {row['street_address']}, {row['postal_city']} -> {row['legal_city']} "
               f"· built {row['year_built'] or '?'} · units {row['units_min'] or '?'}-{row['units_max'] or '?'} · as of {args.as_of}")
         for r in lookup(row, rules, args.as_of):
-            flag = " ⚑ conflict" if r["conflict_flag"] else ""
+            flag = " [conflict]" if r["conflict_flag"] else ""
             print(f"  {r['result']:<18} {r['team_rule_id']:<14} {r['explanation']}{flag}")
         return
 
